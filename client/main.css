@@ -1,4 +1,8 @@
-/* CSS declarations go here */
-body{
+/* * CSS declarations go here */ */
+ body{
   text-align: center;
+}
+
+.navbar{
+  background-color: purple;
 }
