@@ -5,6 +5,9 @@ export class Carousel extends Component {
     render() {
         return (
             <div>
+
+                <h1></h1>
+
                 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -12,7 +15,7 @@ export class Carousel extends Component {
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div className="carousel-inner">
-                    
+
                         <div className="carousel-item active mask">
                             <img className="d-block w-100" className="mask" src="https://images.unsplash.com/photo-1440916005374-25bdd8dc52ba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=280c01f496089ce1c3cd75126a58107b&auto=format&fit=crop&w=1359&q=80" alt="First slide" />
                             <div class="carousel-caption d-none d-md-block">
@@ -41,6 +44,7 @@ export class Carousel extends Component {
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
+
             </div>
         )
     }
