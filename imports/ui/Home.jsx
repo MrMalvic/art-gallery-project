@@ -4,6 +4,7 @@ import route from '/imports/routing/router.js';
 import { withTracker } from 'meteor/react-meteor-data';
 import Posts from '../api/blog/collections.js';
 import { Carousel } from './carousel.jsx';
+import {Navbar2} from '/imports/ui/Navbar2.jsx';
 
 
 class Home extends Component {
@@ -12,6 +13,7 @@ class Home extends Component {
     return (
       <div className="App">
       <Carousel/>
+      <Navbar2/>
       </div>
     )
   }
