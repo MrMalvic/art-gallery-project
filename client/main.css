@@ -1,11 +1,9 @@
 /* CSS declarations go here */
+
 body, html {
   height: 100%;
   text-align: center;
 }
-
-
-/* .carousel { z-index: -97; } */
 
 .carousel-inner > .carousel-item > img {
   height: 100vh;
@@ -29,7 +27,7 @@ a{
 }
 
 a:hover{
-  color: red;
+  color: grey;
 }
 
 .mask{
