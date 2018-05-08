@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 import route from '/imports/routing/router.js';
 import { withTracker } from 'meteor/react-meteor-data';
 import Posts from '../api/blog/collections.js';
+import { Carousel } from './carousel.jsx';
+import { Cards } from './Cards.jsx';
+import {Navbar2} from '/imports/ui/Navbar2.jsx';
+import { Featured } from '/imports/ui/Featured.jsx';
+import { Footer } from '/imports/ui/Footer.jsx'
 import NavBar1 from './invisNavBar/NavBar1.jsx';
 
 
@@ -25,11 +30,19 @@ class Home extends Component {
   //   route.go('/about')
   // }
 
+
+
+
   render() {
     return (
       <div className="App">
       <NavBar1/>
-     </div>
+      <Carousel/>
+      <Navbar2/>
+      <Cards/>      
+      <Featured/>
+      <Footer/>
+      </div>
     )
   }
 }

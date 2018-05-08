@@ -1,4 +1,65 @@
 /* CSS declarations go here */
-body{
+
+body, html {
+  height: 100%;
   text-align: center;
+}
+
+
+
+.card-deck{
+
+
+   max-width: 1200px;
+   margin:auto;
+   text-align: center;
+   font-family: arial;
+   padding-left: 20px;
+
+ }
+ .body{
+   background-color: lightgrey;
+ }
+
+.carousel-inner > .carousel-item > img {
+  height: 100vh;
+  max-width:100%;
+  background-position: center;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a{
+  color: grey;
+  text-decoration: underline;
+  transition: .5s;
+}
+
+a:hover{
+  color: steelblue;
+}
+
+
+.navbar{
+  background-color: steelblue;
+}
+
+.upper{
+  background-color: #e0e0e0;
+}
+
+.lower{
+  background-color: #c0c0c0;
+}
+
+.icon{
+  padding-right: 15px;
+  padding-left: 15px;
 }
