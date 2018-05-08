@@ -4,6 +4,7 @@ import route from '/imports/routing/router.js';
 import { withTracker } from 'meteor/react-meteor-data';
 import Posts from '../api/blog/collections.js';
 import { Carousel } from './carousel.jsx';
+import { Cards } from './Cards.jsx';
 
 
 class Home extends Component {
@@ -12,6 +13,7 @@ class Home extends Component {
     return (
       <div className="App">
       <Carousel/>
+      <Cards/>
       </div>
     )
   }

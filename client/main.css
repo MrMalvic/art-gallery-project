@@ -2,3 +2,18 @@
 body{
   text-align: center;
 }
+
+
+.card-deck{
+
+
+   max-width: 1200px;
+   margin:auto;
+   text-align: center;
+   font-family: arial;
+   padding-left: 20px;
+
+ }
+ .body{
+   background-color: lightgrey;
+ }
