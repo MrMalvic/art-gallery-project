@@ -63,3 +63,10 @@ a:hover{
   padding-right: 15px;
   padding-left: 15px;
 }
+
+.search{
+  align-content: center;
+  /* margin-bottom: 300px; */
+  z-index: 100;
+  position: center;
+}
