@@ -11,14 +11,12 @@ export class Footer extends Component {
                                 <h4>Elite Arts</h4>
                                 <p>Here you can use rows and columns here to organize your footer content.</p>
                             </div>
-                            {/* <span className="vertical"></span> */}
                             <div className="col-md-4">
                                 <h4>Our Socials</h4>
                                 <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
                                 <a href="#"><i class="fab fa-github fa-2x"></i></a>
                                 <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
                             </div>
-                            {/* <span className="vertical"></span> */}
                             <div className="col-md-4">
                                 <h4>Contact us</h4>
                                 <ul className="list-unstyled">
