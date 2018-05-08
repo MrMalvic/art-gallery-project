@@ -7,3 +7,6 @@ import {About} from '/imports/ui/About.jsx';
 route('/', Home);
 route('/contact', ContactUs);
 route('/about', About);
+
+
+

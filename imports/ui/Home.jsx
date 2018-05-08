@@ -4,8 +4,13 @@ import route from '/imports/routing/router.js';
 import { withTracker } from 'meteor/react-meteor-data';
 import Posts from '../api/blog/collections.js';
 import { Carousel } from './carousel.jsx';
+import { Cards } from './Cards.jsx';
 import {Navbar2} from '/imports/ui/Navbar2.jsx';
 import {About} from '/imports/ui/About.jsx';
+import { Featured } from '/imports/ui/Featured.jsx';
+import { Footer } from '/imports/ui/Footer.jsx'
+import NavBar1 from './invisNavBar/NavBar1.jsx';
+
 
 
 
@@ -13,9 +18,13 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
+      <NavBar1/>
       <Carousel/>
       <Navbar2/>
       <a href="/about">About></a>
+      <Cards/>      
+      <Featured/>
+      <Footer/>
       </div>
     )
   }
@@ -26,3 +35,4 @@ export default withTracker(() => {
     posts: Posts.find().fetch(),
   }
 })(Home);
+
