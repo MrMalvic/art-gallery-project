@@ -21,25 +21,34 @@ body, html {
 }
 
 a{
-  color: white;
+  color: grey;
   text-decoration: underline;
   transition: .5s;
 }
 
 a:hover{
-  color: grey;
+  color: steelblue;
 }
 
-.mask{
-  color: rgba(255,255 ,255 , 0.5);
-  height: 100vh;
-  min-height: 300px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 .navbar{
-  background-color: purple;
+  background-color: steelblue;
+}
+
+.upper{
+  background-color: #e0e0e0;
+}
+
+.lower{
+  background-color: #c0c0c0;
+}
+ 
+i{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.vertical{
+  border-left: 2px solid grey;
+    height: 10px;
 }
