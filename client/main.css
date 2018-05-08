@@ -1,4 +1,43 @@
 /* CSS declarations go here */
-body{
+body, html {
+  height: 100%;
   text-align: center;
+}
+
+
+/* .carousel { z-index: -97; } */
+
+.carousel-inner > .carousel-item > img {
+  height: 100vh;
+  max-width:100%; 
+  background-position: center; 
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a{
+  color: white;
+  text-decoration: underline;
+  transition: .5s;
+}
+
+a:hover{
+  color: red;
+}
+
+.mask{
+  color: rgba(255,255 ,255 , 0.5);
+  height: 100vh;
+  min-height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
