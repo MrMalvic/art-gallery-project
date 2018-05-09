@@ -5,20 +5,17 @@ body, html {
   text-align: center;
 }
 
-
+.carousel{
+  z-index: -1;
+}
 
 .card-deck{
-
-
    max-width: 1200px;
    margin:auto;
    text-align: center;
    font-family: arial;
-   padding-left: 20px;
+   /* padding-left: 20px; */
 
- }
- .body{
-   background-color: lightgrey;
  }
 
 .carousel-inner > .carousel-item > img {
@@ -27,17 +24,17 @@ body, html {
   background-position: center;
 }
 
-.carousel-item {
+/* .carousel-item {
   height: 100vh;
   min-height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
 a{
-  color: grey;
+  color: white;
   text-decoration: underline;
   transition: .5s;
 }
@@ -48,7 +45,7 @@ a:hover{
 
 
 .navbar{
-  background-color: steelblue;
+  background-color: white;
 }
 
 .upper{
@@ -66,7 +63,50 @@ a:hover{
 
 .search{
   align-content: center;
-  /* margin-bottom: 300px; */
   z-index: 100;
   position: center;
+}
+
+.carousel-search{
+  position: relative;
+}
+
+/* .bar{
+  position: absolute;
+  padding-left: 5000px;
+} */
+
+input[type=text] {
+  position: absolute;
+  left: 30%;
+    top: 45%;
+    width: 100%;
+    /* text-align: left; */
+    font-size: 30px;
+    outline-color: white;
+  border: 3px solid white;
+  border-radius: 3px;
+  height: 50px;
+  background: transparent;
+  width: 40%;
+  color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+.artist-link{
+  z-index: 2;
 }

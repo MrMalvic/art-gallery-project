@@ -8,6 +8,7 @@ import { Cards } from './Cards.jsx';
 import {Navbar2} from '/imports/ui/Navbar2.jsx';
 import { Featured } from '/imports/ui/Featured.jsx';
 import { Footer } from '/imports/ui/Footer.jsx'
+import { Search } from '/imports/ui/search.jsx';
 
 
 
@@ -15,12 +16,13 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="App">
-      <Carousel/>
-      <Cards/>
+      <div>
+      {/* <Carousel/> */}
+      <Search/>
       <Navbar2/>
-      <Featured/>
-      <Footer/>
+      <Cards/>
+      {/* <Featured/> */}
+      {/* <Footer/> */}
       </div>
     )
   }
