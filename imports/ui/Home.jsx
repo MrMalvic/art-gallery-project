@@ -17,7 +17,7 @@ class Home extends Component {
     return (
       <div>
       <SearchCarousel/>
-      {/* <Navbar2/> */}
+      <Navbar2/>
       <Cards/>
       <Featured/>
       <Footer/>
