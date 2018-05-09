@@ -8,8 +8,8 @@ export class Navbar2 extends Component{
   render(){
     return(
      
-      <nav class="navbar navbar-expand-lg navbar-light bg-purple">
-    <a class="navbar-brand" href="">Art gallery</a>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-two">
+    <a class="navbar-brand" href=""><img src="logo2.png" width="100px" heigDropdownht="80px" className="d-inline-block align-top" alt=""/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

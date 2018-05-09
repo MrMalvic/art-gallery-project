@@ -34,8 +34,8 @@ body, html {
 } */
 
 a{
-  color: white;
-  text-decoration: underline;
+  color: #a7c9f0;
+  /* text-decoration: underline; */
   transition: .5s;
 }
 
@@ -48,11 +48,11 @@ a:hover{
   background-color: white;
 }
 
-.upper{
+.upper-footer{
   background-color: #e0e0e0;
 }
 
-.lower{
+.lower-footer{
   background-color: #c0c0c0;
 }
 
@@ -71,23 +71,18 @@ a:hover{
   position: relative;
 }
 
-/* .bar{
-  position: absolute;
-  padding-left: 5000px;
-} */
-
 input[type=text] {
   position: absolute;
   left: 30%;
-    top: 45%;
-    width: 100%;
-    /* text-align: left; */
-    font-size: 30px;
-    outline-color: white;
+  top: 45%;
+  width: 100%;
+  font-size: 30px;
+  outline-color: white;
   border: 3px solid white;
   border-radius: 3px;
   height: 50px;
   background: transparent;
+  background-image: url('searchicon.png');
   width: 40%;
   color: white;
   padding-left: 7px;
@@ -109,4 +104,23 @@ input[type=text] {
 
 .artist-link{
   z-index: 2;
+}
+
+.trans-nav{
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-link , .artist-link{
+  color: white;
+}
+
+
+.navbar-two{
+  background-color: #a7c9f0;
+}
+
+.footer-head{
+  padding-top: 10px;
 }
