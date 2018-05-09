@@ -5,9 +5,11 @@ import React, { Component } from 'react';
 
 
 export class Navbar2 extends Component{
+  goToPainting = () => {
+    route.go('/painting') // pathDef, params, queryParams
+}
   render(){
     return(
-     
       <nav class="navbar navbar-expand-lg navbar-light navbar-two">
     <a class="navbar-brand" href=""><img src="logo2.png" width="100px" heigDropdownht="80px" className="d-inline-block align-top" alt=""/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +29,7 @@ export class Navbar2 extends Component{
             Categories
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">painting</a>
+            <a class="dropdown-item" href="/painting">painting</a>
             <a class="dropdown-item" href="#">Sculpture</a>
             <a class="dropdown-item" href="#">Drawing</a>
             <a class="dropdown-item" href="#">Craft</a>

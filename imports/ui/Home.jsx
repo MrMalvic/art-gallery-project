@@ -12,12 +12,13 @@ import { SearchCarousel } from '/imports/ui/search.jsx';
 
 
 
+
 class Home extends Component {
   render() {
     return (
       <div>
       <SearchCarousel/>
-      {/* <Navbar2/> */}
+      <Navbar2/> 
       <Cards/>
       <Featured/>
       <Footer/>
