@@ -8,7 +8,8 @@ import {Navbar2} from '/imports/ui/Navbar2.jsx';
 import { Featured } from '/imports/ui/Featured.jsx';
 import { Footer } from '/imports/ui/Footer.jsx'
 import { SearchCarousel } from '/imports/ui/search.jsx';
-
+import { Pops } from  '/imports/ui/Pops.jsx';
+import { Newartist }  from '/imports/ui/Newartist.jsx'
 
 
 
@@ -20,7 +21,10 @@ class Home extends Component {
       <Navbar2/>
       <Cards/>
       <Featured/>
+      <Pops/>
+      <Newartist/>
       <Footer/>
+
       </div>
     )
   }
@@ -31,4 +35,3 @@ export default withTracker(() => {
     posts: Posts.find().fetch(),
   }
 })(Home);
-

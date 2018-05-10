@@ -11,6 +11,3 @@ route('/contact', ContactUs);
 route('/about', About);
 route('/SignUp',ArtSignUp);
 route('/LogIn',LogIn);
-
-
-

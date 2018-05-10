@@ -8,7 +8,7 @@ import Posts from '../api/blog/collections.js';
 export class Pops extends Component{
   render(){
     return(
-      
+
       <div className="row">
         <div className="col-md-4">
           <div className="thumbnail">
