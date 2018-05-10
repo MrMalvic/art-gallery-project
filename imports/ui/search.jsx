@@ -9,7 +9,7 @@ export class SearchCarousel extends Component{
         return(
             <div className="carousel-search" >
             <NavBar1/>
-            <input type="text" className="bar" placeholder="Search..."/>
+            <input type="text" className="bar" id="search-bar" placeholder="Search..."/>
             <Carousel/>
             </div>
         )

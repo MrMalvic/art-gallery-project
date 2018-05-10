@@ -6,9 +6,8 @@ import {Painting} from '/imports/ui/Painting.jsx';
 import {Sculpture} from '/imports/ui/Sculpture.jsx';
 import {Drawing} from '/imports/ui/Drawing.jsx';
 import {Craft} from '/imports/ui/Craft.jsx';
-
-
-
+import ArtSignUp from '/imports/ui/invisNavBar/ArtSignUp.jsx';
+import LogIn from '/imports/ui/invisNavBar/LogIn.jsx';
 
 
 route('/', Home);
@@ -18,5 +17,8 @@ route('/painting', Painting);
 route('/sculpture', Sculpture);
 route('/drawing', Drawing);
 route('/craft', Craft);
+route('/SignUp',ArtSignUp);
+route('/LogIn',LogIn);
+
 
 
