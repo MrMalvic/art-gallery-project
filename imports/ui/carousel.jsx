@@ -5,7 +5,7 @@ export class Carousel extends Component {
     render() {
         return (
             <div className="mask">
-                <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" data-interval="7000" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img className="d-block w-100" src="https://images.unsplash.com/photo-1440916005374-25bdd8dc52ba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=280c01f496089ce1c3cd75126a58107b&auto=format&fit=crop&w=1359&q=80" alt="First slide" />
