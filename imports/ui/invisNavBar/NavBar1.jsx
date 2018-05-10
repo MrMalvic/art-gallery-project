@@ -25,16 +25,11 @@ goTolog = () => {
     
     return (
      <div>  
-<<<<<<< HEAD
-     <nav className="navbar navbar-inverse navbar-fixed-top opaque-navbar">
-       <a className="navbar-brand" href="/">
-         <img src="logo2.png" width="100px" height="80px" className="d-inline-block align-top" alt=" "href="/"/>
-=======
+
      <nav className="navbar navbar-inverse navbar-fixed-top trans-nav">
-       <a className="navbar-brand" href="#">
+       <a className="navbar-brand" href="/">
          <img src="logo2.png" width="100px" heigDropdownht="80px" className="d-inline-block align-top img" alt=""/>
->>>>>>> c327d576b16bdd524f254dad3f8300b5f0f14f86
-      
+     
        </a>
        <ul className="nav justify-Dropdowncontent-end">
     <li className="nav-item dropdown">
