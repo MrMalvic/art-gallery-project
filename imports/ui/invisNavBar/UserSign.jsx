@@ -19,37 +19,37 @@ export default class UserSign extends Component {
     <form onSubmit = {this.handleSubmit}>
         <div className="form-row">
         <div className="form-group col-md-6">
-        <label for="inputName2">Full Names</label>
-        <input type="text" class="form-control" id="inputName2" placeholder="Full Names"/>
+        <label htmlFor="inputName2">Full Names</label>
+        <input type="text" className="form-control" id="inputName2" placeholder="Full Names"/>
         </div>
         <div className="form-group col-md-6">
-        <label for="inputEmail2">Email</label>
-        <input type="email" class="form-control" id="inputEmail2" placeholder="Email"/>
+        <label htmlFor="inputEmail2">Email</label>
+        <input type="email" className="form-control" id="inputEmail2" placeholder="Email"/>
         </div>
         <div className="form-group col-md-6">
-        <label for="inputPassword2">Password</label>
-        <input type="password" class="form-control" id="inputPassword2" placeholder="Password"/>
+        <label htmlFor="inputPassword2">Password</label>
+        <input type="password" className="form-control" id="inputPassword2" placeholder="Password"/>
         </div>
         <div className="form-group col-md-6">
-        <label for="inputConfirm2">Confirm Password</label>
-        <input type="password" class="form-control" id="inputConfirm2" placeholder="Confirm Password"/>
+        <label htmlFor="inputConfirm2">Confirm Password</label>
+        <input type="password" className="form-control" id="inputConfirm2" placeholder="Confirm Password"/>
         </div>
         </div>
-        <div class="form-row">
-        <div class="form-group col-md-6">
-        <label for="inputCity">Location</label>
-        <input type="text" class="form-control" id="inputCity"/>
+        <div className="form-row">
+        <div className="form-group col-md-6">
+        <label htmlFor="inputCity">Location</label>
+        <input type="text" className="form-control" id="inputCity"/>
         </div>
         </div>
-        <div class="form-group">
-        <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck"/>
-        <label class="form-check-label" for="gridCheck">
+        <div className="form-group">
+        <div className="form-check">
+        <input className="form-check-input" type="checkbox" id="gridCheck"/>
+        <label className="form-check-label" for="gridCheck">
             I agree to Elite's Ts&Cs
         </label>
         </div>
         </div>
-        <button type="submit" class="btn btn-primary">Sign Up</button>           
+        <button type="submit" className="btn btn-primary">Sign Up</button>           
     </form> 
       </div>
     );
