@@ -20,12 +20,12 @@ export default class Login extends Component {
        <div className="Container"> <div className="row justify-content-center">
               <form onSubmit = {this.handleSubmit}> 
             <div>
-                <label htmlFfor="Email">Email</label>
-                <input type="password" className="form-control" id="Email" placeholder="Type in Email"/>
+                <label for="Email">Email</label>
+                <input type="password" class="form-control" id="Email" placeholder="Type in Email"/>
             </div>
             <div>           
-                <label htmlFor="inputPassword">Password</label>
-                <input type="password" className="form-control" id="inputPassword" placeholder="Password"/>
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password"/>
             </div>
                 <button type="submit" className="btn btn-primary">LogIn</button>
         </form>
