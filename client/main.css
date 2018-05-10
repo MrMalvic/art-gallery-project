@@ -213,3 +213,19 @@ label{
   padding-left: 7px;
   padding-right: 7px;
 }
+
+.form-control2{
+  height: 50px;
+  width: 400px;
+  outline-color: white;
+  border: 3px solid white;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.login{
+  padding: 30px;
+}

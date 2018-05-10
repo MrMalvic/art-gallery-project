@@ -14,20 +14,24 @@ export default class Login extends Component {
 
     return (
       <div>
+        <div className="mask3">
+        <img src="img5.jpg" className="artist-signup-img"/>
+        </div>
         <NavBar1 />
         <br /><br />
-        <h1>Log In</h1> <br /><br />
+         <br /><br />
         <div className="Container">
          <div className="row justify-content-center">
-          <form onSubmit={this.handleSubmit}>
-            <div>
-              <label htmlFor="Email">Email</label>
-              <input type="password" className="form-control" id="Email" placeholder="Type in Email" />
+          <form onSubmit={this.handleSubmit} className="artist-signup-form container-fluid">
+          <h1 className="artist-reg">Welcome back</h1>
+            <div className="login">
+              {/* <label htmlFor="Email">Email</label><br/> */}
+              <input type="password" className="form-control2" id="Email" placeholder="Email" />
             </div>
-            <div>
-              <label htmlFor="inputPassword">Password</label>
-              <input type="password" className="form-control" id="inputPassword" placeholder="Password" />
-            </div>
+            <div className="login">
+              {/* <label htmlFor="inputPassword">Password</label><br/> */}
+              <input type="password" className="form-control2" id="inputPassword" placeholder="Password" />
+            </div><br/>
             <button type="submit" className="btn btn-primary">LogIn</button>
           </form>
         </div>
