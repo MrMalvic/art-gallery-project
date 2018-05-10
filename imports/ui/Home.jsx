@@ -13,12 +13,13 @@ import { Newartist }  from '/imports/ui/Newartist.jsx'
 
 
 
+
 class Home extends Component {
   render() {
     return (
       <div>
       <SearchCarousel/>
-      <Navbar2/>
+      <Navbar2/> 
       <Cards/>
       <Featured/>
       <Pops/>

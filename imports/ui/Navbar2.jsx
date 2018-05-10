@@ -5,13 +5,17 @@ import React, { Component } from 'react';
 
 
 export class Navbar2 extends Component{
+  goToPainting = () => {
+    route.go('/painting') 
+}
+ 
   render(){
-    return(
-     
+
+    return( 
       <nav className="navbar navbar-expand-lg navbar-light navbar-two">
-    <a className="navbar-brand" href=""><img src="logo2.png" className="d-inline-block align-top" alt=""/></a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+    <a class="navbar-brand" href=""><img src="logo2.png" width="100px" heigDropdownht="80px" className="d-inline-block align-top" alt=""/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -22,15 +26,16 @@ export class Navbar2 extends Component{
         <li className="nav-item">
           <a className="nav-link" href="/about">About</a>
         </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Categories
           </a>
-          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a className="dropdown-item" href="#">painting</a>
-            <a className="dropdown-item" href="#">Sculpture</a>
-            <a className="dropdown-item" href="#">Drawing</a>
-            <a className="dropdown-item" href="#">Craft</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/painting">Painting</a>
+            <a class="dropdown-item" href="/sculpture">Sculpture</a>
+            <a class="dropdown-item" href="/drawing">Drawing</a>
+            <a class="dropdown-item" href="/craft">Craft</a>
+
           </div>
         </li>
         <li className="nav-item dropdown">
