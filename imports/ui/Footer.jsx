@@ -13,15 +13,15 @@ export class Footer extends Component {
                             </div>
                             <div className="col-md-4">
                                 <h4 className="footer-head">Our Socials</h4>
-                                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-github fa-2x icon"></i></a>
-                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="#"><i className="fab fa-facebook fa-2x"></i></a>
+                                <a href="#"><i className="fab fa-github fa-2x icon"></i></a>
+                                <a href="#"><i className="fab fa-twitter fa-2x"></i></a>
                             </div>
                             <div className="col-md-4">
                                 <h4 className="footer-head">Contact us</h4>
                                 <ul className="list-unstyled">
-                                    <li><i class="fas fa-phone"></i>+26094827391</li>
-                                    <li><i class="far fa-envelope"></i>email@gmail.com</li>
+                                    <li><i className="fas fa-phone"></i>+26094827391</li>
+                                    <li><i className="far fa-envelope"></i>email@gmail.com</li>
                                 </ul>
                             </div>
                         </div>

@@ -25,31 +25,31 @@ export default class ArtSignUp extends Component {
         <h1 className="artist-reg">Artist Registration</h1>
           <div className="form-row">
             <div className="form-group col-md-6">
-              <label for="inputName">Full Names</label>
+              <label htmlFor="inputName">Full Names</label>
               <input type="text" className="form-control" id="inputName" placeholder="Full Names" />
             </div>
             <div className="form-group col-md-6">
-              <label for="inputEmail">Email</label>
+              <label htmlFor="inputEmail">Email</label>
               <input type="email" className="form-control" id="inputEmail" placeholder="Email" />
             </div>
             <div className="form-group col-md-6">
-              <label for="inputPassword">Password</label>
+              <label htmlFor="inputPassword">Password</label>
               <input type="password" className="form-control" id="inputPassword" placeholder="Password" />
             </div>
             <div className="form-group col-md-6">
-              <label for="inputConfirm">Confirm Password</label>
+              <label htmlFor="inputConfirm">Confirm Password</label>
               <input type="password" className="form-control" id="inputConfirm" placeholder="Confirm Password" />
             </div>
           </div>
           <div className="form-row">
             <div className="form-group col-md-6">
-              <label for="inputCity">Location</label>
+              <label htmlFor="inputCity">Location</label>
               <input type="text" className="form-control" id="inputCity" placeholder="Your Location" />
             </div>
             <div className="form-group col-md-6">
-              <label for="inputState">Category</label>
+              <label htmlFor="inputState">Category</label>
               <select id="inputCategory" className="form-control">
-                <option selected>Choose Category</option>
+                <option>Choose Category</option>
                 <option>Crafts</option>
                 <option>Drawings</option>
                 <option>Paintings</option>
@@ -60,14 +60,14 @@ export default class ArtSignUp extends Component {
           <div className="form-group">
             <div className="form-check">
               
-              <label className="form-check-label" for="gridCheck">
+              <label className="form-check-label" htmlFor="gridCheck">
               <input className="form-check-input" type="checkbox" id="gridCheck" />
                 I agree to Elite's Ts&Cs
       </label>
             </div>
             </div>
           
-          <button type="submit" class="btn btn-primary">Sign Up</button>
+          <button type="submit" className="btn btn-primary">Sign Up</button>
         </form>
         </div>
         {/* <form onSubmit = {this.handleSubmit}>

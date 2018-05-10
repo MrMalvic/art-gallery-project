@@ -7,7 +7,10 @@ import route from '/imports/routing/router.js';
 // route('/', Home);
 
 
-export default class NavBar1 extends Component {
+export default class NavBar1 extends Component { 
+  goToHome = () => {
+    route.go('/') // pathDef, params, queryParams
+  }
   goToSignUp = () => {
     route.go('/SignUp') // pathDef, params, queryParams
 }
@@ -32,12 +35,15 @@ goTolog = () => {
      <nav className="navbar navbar-inverse navbar-fixed-top trans-nav">
        <a className="navbar-brand" href="#">
          <img src="logo2.png" className="d-inline-block align-top" alt=""/>
+<<<<<<< HEAD
       
 >>>>>>> f6aeec4b4089adedcd11b6661ce249c4d7986b39
+=======
+>>>>>>> 425a323c0ddd528f05bc0223712557626414b0b0
        </a>
        <ul className="nav justify-Dropdowncontent-end">
     <li className="nav-item dropdown">
-     <a className="nav-link dropdown-toggle" href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <a className="nav-link dropdown-toggle"  href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           SignUp
         </a>
        
