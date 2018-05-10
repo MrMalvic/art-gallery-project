@@ -15,9 +15,6 @@ body, html {
    text-align: center;
    font-family: arial;
    z-index: -1;
-   
-   /* padding-left: 20px; */
-
  }
 
 .carousel-inner > .carousel-item > img {
@@ -26,18 +23,8 @@ body, html {
   background-position: center;
 }
 
-/* .carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
-
 a{
   color: #a7c9f0;
-  /* text-decoration: underline; */
   transition: .5s;
 }
 
@@ -77,30 +64,28 @@ input[type=text] {
   position: absolute;
   left: 30%;
   top: 45%;
-  width: 100%;
+  width: 40%;
   font-size: 30px;
   outline-color: white;
   border: 3px solid white;
   border-radius: 3px;
   height: 50px;
-  background: rgba(0, 0, 0, 0.3);
-  background-image: url('searchicon.png');
-  width: 40%;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   padding-left: 7px;
   padding-right: 7px;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder { 
   color: white;
 }
-::-moz-placeholder { /* Firefox 19+ */
+::-moz-placeholder { 
   color: white;
 }
-:-ms-input-placeholder { /* IE 10+ */
+:-ms-input-placeholder { 
   color: white;
 }
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder { 
   color: white;
 }
 
@@ -111,7 +96,7 @@ input[type=text] {
 .trans-nav{
   position: absolute;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .nav-link , .artist-link{
@@ -124,8 +109,55 @@ input[type=text] {
   position: sticky;
   top:0;
   z-index: 1;
+  width: 100%;
 }
 
 .footer-head{
   padding-top: 10px;
+}
+
+.about-page-img{
+  height: 90vh;
+  max-width:100%;
+  background-position: center;
+  position: absolute;
+  z-index: -99;
+  left: 0;
+}
+
+.about-page-text{
+  top:35%;
+  position: absolute;  
+  color: white;
+  width: 100%;
+}
+
+.mask{
+  height:100vh;
+  width:100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.mask2{
+  height:90vh;
+  width:100%;
+  background-color: rgba(0, 0, 0, .7);  
+}
+
+.img{
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 100%;
+
+}
+
+.about-text{
+  margin-top: 20px;
+  background-color: #e0e0e0;
+  width: 100%;
+}
+
+.meet-the-team{
+  margin: 20px;
 }
