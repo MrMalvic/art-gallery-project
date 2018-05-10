@@ -124,3 +124,19 @@ input[type=text] {
 .footer-head{
   padding-top: 10px;
 }
+#b{
+  background-image: url(h.jpg);
+  background-repeat: repeat;
+}
+h1{
+  color: #a7c9f0;
+}
+h4{
+  color: #e0e0e0;
+  font-style: initial;
+}
+#hr{
+  color: black;
+  background-image: url(h.jpg);
+
+}

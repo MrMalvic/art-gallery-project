@@ -11,7 +11,7 @@ export class About extends Component{
     render(){
         return(
        
- <div className="app">
+ <div className="abt">
           <nav class="navbar navbar-expand-lg navbar-light bg-purple">
            <a class="navbar-brand" href="">Elite Art</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,14 +27,14 @@ export class About extends Component{
             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">painting</a>
-              <a class="dropdown-item" href="#">Sculpture</a>
-              <a class="dropdown-item" href="#">Drawing</a>
-              <a class="dropdown-item" href="#">Craft</a>
+              <a class="dropdown-item" href="/painting">Painting</a>
+              <a class="dropdown-item" href="/sculpture">Sculpture</a>
+              <a class="dropdown-item" href="/drawing">Drawing</a>
+              <a class="dropdown-item" href="/craft">Craft</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -50,15 +50,16 @@ export class About extends Component{
           </ul>
       </div>
     </nav>
-          <h1>About Our Gallery Art</h1>
+    <div id="b">
+          <h1>About Our Elite Art</h1>
           <h4> 
-          Gallery Art is the world’s leading
-          <br></br> online art gallery, connecting people with art and artists they love.
-            Gallery Art offers an<br></br>
-             unparalleled selection of paintings, draence of buying and s
-          wingselling art by making it easy, convenient and welcoming for both collectors and artists., sculpture and photography in a range of prices, and it provides artists from around the world with an expertly curated environment in which to exhibit and sell their work.
-              Based in Lusaka, Gallery Art is redefining the  <br></br>experience of buying and selling art by making it easy, convenient and welcoming for both collectors and artists.
-              </h4>
+          Elite Art is the world’s leading
+          <br></br> online Elite art, connecting people with art and artists <br></br>
+                      they love.
+            Elite Art offers an<br></br>
+             unparalleled selection of paintings, draence of <br></br>
+              buying and selling art by making it easy, convenient and welcoming for both <br></br>
+          collectors and artists., sculpture and photography in a range of prices, and it provides <br></br>artists from around the world with an expertly curated environment <br></br>in which to exhibit and sell their work.Based in Lusaka, Elite Art is redefining the  <br></br> experience of buying and selling art by making  <br></br>it easy, convenient and welcoming for both collectors and artists.      </h4>
           <h1>Meet Our Team</h1>
         <div class="card-group">
       <div class="card">
@@ -96,8 +97,8 @@ export class About extends Component{
       </div>
     </div>
     </div>
-   
-        );
-    }
-    
+    <hr id="hr"></hr>
+   </div>
+     );
+   }  
 }
