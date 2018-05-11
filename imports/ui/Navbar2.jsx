@@ -36,7 +36,7 @@ export class Navbar2 extends Component{
             <a className="dropdown-item" href="/drawing">Drawing</a>
             <a className="dropdown-item" href="/craft">Craft</a>
 
-          </div>Name
+          </div>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
