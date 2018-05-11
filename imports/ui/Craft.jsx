@@ -52,93 +52,78 @@ export class Craft extends Component{
           </ul>
       </div>
     </nav>
-    <div class="card-group">             
-      <div class="card">
-    <img class="card-img-top" src="ges.jpeg" width="10%" height="50%" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Charles Chanda</h5>
-      <p class="card-text">Drawing.</p>
-          </div>
+                      <h1>CRAFTS</h1>
+    <div class="row">             
+      <div class="col-md-4">
+    <img class="card-img-top" src="craft/let.jpeg" width="200%" height="80%" alt="Card image cap"></img>
+    <br>
+    </br>
+    <button class="btn btn-success"  onClick={this.state}>Buy</button>
            </div>
-        <div class="card">
-        <img class="card-img-top" src="i.jpeg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">Andrew Khondowe</h5>
-          <p class="card-text">Painting.</p>
-        </div>
+        <div class="col-md-4">   
+     <img class="card-img-top" src="craft/awes.jpeg" width="200%" height="80%" alt="Card image cap"></img>
+     <br>
+     </br>
+          <button class="btn btn-success"  onClick={this.state}>Buy</button>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="im.jpeg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">Mafwolisha Likelenge</h5>
-          <p class="card-text">Craft.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="ima.jpeg" height="50%" width="20%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">malumbo mutale</h5>
-          <p class="card-text">Artists.</p>
-        </div>
-      </div>
-      <div class="card-group">
-      <div class="card">
-    <img class="card-img-top" src="a1.jpg" width="20%" height="50%" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Charles Chanda</h5>
-      <p class="card-text">painting.</p>
-          </div>
+      <div class="col-md-4">
+    <img class="card-img-top" src="craft/super.jpeg" width="200%" height="80%" alt="Card image cap"></img>
+    <br>
+    </br>
+    <button class="btn btn-success" onClick={this.state}>Buy</button>
            </div>
-        <div class="card">
-        <img class="card-img-top" src="img1.jpg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">Andrew Khondowe</h5>
-          <p class="card-text">Artists.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="img2.jpeg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">Mafwolisha Likelenge</h5>
-          <p class="card-text">Artists.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="img3.jpg" height="50%" width="10%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">malumbo mutale</h5>
-          <p class="card-text">Drawing.</p>
-        </div>
-      </div>
-      <div class="card">
-    <img class="card-img-top" src="image.jpeg" width="10%" height="50%" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Charles Chanda</h5>
-      <p class="card-text">painting.</p>
-          </div>
            </div>
-        <div class="card">
-        <img class="card-img-top" src="images.jpeg" width="10%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">Andrew Khondowe</h5>
-          <p class="card-text">Drawing.</p>
-        </div>
+           <div class="row"> 
+        <div class="col-md-4">
+        <img class="card-img-top" src="craft/less.jpeg" width="200%" height="80%" alt="Card image cap"></img>
+        <br>
+        </br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="love.jpeg" width="10%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">Mafwolisha Likelenge</h5>
-          <p class="card-text">Craft.</p>
-        </div>
+      <div class="col-md-4">
+        <img class="card-img-top" src="craft/inde.jpeg" width="20%" height="80%" alt="Card image cap"></img>
+        <br>
+        </br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="pia.jpeg" height="50%" width="10%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">malumbo mutale</h5>
-          <p class="card-text">csculpture.</p>
-        </div>
-        </div>
+      <div class="col-md-4">
+        <img class="card-img-top" src="craft/toot.jpeg"  width="200%" height="80%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
+      </div>
+      <div class="row">
+      <div class="col-md-4">
+        <img class="card-img-top" src="craft/great.jpeg" width="200%" height="80%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
+      </div>
+      <div class="col-md-4">
+        <img class="card-img-top" src="craft/impo.jpeg"  width="200%" height="80%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
+      </div>
+      <div class="col-md-4">
+    <img class="card-img-top" src="craft/more.jpeg" width="200%" height="80%" alt="Card image cap"></img>
+    <br></br>
+    <button class="btn btn-success" onClick={this.state}>Buy</button>
+      </div>
+      </div>
+           <div class="row">
+        <div class="col-md-4">
+        <img class="card-img-top" src="craft/cool.jpeg" width="200%" height="80%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
+      </div>
+      <div class="col-md-4">
+        <img class="card-img-top" src="craft/sir.jpeg" width="200%" height="80%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
+      </div>
+      <div class="col-md-4">
+        <img class="card-img-top" src="craft/eat.jpeg"  width="200%" height="80%" alt="Card image cap"></img>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        </div>
       </div>
       </div>
         );

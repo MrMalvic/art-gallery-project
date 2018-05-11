@@ -53,118 +53,79 @@ export class Painting extends Component{
           </ul>
       </div>
     </nav>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <li class="nav-item">
-            <a class="nav-link" href="/painting">Painting</a>
-          </li>
-          <a class="dropdown-item" href="#">Sculpture</a>
-            <a class="dropdown-item" href="#">Drawing</a>
-            <a class="dropdown-item" href="#">Craft</a>
-          </div>
+                          <h1>PAINTINGS</h1>
           <div class="row">             
       <div class="col-md-4">
-    <img class="card-img-top" src="sculpture/chain.jpeg" width="20%" height="50%" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">The sculpture painted by a famous man lives in a city of South Africa called Pretoria city.This man named:</h5>
-      <p class="card-text"> <datagrid>erick P</datagrid>.</p>
-      <h4>A Painter</h4>
-          </div>
+    <img class="card-img-top" src="painting/ab.jpg" width="200%" height="85%" alt="Card image cap"></img>
+    <br>
+    </br>
+    <button class="btn btn-success"  onClick={this.state}>Buy</button>
            </div>
-        <div class="col-md-4">
-        <img class="card-img-top" src="sculpture/dem.jpeg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">The sculpture painted by a famous man lives in a city of Madagascar called Antananalivo.This man named:</h5>
-          <p class="card-text">Andrew.</p>
-          <h4>A Painter</h4>
-        </div>
+        <div class="col-md-4">   
+     <img class="card-img-top" src="painting/ah.jpeg" width="200%" height="85%" alt="Card image cap"></img>
+     <br>
+     </br>
+          <button class="btn btn-success"  onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
-        <img class="card-img-top" src="sculpture/finally.jpeg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">The sculpture painted by a famous man lives in a town of Egypt called cairo.This man named: </h5>
-          <p class="card-text">Charles.</p>
-          <h4>A Painter</h4>
-        </div>
+    <img class="card-img-top" src="painting/ac.jpeg" width="200%" height="85%" alt="Card image cap"></img>
+    <br>
+    </br>
+    <button class="btn btn-success" onClick={this.state}>Buy</button>
+           </div>
+           </div>
+           <div class="row"> 
+        <div class="col-md-4">
+        <img class="card-img-top" src="painting/ad.jpg" width="200%" height="85%" alt="Card image cap"></img>
+        <br>
+        </br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
+      </div>
+      <div class="col-md-4">
+        <img class="card-img-top" src="painting/ae.jpg" width="20%" height="85%" alt="Card image cap"></img>
+        <br>
+        </br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
+      </div>
+      <div class="col-md-4">
+        <img class="card-img-top" src="painting/af.jpg"  width="200%" height="85%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       </div>
       <div class="row">
       <div class="col-md-4">
-        <img class="card-img-top" src="painting/angelfish.jpg" height="50%" width="20%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">The sculpture painted by a famous man lives in a city of malawi called lilongwe city.This man named:</h5>
-          <p class="card-text">Pop fo.</p>
-          <h4>A Painter</h4>
-        </div>
+        <img class="card-img-top" src="painting/ag.jpg" width="200%" height="85%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
-    <img class="card-img-top" src="painting/races.jpg" width="20%" height="50%" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">The sculpture painted by a famous man lives in a city of Nigeria called abuja city.This man named:</h5>
-      <p class="card-text">Dan S.</p>
-      <h4>A Painter</h4>
-          </div>
-           </div>
-        <div class="col-md-4">
-        <img class="card-img-top" src="b.jpg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">The sculpture painted by a famous man lives in a city of Algeria called algers city.This man named:</h5>
-          <p class="card-text">Ba D.</p>
-          <h4>A Painter</h4>
-        </div>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-md-4">
-        <img class="card-img-top" src="painting/sows.jpg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">The sculpture painted by a famous man lives in a city of Morocco called rabat city.This man named:</h5>
-          <p class="card-text">Martha A.</p>
-          <h4>A Painter</h4>
-        </div>
+        <img class="card-img-top" src="painting/ai.jpg"  width="200%" height="85%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
-        <img class="card-img-top" src="painting/fa.jpg" height="50%" width="20%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">The sculpture painted by a famous man lives in a city of malawi called  city.This man named:</h5>
-          <p class="card-text">Sithe N.</p>
-          <h4>A Painter</h4>
-        </div>
-        </div>
-      <div class="col-md-4">
-    <img class="card-img-top" src="painting/223.jpg" width="20%" height="50%" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">The sculpture painted by a famous man lives in a city of malawi called lilongwe city.This man named:</h5>
-      <p class="card-text">Sam P.</p>
-      <h4>A Painter</h4>
-          </div>
-           </div>
-           </div>
+    <img class="card-img-top" src="painting/aj.jpg" width="200%" height="85%" alt="Card image cap"></img>
+    <br></br>
+    <button class="btn btn-success" onClick={this.state}>Buy</button>
+      </div>
+      </div>
            <div class="row">
         <div class="col-md-4">
-        <img class="card-img-top" src="painting/con.jpg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">The sculpture painted by a famous man lives in a city of malawi called lilongwe city.This man named:</h5>
-          <p class="card-text">Mafwolisha L.</p>
-          <h4>A Painter</h4>
-        </div>
+        <img class="card-img-top" src="painting/ad.jpg" width="200%" height="85%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
-        <img class="card-img-top" src="painting/billy.jpg" width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">The sculpture painted by a famous man lives in a city of malawi called lilongwe city.This man named:</h5>
-          <p class="card-text">Malumbo m.</p>
-          <h4>A Painter</h4>
-        </div>
+        <img class="card-img-top" src="painting/ab.jpg" width="200%" height="85%" alt="Card image cap"></img>
+        <br></br>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
-        <img class="card-img-top" src="painting/BORN.jpg"  width="20%" height="50%" alt="Card image cap"></img>
-        <div class="card-body">
-          <h5 class="card-title">The sculpture painted by a famous man lives in a city of malawi called lilongwe city.This man named:</h5>
-          <p class="card-text">Micheal jk.</p>
-          <h4>A Painter</h4>
+        <img class="card-img-top" src="painting/aa.jpg"  width="200%" height="85%" alt="Card image cap"></img>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
-        </div>
-        </div>
+      </div>
       </div>
         );
     }
