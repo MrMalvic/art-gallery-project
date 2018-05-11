@@ -8,6 +8,20 @@ import {Drawing} from '/imports/ui/Drawing.jsx';
 import {Craft} from '/imports/ui/Craft.jsx';
 import ArtSignUp from '/imports/ui/invisNavBar/ArtSignUp.jsx';
 import LogIn from '/imports/ui/invisNavBar/LogIn.jsx';
+import { Pops } from  '/imports/ui/Pops.jsx';
+import { Paul } from '/imports/ui/Paul.jsx';
+import {Titans} from '/imports/ui/Titans.jsx';
+import { Pierre } from '/imports/ui/Pierre.jsx';
+import {Claude} from '/imports/ui/Claude.jsx';
+import { Diego } from '/imports/ui/Diego.jsx';
+import { Edvard } from '/imports/ui/Edvard.jsx';
+import { Vincent } from '/imports/ui/Vincent.jsx';
+import { Raphael } from '/imports/ui/Raphael.jsx';
+import { Newartist }  from '/imports/ui/Newartist.jsx';
+
+
+
+
 
 
 route('/', Home);
@@ -17,5 +31,15 @@ route('/painting', Painting);
 route('/sculpture', Sculpture);
 route('/drawing', Drawing);
 route('/craft', Craft);
-route('/SignUp',ArtSignUp);
-route('/LogIn',LogIn);
+route('/SignUp', ArtSignUp);
+route('/LogIn', LogIn);
+route('/Pops', Pops);
+route('/paul', Paul);
+route('/titans', Titans);
+route('/Pierre', Pierre);
+route('/newartist', Newartist );
+route('/vincent', Vincent);
+route('/raphael', Raphael);
+route('/edvard', Edvard);
+route('/claude', Claude);
+route('/diego', Diego);

@@ -11,9 +11,13 @@ export class Craft extends Component{
         route.go('/craft');
       }
 
+      goToPops = () => {
+          route.go('/Pops');
+        }
+
     render(){
         return(
-      
+
       <div className="App">
          <nav class="navbar navbar-expand-lg navbar-light bg-purple">
            <a class="navbar-brand" href="">Elite Art</a>
@@ -40,11 +44,11 @@ export class Craft extends Component{
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Discovery
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Popular Artists</a>
+              <a class="dropdown-item" href="/Pops">Popular Artists</a>
               <a class="dropdown-item" href="#">New Artists</a>
               <a class="dropdown-item" href="#">Other Artists</a>
             </div>
@@ -53,14 +57,14 @@ export class Craft extends Component{
       </div>
     </nav>
                       <h1>CRAFTS</h1>
-    <div class="row">             
+    <div class="row">
       <div class="col-md-4">
     <img class="card-img-top" src="craft/let.jpeg" width="200%" height="80%" alt="Card image cap"></img>
     <br>
     </br>
     <button class="btn btn-success"  onClick={this.state}>Buy</button>
            </div>
-        <div class="col-md-4">   
+        <div class="col-md-4">
      <img class="card-img-top" src="craft/awes.jpeg" width="200%" height="80%" alt="Card image cap"></img>
      <br>
      </br>
@@ -73,7 +77,7 @@ export class Craft extends Component{
     <button class="btn btn-success" onClick={this.state}>Buy</button>
            </div>
            </div>
-           <div class="row"> 
+           <div class="row">
         <div class="col-md-4">
         <img class="card-img-top" src="craft/less.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <br>

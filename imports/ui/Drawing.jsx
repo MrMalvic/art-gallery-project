@@ -11,6 +11,11 @@ export class Drawing extends Component{
         route.go('/drawing');
       }
 
+      goToPops = () => {
+          route.go('/Pops');
+        }
+
+
     render(){
         return(
           <div className="App">
@@ -19,7 +24,7 @@ export class Drawing extends Component{
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                  </button>
-   
+
                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
            <li class="nav-item active">
@@ -40,11 +45,11 @@ export class Drawing extends Component{
              </div>
            </li>
            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Discovery
              </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="#">Popular Artists</a>
+               <a class="dropdown-item" href="/Pops">Popular Artists</a>
                <a class="dropdown-item" href="#">New Artists</a>
                <a class="dropdown-item" href="#">Other Artists</a>
              </div>
@@ -53,12 +58,12 @@ export class Drawing extends Component{
        </div>
      </nav>
                         <h1>DRAWINGS</h1>
-          <div class="row">             
+          <div class="row">
           <div class="col-md-4">
         <img class="card-img-top" src="drawing/3.jpeg" width="200%" height="90%" alt="Card image cap"></img>
         <button class="btn btn-success"  onClick={this.state}>Buy</button>
                </div>
-            <div class="col-md-4">   
+            <div class="col-md-4">
          <img class="card-img-top" src="drawing/2.jpeg" width="200%" height="90%" alt="Card image cap"></img>
               <button class="btn btn-success"  onClick={this.state}>Buy</button>
           </div>
@@ -67,7 +72,7 @@ export class Drawing extends Component{
         <button class="btn btn-success" onClick={this.state}>Buy</button>
                </div>
                </div>
-               <div class="row"> 
+               <div class="row">
             <div class="col-md-4">
             <img class="card-img-top" src="drawing/6.jpeg" width="200%" height="90%" alt="Card image cap"></img>
             <button class="btn btn-success" onClick={this.state}>Buy</button>
@@ -112,7 +117,7 @@ export class Drawing extends Component{
           </div>
           </div>
 
-  
+
         );
     }
 };

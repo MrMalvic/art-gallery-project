@@ -9,6 +9,11 @@ export class Navbar2 extends Component{
     route.go('/painting')
 }
 
+goToPops = () => {
+  route.go('/pops')
+}
+
+
   render(){
 
     return(
@@ -39,11 +44,11 @@ export class Navbar2 extends Component{
           </div>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Discovery
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a className="dropdown-item" href="#">Popular Artists</a>
+            <a className="dropdown-item" href="/Pops">Popular Artists</a>
             <a className="dropdown-item" href="#">New Artists</a>
             <a className="dropdown-item" href="#">Other Artists</a>
           </div>
