@@ -52,24 +52,25 @@ export class Craft extends Component{
           </ul>
       </div>
     </nav>
+                      <h1>CRAFTS</h1>
     <div class="row">             
       <div class="col-md-4">
     <img class="card-img-top" src="craft/let.jpeg" width="200%" height="80%" alt="Card image cap"></img>
     <br>
     </br>
-    <button class="btn btn-success"  onClick={this.state}>By</button>
+    <button class="btn btn-success"  onClick={this.state}>Buy</button>
            </div>
         <div class="col-md-4">   
      <img class="card-img-top" src="craft/awes.jpeg" width="200%" height="80%" alt="Card image cap"></img>
      <br>
      </br>
-          <button class="btn btn-success"  onClick={this.state}>By</button>
+          <button class="btn btn-success"  onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
     <img class="card-img-top" src="craft/super.jpeg" width="200%" height="80%" alt="Card image cap"></img>
     <br>
     </br>
-    <button class="btn btn-success" onClick={this.state}>By</button>
+    <button class="btn btn-success" onClick={this.state}>Buy</button>
            </div>
            </div>
            <div class="row"> 
@@ -77,51 +78,51 @@ export class Craft extends Component{
         <img class="card-img-top" src="craft/less.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <br>
         </br>
-        <button class="btn btn-success" onClick={this.state}>By</button>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/inde.jpeg" width="20%" height="80%" alt="Card image cap"></img>
         <br>
         </br>
-        <button class="btn btn-success" onClick={this.state}>By</button>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/toot.jpeg"  width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>By</button>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       </div>
       <div class="row">
       <div class="col-md-4">
         <img class="card-img-top" src="craft/great.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>By</button>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/impo.jpeg"  width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>By</button>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
     <img class="card-img-top" src="craft/more.jpeg" width="200%" height="80%" alt="Card image cap"></img>
     <br></br>
-    <button class="btn btn-success" onClick={this.state}>By</button>
+    <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       </div>
            <div class="row">
         <div class="col-md-4">
         <img class="card-img-top" src="craft/cool.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>By</button>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/sir.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>By</button>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/eat.jpeg"  width="200%" height="80%" alt="Card image cap"></img>
-        <button class="btn btn-success" onClick={this.state}>By</button>
+        <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
       </div>
       </div>

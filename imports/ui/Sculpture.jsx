@@ -53,26 +53,24 @@ export class Sculpture extends Component{
           </ul>
       </div>
     </nav>
+                          <h1>SCULPTURES</h1>
     <div class="row">             
       <div class="col-md-4">
     <img class="card-img-top" src="sculpture/Af2.jpg" width="200%" height="90%" alt="Card image cap"></img>
     <div class="card-body">
-      <h5 class="card-title">Goia Opra</h5>
-      <button class="btn btn-success" onClick={this.state}>By</button>
+      <button class="btn btn-success" onClick={this.state}>Buy</button>
           </div>
            </div>
         <div class="col-md-4">
         <img class="card-img-top" src="sculpture/Af3.jpg" width="200%" height="90%" alt="Card image cap"></img>
         <div class="card-body">
-          <h5 class="card-title">Andy Carol</h5>
-          <button class="btn btn-success" onClick={this.state}>By</button>
+          <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="sculpture/Af4.jpg" width="200%" height="90%" alt="Card image cap"></img>
         <div class="card-body">
-          <h5 class="card-title">Sonogo Westith</h5>
-          <button class="btn btn-success" onClick={this.state}>By</button>
+          <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
       </div>
       </div>
@@ -80,22 +78,19 @@ export class Sculpture extends Component{
       <div class="col-md-4">
         <img class="card-img-top" src="sculpture/Af5.jpg" width="200%" height="90%"  alt="Card image cap"></img>
         <div class="card-body">
-          <h5 class="card-title">Owen Kane</h5>
-          <button class="btn btn-success" onClick={this.state}>By</button>
+          <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
       </div>
       <div class="col-md-4">
     <img class="card-img-top" src="sculpture/Af6.jpg" width="200%" height="90%" alt="Card image cap"></img>
     <div class="card-body">
-      <h5 class="card-title">San Paulo</h5>
-      <button class="btn btn-success" onClick={this.state}>By</button>
+      <button class="btn btn-success" onClick={this.state}>Buy</button>
           </div>
            </div>
         <div class="col-md-4">
-        <img class="card-img-top" src="sculpture/Af16.jpeg" width="200%" height="90%" alt="Card image cap"></img>
+        <img class="card-img-top" src="sculpture/ix.jpeg" width="200%" height="90%" alt="Card image cap"></img>
         <div class="card-body">
-          <h5 class="card-title">San Marino</h5>
-          <button class="btn btn-success" onClick={this.state}>By</button>
+          <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
       </div>
       </div>
@@ -103,22 +98,19 @@ export class Sculpture extends Component{
       <div class="col-md-4">
         <img class="card-img-top" src="sculpture/Af8.jpg" width="200%" height="80%" alt="Card image cap"></img>
         <div class="card-body">
-          <h5 class="card-title">M Smith</h5>
-          <button class="btn btn-success" onClick={this.state}>By</button>
+          <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="sculpture/Af12.jpg" width="200%" height="80%"  alt="Card image cap"></img>
         <div class="card-body">
-          <h5 class="card-title">Michel Taylor</h5>
-          <button class="btn btn-success" onClick={this.state}>By</button>
+          <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
         </div>
       <div class="col-md-4">
     <img class="card-img-top" src="sculpture/Af13.jpeg" width="200%" height="80%" alt="Card image cap"></img>
     <div class="card-body">
-      <h5 class="card-title">Oswar  Zion</h5>
-      <button class="btn btn-success" onClick={this.state}>By</button>
+      <button class="btn btn-success" onClick={this.state}>Buy</button>
           </div>
            </div>
            <div>
@@ -126,22 +118,19 @@ export class Sculpture extends Component{
         <div class="col-md-4">
         <img class="card-img-top" src="sculpture/Af14.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <div class="card-body">
-          <h5 class="card-title">GOOD SON E</h5>
-          <button class="btn btn-success" onClick={this.state}>By</button>
+          <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="sculpture/Af15.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <div class="card-body">
-          <h5 class="card-title">Serena Luiz</h5>
-          <button class="btn btn-success" onClick={this.state}>By</button>
+          <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="sculpture/Af1.JPG"  width="200%" height="80%" alt="Card image cap"></img>
         <div class="card-body">
-          <h5 class="card-title">Maale More</h5>
-          <button class="btn btn-success" onClick={this.state}>By</button>
+          <button class="btn btn-success" onClick={this.state}>Buy</button>
         </div>
         </div>
       </div>
