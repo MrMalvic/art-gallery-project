@@ -6,7 +6,7 @@ import Posts from '../api/blog/collections.js';
 import { Cards } from './Cards.jsx';
 import {Navbar2} from '/imports/ui/Navbar2.jsx';
 import { Featured } from '/imports/ui/Featured.jsx';
-import { Footer } from '/imports/ui/Footer.jsx'
+import { Footer } from '/imports/ui/Footer.jsx';
 import { SearchCarousel } from '/imports/ui/search.jsx';
 
 
