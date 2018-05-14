@@ -1,14 +1,41 @@
 import { Meteor } from 'meteor/meteor';
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 
 
 
 export class Navbar2 extends Component{
+
+  componentDidMount(){
+        (function ($) {
+          $(document).ready(function(){
+            
+          // hide .navbar first
+          $("#hidden-nav").hide();
+          
+          // fade in .navbar
+          $(function () {
+            $(window).scroll(function () {
+                    // set distance user needs to scroll before we fadeIn navbar
+              if ($(this).scrollTop() > 850) {
+                $('#hidden-nav').slideDown();
+              } else if ($(this).scrollTop() < 870){
+                $('#hidden-nav').slideUp();
+              }
+            });
+        
+          
+          });
+        
+        });
+          }(jQuery));
+      }
+
   render(){
     return(
      
-      <nav className="navbar navbar-expand-lg navbar-light navbar-two">
+      <nav className="navbar navbar-expand-lg navbar-light navbar-two" id="hidden-nav">
     <a className="navbar-brand" href=""><img src="logo2.png" className="d-inline-block align-top" alt=""/></a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
