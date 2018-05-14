@@ -1,12 +1,15 @@
 import { Meteor } from 'meteor/meteor';
 import React, { Component } from 'react';
-
+import {Clock} from '/imports/ui/Clock.jsx';
 
 
 
 
 export class Painting extends Component{
-
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
     goToPainting = () => {
         route.go('/painting');
       }
@@ -16,7 +19,7 @@ export class Painting extends Component{
       
       <div className="App">
           <nav className="navbar navbar-expand-lg navbar-light bg-purple">
-           <a className="navbar-brand" href="">Elite Art</a>
+           <a className="navbar-brand" href="/">Elite Art</a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span className="navbar-toggler-icon"></span>
                 </button>
@@ -45,7 +48,7 @@ export class Painting extends Component{
               Discovery
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Popular Artists</a>
+              <a class="dropdown-item" href="/Pops">Popular Artists</a>
               <a class="dropdown-item" href="#">New Artists</a>
               <a class="dropdown-item" href="#">Other Artists</a>
             </div>
@@ -59,19 +62,20 @@ export class Painting extends Component{
     <img class="card-img-top" src="painting/ab.jpg" width="200%" height="85%" alt="Card image cap"></img>
     <br>
     </br>
-    <button class="btn btn-success"  onClick={this.state}>Buy</button>
+    <a class="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+    
            </div>
         <div class="col-md-4">   
      <img class="card-img-top" src="painting/ah.jpeg" width="200%" height="85%" alt="Card image cap"></img>
      <br>
      </br>
-          <button class="btn btn-success"  onClick={this.state}>Buy</button>
+     <a class="btn btn-success" href="/buy2"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
     <img class="card-img-top" src="painting/ac.jpeg" width="200%" height="85%" alt="Card image cap"></img>
     <br>
     </br>
-    <button class="btn btn-success" onClick={this.state}>Buy</button>
+    <a class="btn btn-success" href="/buy3"><h5>Buy</h5></a>
            </div>
            </div>
            <div class="row"> 
@@ -79,52 +83,53 @@ export class Painting extends Component{
         <img class="card-img-top" src="painting/ad.jpg" width="200%" height="85%" alt="Card image cap"></img>
         <br>
         </br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/buy4"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="painting/ae.jpg" width="20%" height="85%" alt="Card image cap"></img>
         <br>
         </br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/buy5"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="painting/af.jpg"  width="200%" height="85%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/buy6"><h5>Buy</h5></a>
       </div>
       </div>
       <div class="row">
       <div class="col-md-4">
         <img class="card-img-top" src="painting/ag.jpg" width="200%" height="85%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/buy7"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="painting/ai.jpg"  width="200%" height="85%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/buy8"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
     <img class="card-img-top" src="painting/aj.jpg" width="200%" height="85%" alt="Card image cap"></img>
     <br></br>
-    <button class="btn btn-success" onClick={this.state}>Buy</button>
+    <a class="btn btn-success" href="/buy9"><h5>Buy</h5></a>
       </div>
       </div>
            <div class="row">
         <div class="col-md-4">
-        <img class="card-img-top" src="painting/ad.jpg" width="200%" height="85%" alt="Card image cap"></img>
+        <img class="card-img-top" src="painting/an.jpeg" width="200%" height="85%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/buy10"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
-        <img class="card-img-top" src="painting/ab.jpg" width="200%" height="85%" alt="Card image cap"></img>
+        <img class="card-img-top" src="painting/ap.jpg" width="200%" height="85%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/buy11"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="painting/aa.jpg"  width="200%" height="85%" alt="Card image cap"></img>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/buy12"><h5>Buy</h5></a>
         </div>
+     <Clock/>
       </div>
       </div>
         );
