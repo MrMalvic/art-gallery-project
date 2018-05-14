@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 
 
 
-export class Scul12 extends Component{
+export class Draw12 extends Component{
     render(){
       return(
         <div className="App">
@@ -49,7 +49,7 @@ export class Scul12 extends Component{
             </ul>
             </div>
             </nav>
-
+           
       <div className="col-md-6">
         <div className="thumbnail">
             <center> <img className="size" src="images/blac.jpg"/></center>

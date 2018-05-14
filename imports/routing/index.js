@@ -42,6 +42,19 @@ import {Scul9} from '/imports/ui/Scul9.jsx';
 import {Scul10} from '/imports/ui/Scul10.jsx';
 import {Scul11} from '/imports/ui/Scul11.jsx';
 import {Scul12} from '/imports/ui/Scul12.jsx';
+import {Draw1} from '/imports/ui/Draw1.jsx';
+import {Draw2} from '/imports/ui/Draw2.jsx';
+import {Draw3} from '/imports/ui/Draw3.jsx';
+import {Draw4} from '/imports/ui/Draw4.jsx';
+import {Draw5} from '/imports/ui/Draw5.jsx';
+import {Draw6} from '/imports/ui/Draw6.jsx';
+import {Draw7} from '/imports/ui/Draw7.jsx';
+import {Draw8} from '/imports/ui/Draw8.jsx';
+import {Draw9} from '/imports/ui/Draw9.jsx';
+import {Draw10} from '/imports/ui/Draw10.jsx';
+import {Draw11} from '/imports/ui/Draw11.jsx';
+import {Draw12} from '/imports/ui/Draw12.jsx';
+
 
 
 
@@ -94,4 +107,15 @@ route('/scul9', Scul9);
 route('/scul10', Scul10);
 route('/scul11', Scul11);
 route('/scul12', Scul12);
-
+route('/draw1', Draw1);
+route('/draw2', Draw2);
+route('/draw3', Draw3);
+route('/draw4', Draw4);
+route('/draw5', Draw5);
+route('/draw6', Draw6);
+route('/draw7', Draw7);
+route('/draw8', Draw8);
+route('/draw9', Draw9);
+route('/draw10', Draw10);
+route('/draw11', Draw11);
+route('/draw12', Draw12);

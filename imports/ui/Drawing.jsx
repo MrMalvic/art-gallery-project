@@ -61,58 +61,58 @@ export class Drawing extends Component{
           <div class="row">
           <div class="col-md-4">
         <img class="card-img-top" src="drawing/3.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-        <button class="btn btn-success"  onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/draw1"><h5>Buy</h5></a>
                </div>
             <div class="col-md-4">
          <img class="card-img-top" src="drawing/2.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-              <button class="btn btn-success"  onClick={this.state}>Buy</button>
+         <a class="btn btn-success" href="/draw2"><h5>Buy</h5></a>
           </div>
           <div class="col-md-4">
         <img class="card-img-top" src="drawing/5.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/draw3"><h5>Buy</h5></a>
                </div>
                </div>
                <div class="row">
             <div class="col-md-4">
             <img class="card-img-top" src="drawing/6.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-            <button class="btn btn-success" onClick={this.state}>Buy</button>
+            <a class="btn btn-success" href="/draw4"><h5>Buy</h5></a>
           </div>
           <div class="col-md-4">
             <img class="card-img-top" src="drawing/7.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-            <button class="btn btn-success" onClick={this.state}>Buy</button>
+            <a class="btn btn-success" href="/draw5"><h5>Buy</h5></a>
           </div>
           <div class="col-md-4">
             <img class="card-img-top" src="drawing/8.jpeg"  width="200%" height="90%" alt="Card image cap"></img>
-            <button class="btn btn-success" onClick={this.state}>Buy</button>
+            <a class="btn btn-success" href="/draw6"><h5>Buy</h5></a>
           </div>
           </div>
           <div class="row">
           <div class="col-md-4">
             <img class="card-img-top" src="drawing/14.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-            <button class="btn btn-success" onClick={this.state}>Buy</button>
+            <a class="btn btn-success" href="/draw7"><h5>Buy</h5></a>
           </div>
           <div class="col-md-4">
             <img class="card-img-top" src="drawing/10.jpeg"  width="200%" height="90%" alt="Card image cap"></img>
-            <button class="btn btn-success" onClick={this.state}>Buy</button>
+            <a class="btn btn-success" href="/draw8"><h5>Buy</h5></a>
           </div>
           <div class="col-md-4">
         <img class="card-img-top" src="drawing/11.jpeg" width="200%" height="90%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/draw9"><h5>Buy</h5></a>
           </div>
           </div>
                <div class="row">
             <div class="col-md-4">
             <img class="card-img-top" src="drawing/1.jpg" width="200%" height="90%" alt="Card image cap"></img>
-            <button class="btn btn-success" onClick={this.state}>Buy</button>
+            <a class="btn btn-success" href="/draw10"><h5>Buy</h5></a>
           </div>
           <div class="col-md-4">
             <img class="card-img-top" src="drawing/13.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-            <button class="btn btn-success" onClick={this.state}>Buy</button>
+            <a class="btn btn-success" href="/draw11"><h5>Buy</h5></a>
           </div>
           <div class="col-md-4">
             <img class="card-img-top" src="drawing/9.jpeg"  width="200%" height="90%" alt="Card image cap"></img>
-            <button class="btn btn-success" onClick={this.state}>Buy</button>
+            <a class="btn btn-success" href="/draw12"><h5>Buy</h5></a>
             </div>
           </div>
           </div>

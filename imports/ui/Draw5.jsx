@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 
 
 
-export class Scul12 extends Component{
+export class Draw5 extends Component{
     render(){
       return(
         <div className="App">
@@ -49,47 +49,13 @@ export class Scul12 extends Component{
             </ul>
             </div>
             </nav>
-
-      <div className="col-md-6">
-        <div className="thumbnail">
-            <center> <img className="size" src="images/blac.jpg"/></center>
-                         <center><h5>Claude Monet</h5></center>
-                        </div>
-            <h1>PROJECTS DONE BY THIS ARTIST:</h1>
+            
+            <h1>PROJECTS DONE</h1>
   <div class="row">
         <div class="col-md-4">
-        <img class="card-img-top" src="drawing/12.jpeg"  width="200%" height="85%"/>
-  </div>
-  <div class="col-md-4">
-  <img class="card-img-top" src="drawing/1.jpg"  width="200%" height="85%"/>
-  </div>
-  <div class="col-md-4">
-  <img class="card-img-top" src="drawing/13.jpeg"  width="200%" height="85%"/>
+  <img className="size" src="drawing/7.jpeg"  width="200%" height="85%"/>
   </div>
   </div>
-  <div class="row">
-        <div class="col-md-4">
-        <img class="card-img-top" src="drawing/12.jpeg"  width="200%" height="85%"/>
-  </div>
-        <div class="col-md-4">
-        <img class="card-img-top" src="drawing/1.jpg"  width="200%" height="85%"/>
-  </div>
-        <div class="col-md-4">
-        <img class="card-img-top" src="drawing/13.jpeg"  width="200%" height="85%"/>
-  </div>
-  </div>
-  <div class="row">
-        <div class="col-md-4">
- <img class="card-img-top" src="drawing/12.jpeg"  width="200%" height="85%"/>
-  </div>
-        <div class="col-md-4">
-  <img class="card-img-top" src="drawing/1.jpg"  width="200%" height="85%"/>
-  </div>
-         <div class="col-md-4">
-  <img class="card-img-top" src="drawing/13.jpeg"  width="200%" height="85%"/>
-  </div>
-  </div>
-        </div>
         </div>
       );
     }
