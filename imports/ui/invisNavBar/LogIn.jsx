@@ -13,7 +13,7 @@ export default class Login extends Component {
   render() {
 
     return (
-      <div>
+      <div className="App">
         <div className="mask3">
         <img src="img5.jpg" className="artist-signup-img"/>
         </div>
