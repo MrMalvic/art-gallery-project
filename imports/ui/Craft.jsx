@@ -20,7 +20,7 @@ export class Craft extends Component{
 
       <div className="App">
          <nav class="navbar navbar-expand-lg navbar-light bg-purple">
-           <a class="navbar-brand" href="">Elite Art</a>
+           <a class="navbar-brand" href="/">Elite Art</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                 </button>
