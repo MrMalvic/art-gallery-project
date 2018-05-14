@@ -62,19 +62,19 @@ export class Craft extends Component{
     <img class="card-img-top" src="craft/let.jpeg" width="200%" height="80%" alt="Card image cap"></img>
     <br>
     </br>
-    <button class="btn btn-success"  onClick={this.state}>Buy</button>
+    <a class="btn btn-success" href="/low1"><h5>Buy</h5></a>
            </div>
         <div class="col-md-4">
      <img class="card-img-top" src="craft/awes.jpeg" width="200%" height="80%" alt="Card image cap"></img>
      <br>
      </br>
-          <button class="btn btn-success"  onClick={this.state}>Buy</button>
+     <a class="btn btn-success" href="/low2"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
     <img class="card-img-top" src="craft/super.jpeg" width="200%" height="80%" alt="Card image cap"></img>
     <br>
     </br>
-    <button class="btn btn-success" onClick={this.state}>Buy</button>
+    <a class="btn btn-success" href="/low3"><h5>Buy</h5></a>
            </div>
            </div>
            <div class="row">
@@ -82,51 +82,51 @@ export class Craft extends Component{
         <img class="card-img-top" src="craft/less.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <br>
         </br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/low4"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/inde.jpeg" width="20%" height="80%" alt="Card image cap"></img>
         <br>
         </br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/low5"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/toot.jpeg"  width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/low6"><h5>Buy</h5></a>
       </div>
       </div>
       <div class="row">
       <div class="col-md-4">
         <img class="card-img-top" src="craft/great.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/low7"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/impo.jpeg"  width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/low8"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
     <img class="card-img-top" src="craft/more.jpeg" width="200%" height="80%" alt="Card image cap"></img>
     <br></br>
-    <button class="btn btn-success" onClick={this.state}>Buy</button>
+    <a class="btn btn-success" href="/low9"><h5>Buy</h5></a>
       </div>
       </div>
            <div class="row">
         <div class="col-md-4">
         <img class="card-img-top" src="craft/cool.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/low10"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/sir.jpeg" width="200%" height="80%" alt="Card image cap"></img>
         <br></br>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/low11"><h5>Buy</h5></a>
       </div>
       <div class="col-md-4">
         <img class="card-img-top" src="craft/eat.jpeg"  width="200%" height="80%" alt="Card image cap"></img>
-        <button class="btn btn-success" onClick={this.state}>Buy</button>
+        <a class="btn btn-success" href="/clow12"><h5>Buy</h5></a>
         </div>
       </div>
       </div>

@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 
 
 
-export class Draw5 extends Component{
+export class Low3 extends Component{
     render(){
       return(
         <div className="App">
