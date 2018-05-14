@@ -45,30 +45,10 @@ export class Buy1 extends Component {
                     <img className="more-work" src="painting/aa.jpg"/>
                   </div>
                 </div>
-                <div class="row">
-                <div class="col-md-4">
-                    <img className="more-work" src="painting/ac.jpeg"/>
-                  </div>
-                  <div class="col-md-4">
-                    <img className="more-work" src="painting/am.jpeg"/>
-                  </div>
-                  <div class="col-md-4">
-                    <img className="more-work" src="painting/aa.jpg"/>
+                </div>
                   </div>
                 </div>
-                <div class="row">
-                <div class="col-md-4">
-                    <img className="more-work" src="painting/ac.jpeg"/>
-                  </div>
-                  <div class="col-md-4">
-                    <img className="more-work" src="painting/am.jpeg"/>
-                  </div>
-                  <div class="col-md-4">
-                    <img className="more-work" src="painting/aa.jpg"/>
-                  </div>
-                  </div>
-                </div>
-              </div>
+              
             {/* <div className="col-md-3">
               <div className="thumbnail">
                 <center> <img className="size" src="images/blac.jpg" /></center>
@@ -101,7 +81,7 @@ export class Buy1 extends Component {
        
         <Footer/>
      </div>
-        </div>
+       
 
 
 
