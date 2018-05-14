@@ -54,6 +54,18 @@ import {Draw9} from '/imports/ui/Draw9.jsx';
 import {Draw10} from '/imports/ui/Draw10.jsx';
 import {Draw11} from '/imports/ui/Draw11.jsx';
 import {Draw12} from '/imports/ui/Draw12.jsx';
+import {Low1} from '/imports/ui/Low1.jsx';
+import {Low2} from '/imports/ui/Low2.jsx';
+import {Low3} from '/imports/ui/Low3.jsx';
+import {Low4} from '/imports/ui/Low4.jsx';
+import {Low5} from '/imports/ui/Low5.jsx';
+import {Low6} from '/imports/ui/Low6.jsx';
+import {Low7} from '/imports/ui/Low7.jsx';
+import {Low8} from '/imports/ui/Low8.jsx';
+import {Low9} from '/imports/ui/Low9.jsx';
+import {Low10} from '/imports/ui/Low10.jsx';
+import {Low11} from '/imports/ui/Low11.jsx';
+import {Low12} from '/imports/ui/Low12.jsx';
 
 
 
@@ -119,3 +131,15 @@ route('/draw9', Draw9);
 route('/draw10', Draw10);
 route('/draw11', Draw11);
 route('/draw12', Draw12);
+route('/low1', Low1);
+route('/low2', Low2);
+route('/low3', Low3);
+route('/low4', Low4);
+route('/low5', Low5);
+route('/low6', Low6);
+route('/low7', Low7);
+route('/low8', Low8);
+route('/low9', Low9);
+route('/low10', Low10);
+route('/low11', Low11);
+route('/low12', Low12);

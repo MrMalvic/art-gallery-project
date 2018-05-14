@@ -45,7 +45,10 @@ export class Buy1 extends Component {
                     <img className="more-work" src="painting/aa.jpg"/>
                   </div>
                 </div>
-              </div>
+                </div>
+                  </div>
+                </div>
+              
             {/* <div className="col-md-3">
               <div className="thumbnail">
                 <center> <img className="size" src="images/blac.jpg" /></center>
@@ -74,10 +77,11 @@ export class Buy1 extends Component {
                 <a rel="stylesheet" className="btn btn-primary" href="https://mailto:mafwolikelenge@gmail.com">Email:</a>
               </div>
             </div> */}
-          </div>
-        </div> 
+         
+       
         <Footer/>
-      </div>
+     </div>
+       
 
 
 

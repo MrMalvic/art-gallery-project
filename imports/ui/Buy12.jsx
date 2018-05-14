@@ -68,13 +68,13 @@ in the Academie Suisse. After an art exhibition in 1874, a critic insultingly
   <h1>PROJECTS HE HAS DONE</h1>
   <div class="row">
         <div class="col-md-4">
-  <img className="size" src="painting/ak.jpeg"  width="200%" height="85%"/>
+  <img className="card-img-top" src="painting/ak.jpeg"  width="200%" height="85%"/>
   </div>
         <div class="col-md-4">
-   <img className="size" src="painting/am.jpeg"  width="200%" height="85%"/>
+   <img className="card-img-top" src="painting/am.jpeg"  width="200%" height="85%"/>
   </div>
         <div class="col-md-4">
-  <img className="size" src="painting/ab.jpg"  width="200%" height="85%"/>
+  <img className="card-img-top" src="painting/ab.jpg"  width="200%" height="85%"/>
   </div>
         </div>
                 <h1>EMAIL CONTACT ONLY</h1>
