@@ -29,6 +29,8 @@ goTolog = () => {
        </a>
        <ul className="nav justify-Dropdowncontent-end">
     <li className="nav-item dropdown">
+
+
      <a className="nav-link dropdown-toggle"  href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           SignUp </a>        
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">

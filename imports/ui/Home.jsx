@@ -12,6 +12,10 @@ import { SearchCarousel } from '/imports/ui/search.jsx';
 
 
 
+
+
+
+
 class Home extends Component {
   render() {
     return (
@@ -31,4 +35,3 @@ export default withTracker(() => {
     posts: Posts.find().fetch(),
   }
 })(Home);
-

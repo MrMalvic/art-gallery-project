@@ -5,9 +5,8 @@ import { Footer } from '/imports/ui/Footer.jsx'
 
 
 
-export class About extends Component {
 
-
+export class About extends Component{
 
   render() {
     return (
@@ -27,6 +26,7 @@ export class About extends Component {
          wingselling art by making it easy, convenient and welcoming for both collectors and artists., sculpture and photography in a range of prices, and it provides artists from around the world with an expertly curated environment in which to exhibit and sell their work.
               Based in Lusaka, Gallery Art is redefining the  <br></br>experience of buying and selling art by making it easy, convenient and welcoming for both collectors and artists.
               </h4>
+
         </div>
 
           <h1 className="meet-the-team">Meet Our Team</h1>
@@ -69,13 +69,12 @@ export class About extends Component {
             <div className="col-md-4">
               <img className="img" src="img4.jpeg" alt="Card image cap"></img>
             </div>
-
           </div>
-        </div>
-        <Footer/>
-      </div>
-
+          </div>
+          <Footer/>
+          </div>
     );
   }
 
 }
+
