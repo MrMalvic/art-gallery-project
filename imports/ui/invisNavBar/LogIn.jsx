@@ -26,7 +26,7 @@ export default class Login extends Component {
           <h1 className="artist-reg">Welcome back</h1>
             <div className="login">
               {/* <label htmlFor="Email">Email</label><br/> */}
-              <input type="password" className="form-control2" id="Email" placeholder="Email" />
+              <input type="text" className="form-control2" id="Email" placeholder="Email" />
             </div>
             <div className="login">
               {/* <label htmlFor="inputPassword">Password</label><br/> */}
