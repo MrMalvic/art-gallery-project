@@ -25,3 +25,5 @@ accounts-password
 alexwine:bootstrap-4
 session
 accounts-ui
+accounts-base
+jquery

@@ -16,7 +16,7 @@ logUserIn = e => {
   const password =e.target.password.value;
  
   Meteor.loginWithPassword(email,password,err =>{
-    err ? console.log(err.reason): console.log('logged in successfully');
+    err ? console.log(err.reason):console.log('logged in successfully');
   })
 }
   render() {
