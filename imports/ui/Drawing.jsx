@@ -1,123 +1,89 @@
 import { Meteor } from 'meteor/meteor';
 import React, { Component } from 'react';
+import { Navbar2 } from '/imports/ui/Navbar2.jsx';
+import { Footer } from '/imports/ui/Footer.jsx';
 
 
 
 
 
-export class Drawing extends Component{
+export class Drawing extends Component {
 
-    goToDrawing = () => {
-        route.go('/drawing');
-      }
+  goToDrawing = () => {
+    route.go('/drawing');
+  }
 
-      goToPops = () => {
-          route.go('/Pops');
-        }
-
-
-    render(){
-        return(
-          <div className="App">
-          <nav class="navbar navbar-expand-lg navbar-light bg-purple">
-            <a class="navbar-brand" href="">Elite Art</a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                 </button>
-
-                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-           <li class="nav-item active">
-             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="/about">About</a>
-           </li>
-           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Categories
-             </a>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="/painting">Painting</a>
-               <a class="dropdown-item" href="/sculpture">Sculpture</a>
-               <a class="dropdown-item" href="/drawing">Drawing</a>
-               <a class="dropdown-item" href="/craft">Craft</a>
-             </div>
-           </li>
-           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Discovery
-             </a>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="/Pops">Popular Artists</a>
-               <a class="dropdown-item" href="#">New Artists</a>
-               <a class="dropdown-item" href="#">Other Artists</a>
-             </div>
-           </li>
-           </ul>
-       </div>
-     </nav>
-                        <h1>DRAWINGS</h1>
-          <div class="row">
-          <div class="col-md-4">
-        <img class="card-img-top" src="drawing/3.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-        <a class="btn btn-success" href="/draw1"><h5>Buy</h5></a>
-               </div>
-            <div class="col-md-4">
-         <img class="card-img-top" src="drawing/2.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-         <a class="btn btn-success" href="/draw2"><h5>Buy</h5></a>
-          </div>
-          <div class="col-md-4">
-        <img class="card-img-top" src="drawing/5.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-        <a class="btn btn-success" href="/draw3"><h5>Buy</h5></a>
-               </div>
-               </div>
-               <div class="row">
-            <div class="col-md-4">
-            <img class="card-img-top" src="drawing/6.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-            <a class="btn btn-success" href="/draw4"><h5>Buy</h5></a>
-          </div>
-          <div class="col-md-4">
-            <img class="card-img-top" src="drawing/7.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-            <a class="btn btn-success" href="/draw5"><h5>Buy</h5></a>
-          </div>
-          <div class="col-md-4">
-            <img class="card-img-top" src="drawing/8.jpeg"  width="200%" height="90%" alt="Card image cap"></img>
-            <a class="btn btn-success" href="/draw6"><h5>Buy</h5></a>
-          </div>
-          </div>
-          <div class="row">
-          <div class="col-md-4">
-            <img class="card-img-top" src="drawing/14.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-            <a class="btn btn-success" href="/draw7"><h5>Buy</h5></a>
-          </div>
-          <div class="col-md-4">
-            <img class="card-img-top" src="drawing/10.jpeg"  width="200%" height="90%" alt="Card image cap"></img>
-            <a class="btn btn-success" href="/draw8"><h5>Buy</h5></a>
-          </div>
-          <div class="col-md-4">
-        <img class="card-img-top" src="drawing/11.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-        <br></br>
-        <a class="btn btn-success" href="/draw9"><h5>Buy</h5></a>
-          </div>
-          </div>
-               <div class="row">
-            <div class="col-md-4">
-            <img class="card-img-top" src="drawing/1.jpg" width="200%" height="90%" alt="Card image cap"></img>
-            <a class="btn btn-success" href="/draw10"><h5>Buy</h5></a>
-          </div>
-          <div class="col-md-4">
-            <img class="card-img-top" src="drawing/13.jpeg" width="200%" height="90%" alt="Card image cap"></img>
-            <a class="btn btn-success" href="/draw11"><h5>Buy</h5></a>
-          </div>
-          <div class="col-md-4">
-            <img class="card-img-top" src="drawing/9.jpeg"  width="200%" height="90%" alt="Card image cap"></img>
-            <a class="btn btn-success" href="/draw12"><h5>Buy</h5></a>
-            </div>
-          </div>
-          </div>
+  goToPops = () => {
+    route.go('/Pops');
+  }
 
 
-        );
-    }
+  render() {
+    return (
+      <div className="App">
+        <Navbar2/>
+        <h1>DRAWINGS</h1>
+        <div className="row">
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/3.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/2.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/5.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/6.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/7.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/8.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/14.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/10.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/11.jpeg" alt="Card image cap"></img>
+            <br></br>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/1.jpg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/13.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+          <div className="col-md-4">
+            <img className="card-img-top thumb" src="drawing/9.jpeg" alt="Card image cap"></img>
+            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          </div>
+        </div>
+        <Footer/>
+      </div>
+
+
+    );
+  }
 };

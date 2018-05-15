@@ -13,10 +13,6 @@ import { Newartist }  from '/imports/ui/Newartist.jsx';
 import { ProfilePage }  from '/imports/ui/ProfilePage.jsx';
 
 
-
-
-
-
 class Home extends Component {
   render() {
     return (

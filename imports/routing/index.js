@@ -78,10 +78,10 @@ route('/painting', Painting);
 route('/sculpture', Sculpture);
 route('/drawing', Drawing);
 route('/craft', Craft);
-route('/SignUp',ArtSignUp);
 route('/UserSign',UserSign);
-route('/LogIn',LogIn);
 route('/ProfilePage',ProfilePage);
+route('/SignUp', ArtSignUp);
+route('/LogIn', LogIn);
 route('/Pops', Pops);
 route('/paul', Paul);
 route('/titans', Titans);
@@ -140,4 +140,3 @@ route('/low9', Low9);
 route('/low10', Low10);
 route('/low11', Low11);
 route('/low12', Low12);
-
