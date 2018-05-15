@@ -6,3 +6,9 @@ Meteor.methods({
     Posts.insert(post);
   }
 });
+
+Meteor.methods({
+  'insertUser': (newUserData) => {
+    return Accounts.createUser(newUserData);
+  }
+})

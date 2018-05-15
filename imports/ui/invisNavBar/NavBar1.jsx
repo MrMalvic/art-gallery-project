@@ -24,7 +24,7 @@ goTolog = () => {
     return ( 
      <div> 
      <nav className="navbar navbar-inverse navbar-fixed-top trans-nav">
-       <a className="navbar-brand" href="#">
+       <a className="navbar-brand" href="/">
          <img src="logo2.png" className="d-inline-block align-top" alt=""/>
        </a>
        <ul className="nav justify-Dropdowncontent-end">

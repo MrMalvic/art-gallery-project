@@ -11,7 +11,7 @@ export class About extends Component{
   render() {
     return (
 
-      <div>
+      <div className="App">
         <Navbar2 />
         <div className="mask2">
           <img src="img3.jpg" className="about-page-img" />

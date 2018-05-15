@@ -24,4 +24,8 @@ meteortoys:allthings
 accounts-password
 alexwine:bootstrap-4
 session
+<<<<<<< HEAD
 accounts-ui
+=======
+accounts-base
+>>>>>>> 0beb3d07f09630ab33a98275c07455e601377e11
