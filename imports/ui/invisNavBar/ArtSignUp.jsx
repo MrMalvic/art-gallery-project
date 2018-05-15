@@ -63,18 +63,6 @@ export class ArtSignUp extends Component {
           <button type="submit" className="btn btn-primary">Sign Up</button>
         </form>
         </div>
-        {/* <form onSubmit = {this.handleSubmit}>
-            <input type="text" placeholder="Full Names"/> <br/>
-            <input type="number" placeholder="age"/><br />
-            <input type="text" placeholder="Email"/><br />
-            <
-            <input type="text"placeholder="Art Category" /> <br />
-            <input type="text" placeholder="Location"/><br /> 
-            <input type="password" placeholder="Password"/><br />
-            <input type="password" placeholder="Confirm Password"/><br /> 
-            
-            <button type="submit">Sign Up</button>            
-        </form>  */}
       </div>
     );
   }
