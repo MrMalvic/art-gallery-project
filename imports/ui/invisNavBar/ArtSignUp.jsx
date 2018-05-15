@@ -3,51 +3,8 @@ import React, { Component } from 'react';
 import route from '/imports/routing/router.js';
 import NavBar1 from './NavBar1.jsx';
 
-
-
-export default class ArtSignUp extends Component {
-  goToHome = () => {
-      route.go('/') // pathDef, params, queryParams
-
-  }
-
-  handleSubmit = (e) => {
-    const post = {
-      title: this.state.title,
-      desc: this.state.desc
-    }
-    Meteor.call('posts.create', post)
-    e.preventDefault();
-  }
-
-  getUserData = (e) => {
-    e.preventDefault();
-    const { target } = e;
-    const name = target.name.value;
-    const email = target.email.value;
-    const password = target.password.value;
-    const confirmPassword = target.confirmPassword.value;
-    const location = target.location.value;
-    if (password.trim() !== confirmPassword.trim()) {
-      console.log("passwords dont match");
-      return;
-    }
-
-
-    const user = {
-      email,
-      password,
-      profile:{
-        name,
-        location
-      },
-      createdAt: new Date()
-    }
-    Accounts.createUser(user,error =>{
-      error ? console.log(error.reason) : console.log('Account created succesfully')
-    })
-  }
-  
+export class ArtSignUp extends Component {
+ 
   render() {
 
     return (

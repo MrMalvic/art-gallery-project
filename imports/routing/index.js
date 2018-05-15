@@ -8,6 +8,8 @@ import {Drawing} from '/imports/ui/Drawing.jsx';
 import {Craft} from '/imports/ui/Craft.jsx';
 import ArtSignUp from '/imports/ui/invisNavBar/ArtSignUp.jsx';
 import LogIn from '/imports/ui/invisNavBar/LogIn.jsx';
+import UserSign from'/imports/ui/invisNavBar/UserSign.jsx';
+import { ProfilePage } from '/imports/ui/ProfilePage.jsx';
 import { Pops } from  '/imports/ui/Pops.jsx';
 import { Paul } from '/imports/ui/Paul.jsx';
 import {Titans} from '/imports/ui/Titans.jsx';
@@ -69,13 +71,6 @@ import {Low12} from '/imports/ui/Low12.jsx';
 
 
 
-
-
-
-
-
-
-
 route('/', Home);
 route('/contact', ContactUs);
 route('/about', About);
@@ -83,6 +78,8 @@ route('/painting', Painting);
 route('/sculpture', Sculpture);
 route('/drawing', Drawing);
 route('/craft', Craft);
+route('/UserSign',UserSign);
+route('/ProfilePage',ProfilePage);
 route('/SignUp', ArtSignUp);
 route('/LogIn', LogIn);
 route('/Pops', Pops);
