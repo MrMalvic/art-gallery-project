@@ -11,6 +11,42 @@ export default class ArtSignUp extends Component {
 
   }
 
+  handleSubmit = (e) => {
+    const post = {
+      title: this.state.title,
+      desc: this.state.desc
+    }
+    Meteor.call('posts.create', post)
+    e.preventDefault();
+  }
+
+  getUserData = (e) => {
+    e.preventDefault();
+    const { target } = e;
+    const name = target.name.value;
+    const email = target.email.value;
+    const password = target.password.value;
+    const confirmPassword = target.confirmPassword.value;
+    const location = target.location.value;
+    if (password.trim() !== confirmPassword.trim()) {
+      console.log("passwords dont match");
+      return;
+    }
+
+
+    const user = {
+      email,
+      password,
+      profile:{
+        name,
+        location
+      },
+      createdAt: new Date()
+    }
+    Accounts.createUser(user,error =>{
+      error ? console.log(error.reason) : console.log('Account created succesfully')
+    })
+  }
   
   render() {
 
@@ -21,30 +57,30 @@ export default class ArtSignUp extends Component {
         </div>
         <NavBar1 />
         <div>
-        <form onSubmit={this.handleSubmit}  className="artist-signup-form container-fluid">
+        <form onSubmit={this.getUserData}  className="artist-signup-form container-fluid">
         <h1 className="artist-reg">Artist Registration</h1>
           <div className="form-row">
             <div className="form-group col-md-6">
               <label htmlFor="inputName">Full Names</label>
-              <input type="text" className="form-control" id="inputName" placeholder="Full Names" />
+              <input type="text" className="form-control" id="inputName" name="name" placeholder="Full Names" />
             </div>
             <div className="form-group col-md-6">
               <label htmlFor="inputEmail">Email</label>
-              <input type="email" className="form-control" id="inputEmail" placeholder="Email" />
+              <input type="email" className="form-control" id="inputEmail" name="email" placeholder="Email" />
             </div>
             <div className="form-group col-md-6">
               <label htmlFor="inputPassword">Password</label>
-              <input type="password" className="form-control" id="inputPassword" placeholder="Password" />
+              <input type="password" className="form-control" id="inputPassword" name="password" placeholder="Password" />
             </div>
             <div className="form-group col-md-6">
               <label htmlFor="inputConfirm">Confirm Password</label>
-              <input type="password" className="form-control" id="inputConfirm" placeholder="Confirm Password" />
+              <input type="password" className="form-control" id="inputConfirm" name="confirmPassword" placeholder="Confirm Password" />
             </div>
           </div>
           <div className="form-row">
             <div className="form-group col-md-6">
               <label htmlFor="inputCity">Location</label>
-              <input type="text" className="form-control" id="inputCity" placeholder="Your Location" />
+              <input type="text" className="form-control" id="inputCity" name="location" placeholder="Your Location" />
             </div>
             <div className="form-group col-md-6">
               <label htmlFor="inputState">Category</label>
