@@ -14,8 +14,8 @@ export class UserSign extends Component {
 
     return (
       <div>
-        <NavBar1 /> <br /><br />
-        <h1>User Registration</h1> <br /><br />
+        <NavBar1 /> 
+       <center> <h1>User Registration</h1></center> 
         <form onSubmit={this.handleSubmit}>
           <div className="form-row">
             <div className="form-group col-md-6">
