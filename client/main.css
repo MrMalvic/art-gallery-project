@@ -325,8 +325,8 @@ label{
 .thumb{
   width: 300px;
   height: 300px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
 }
 
 .cover-photo{
@@ -342,7 +342,7 @@ label{
 }
 
 .thumbs{
-  padding: 10px;
+  margin: 10px;
   width:300px;
   height:300px;
   transition-duration: 0.5s;
@@ -354,4 +354,31 @@ label{
      font-size: 25px;
      border-radius: 4px;
      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 20px 10px 50px 0 rgba(0,0,0,0.3);
+}
+
+.logo{
+  height: 50px; 
+}
+
+.container2{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  width:300px;
+  height:300px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.centered:hover{
+  opacity: .5;
 }

@@ -28,7 +28,7 @@ export class Footer extends Component {
                     </div>
                     <div className="footer-copyright py-3 text-center lower-footer">
                         © 2018 Copyright :
-                        <a href="https://github.com/MrMalvic/art-gallery-project">Malumbo mutale </a>
+                        <a href="https://github.com/MrMalvic/art-gallery-project"> Elite Arts</a>
                     </div>
                 </footer>
 

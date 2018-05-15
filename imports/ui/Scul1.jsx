@@ -18,11 +18,12 @@ export class Scul1 extends Component {
           </div>
           <h1>PROJECTS DONE BY THIS ARTIST:</h1>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 container2">
             <a className="" href="#"><img class="thumb thumbs" src="painting/aa.jpg"/></a>
+            <div class="centered"></div>
             </div>
             <div class="col-md-4">
-            <a className="" href="#"><img class="thumb thumbs" src="painting/ab.jpg"/></a>
+            <a className="" href="/buy1"><img class="thumb thumbs" src="painting/ab.jpg"/></a>
             </div>
             <div class="col-md-4">
             <a className="" href="#"><img class="thumb thumbs" src="painting/ac.jpeg"/></a>

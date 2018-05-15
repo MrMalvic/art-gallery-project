@@ -6,6 +6,12 @@ import { Footer } from '/imports/ui/Footer.jsx'
 
 
 export class Buy1 extends Component {
+
+  goToSculpture = () => {
+    route.go('/sculpture');
+  }
+
+
   render() {
     return (
       <div>
@@ -18,7 +24,7 @@ export class Buy1 extends Component {
             <div className="vr">
             </div>
             <div className="col-md-3 contact-info">
-            <p>By <a href="#">Malumbo Mutale</a></p>
+            <p>By <a href="/scul1">Claude Monet</a></p>
             <a href="#"><i class="fas fa-user-plus"> Follow</i></a><hr/>
             <h5>Contact the artist</h5>
               <form>
