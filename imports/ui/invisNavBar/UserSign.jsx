@@ -5,7 +5,7 @@ import NavBar1 from './NavBar1.jsx';
 
 
 
-export default class UserSign extends Component {
+export class UserSign extends Component {
   // goToHome = () => {
   //     route.go('/') // pathDef, params, queryParams
 
@@ -20,19 +20,19 @@ export default class UserSign extends Component {
           <div className="form-row">
             <div className="form-group col-md-6">
               <label htmlFor="inputName2">Full Names</label>
-              <input type="text" className="form-control" id="inputName2" placeholder="Full Names" />
+              <input type="text" className="form-control" id="inputName2" placeholder="Full Names" required/>
             </div>
             <div className="form-group col-md-6">
               <label htmlFor="inputEmail2">Email</label>
-              <input type="email" className="form-control" id="inputEmail2" placeholder="Email" />
+              <input type="email" className="form-control" id="inputEmail2" placeholder="Email" required/>
             </div>
             <div className="form-group col-md-6">
               <label htmlFor="inputPassword2">Password</label>
-              <input type="password" className="form-control" id="inputPassword2" placeholder="Password" />
+              <input type="password" className="form-control" id="inputPassword2" placeholder="Password" required/>
             </div>
             <div className="form-group col-md-6">
               <label htmlFor="inputConfirm2">Confirm Password</label>
-              <input type="password" className="form-control" id="inputConfirm2" placeholder="Confirm Password" />
+              <input type="password" className="form-control" id="inputConfirm2" placeholder="Confirm Password" required />
             </div>
           </div>
           <div className="form-row">
