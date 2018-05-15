@@ -66,8 +66,7 @@ export class ArtSignUp extends Component {
           
           <button type="submit" className="btn btn-primary">Sign Up</button>
         </form>
-        </div>      
-        <Footer/>
+        </div>
       </div>
     );
   }
