@@ -8,10 +8,8 @@ import {Drawing} from '/imports/ui/Drawing.jsx';
 import {Craft} from '/imports/ui/Craft.jsx';
 import ArtSignUp from '/imports/ui/invisNavBar/ArtSignUp.jsx';
 import LogIn from '/imports/ui/invisNavBar/LogIn.jsx';
-<<<<<<< HEAD
 import UserSign from'/imports/ui/invisNavBar/UserSign.jsx';
-import ProfilePage from '/imports/ui/ProfilePage.jsx';
-=======
+import { ProfilePage } from '/imports/ui/ProfilePage.jsx';
 import { Pops } from  '/imports/ui/Pops.jsx';
 import { Paul } from '/imports/ui/Paul.jsx';
 import {Titans} from '/imports/ui/Titans.jsx';
@@ -73,14 +71,6 @@ import {Low12} from '/imports/ui/Low12.jsx';
 
 
 
-
-
-
-
-
->>>>>>> 0beb3d07f09630ab33a98275c07455e601377e11
-
-
 route('/', Home);
 route('/contact', ContactUs);
 route('/about', About);
@@ -88,15 +78,10 @@ route('/painting', Painting);
 route('/sculpture', Sculpture);
 route('/drawing', Drawing);
 route('/craft', Craft);
-<<<<<<< HEAD
 route('/SignUp',ArtSignUp);
 route('/UserSign',UserSign);
 route('/LogIn',LogIn);
 route('/ProfilePage',ProfilePage);
-
-=======
-route('/SignUp', ArtSignUp);
-route('/LogIn', LogIn);
 route('/Pops', Pops);
 route('/paul', Paul);
 route('/titans', Titans);
@@ -155,4 +140,4 @@ route('/low9', Low9);
 route('/low10', Low10);
 route('/low11', Low11);
 route('/low12', Low12);
->>>>>>> 0beb3d07f09630ab33a98275c07455e601377e11
+

@@ -4,44 +4,7 @@ import route from '/imports/routing/router.js';
 import NavBar1 from './NavBar1.jsx';
 
 export class ArtSignUp extends Component {
-
-    getUserData =(e) =>{  
-      e.preventDefault();  
-      const {target} = e;  
-      const name = target.name.value;  
-      const email = target.email.value;   
-      const password = target.password.value;  
-      const password2 = target.password2.value; 
-  
-     if(password.trim()!==password2.trim()){  
-       this.setState({   
-         error: "Passwords do not match"  
-       })   
-       return;  
-     };  
-     if(password.length <=5  
-     ){  
-       this.setState({  
-         error2: "Password too short"  
-       })  
-       return;  
-     }  
-     const user = {  
-       email,  
-       password,  
-       profile: {  
-         name,  
-         phone,
-         location,
-         Category 
-       },  
-       createdAt: new Date()  
-     }  
-     Accounts.createUser(user,error=>{  
-       error ? console.log(error.reason) : console.log("Account Created Successfully")
-       }) ;   
-    route.go('/profilePage');
-    }  
+ 
   render() {
 
     return (

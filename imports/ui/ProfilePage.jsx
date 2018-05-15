@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import route from '/imports/routing/router.js';
-import ArtSignUp from '/imports/ui/invisNavBar/ArtSignUp.jsx';
+// import ArtSignUp from '/imports/ui/invisNavBar/ArtSignUp.jsx';
 
 export class profilePage extends Component {
 
-//   go = () => {
-//     route.('')
-//   }
+// //   go = () => {
+// //     route.('')
+// //   }
 
   
 
   render() {
     return(
     <div className = '' style = {{height: 50+ 'px',  width: 100+'px', backgroundColor: 'LawnGreen'}}> 
-      <iframe className='' src="profilepic"></iframe>
+      {/* <iframe className='' src="profilepic"></iframe> */}
       </div>
     //   <div className = 'container'>
     //   <row>
