@@ -9,7 +9,7 @@ export class SearchCarousel extends Component {
       <div className="carousel-search">
         <NavBar1/>
         <input type="text" id="search-bar" placeholder="Search..."/>
-        <button type="submit"className="search-button"><i class="fas fa-search"></i></button>
+        <button type="submit"className="search-button"><i className="fas fa-search"></i></button>
         <Carousel/>
       </div>
     )

@@ -28,7 +28,7 @@ export class ArtSignUp extends Component {
       createdAt: new Date()
     }
     Accounts.createUser(user, error => {
-      error ? console.log(error.reason) : console.log('Account created succesfully')
+      error ? console.log(error.reason) : route.go('/');
     })
   }
 

@@ -3,9 +3,32 @@ import React, { Component } from 'react';
 // import './App.css';
 import route from '/imports/routing/router.js';
 // route('/', Home);
+import $ from 'jquery';
 
 
 export default class NavBar1 extends Component { 
+
+  componentDidMount(){
+    $(document).click(() =>{
+      if(Meteor.user()){
+        $('#navbarDropdown').hide();
+        $('#logIn').hide();
+        $('#logOut').show();
+      }
+      else{
+        $('#navbarDropdown').show();
+        $('#logIn').show();
+        $('#logOut').hide();
+      }
+    })
+  }
+
+  logUserOut = (e) =>{
+    e.preventDefault();
+    console.log('you are now logged out');
+    Meteor.logout();
+  }
+
   goToHome = () => {
     route.go('/') // pathDef, params, queryParams
   }
@@ -34,12 +57,15 @@ goTolog = () => {
      <a className="nav-link dropdown-toggle"  href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           SignUp </a>        
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a className="dropdown-item" href="/SignUp">Artist</a>
-          <a className="dropdown-item" href="/UserSign">User</a> 
+          <a className="dropdown-item"  href="/SignUp">Artist</a>
+          <a className="dropdown-item"  href="/UserSign">User</a> 
           </div>
       </li>
   <li className="nav-item">
-    <a className="nav-link active" href="/LogIn">LogIn</a>
+    <a className="nav-link active" id="logIn" href="/LogIn">LogIn</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link active" id="logOut" href="#" onClick={this.logUserOut}>LogOut</a>
   </li>
   </ul>
      </nav>
