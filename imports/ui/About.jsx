@@ -6,7 +6,7 @@ import { Footer } from '/imports/ui/Footer.jsx'
 
 
 
-export class About extends Component{
+export class About extends Component {
 
   render() {
     return (
@@ -26,10 +26,8 @@ export class About extends Component{
          wingselling art by making it easy, convenient and welcoming for both collectors and artists., sculpture and photography in a range of prices, and it provides artists from around the world with an expertly curated environment in which to exhibit and sell their work.
               Based in Lusaka, Gallery Art is redefining the  <br></br>experience of buying and selling art by making it easy, convenient and welcoming for both collectors and artists.
               </h4>
-
         </div>
-
-          <h1 className="meet-the-team">Meet Our Team</h1>
+        <h1 className="meet-the-team">Meet Our Team</h1>
 
         <div className="container">
           <div className="row">
@@ -39,13 +37,13 @@ export class About extends Component{
             </div>
             <div className="col-md-8 about-text">
               <h5>Malumbo Mutale</h5>
-              <p>Senior Developer/Designer.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Repudiandae voluptatibus debitis pariatur nostrum exercitationem saepe.</p>
+              <p>Senior Developer/Designer.<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Repudiandae voluptatibus debitis pariatur nostrum exercitationem saepe.</p>
               <a rel="stylesheet" className="btn btn-primary" href="https://mailto:chandacharles904@gmail.com">Email:</a>
             </div>
 
             <div className="col-md-8 about-text">
               <h5>Andrew Khondowe</h5>
-              <p>Front-End full Developer.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Repudiandae voluptatibus debitis pariatur nostrum exercitationem saepe.</p>
+              <p>Front-End full Developer.<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Repudiandae voluptatibus debitis pariatur nostrum exercitationem saepe.</p>
               <a rel="stylesheet" className="btn btn-primary" href="https://mailto:a@gmail.com">Email:</a>
             </div>
             <div className="col-md-4">
@@ -57,22 +55,22 @@ export class About extends Component{
             </div>
             <div className="col-md-8 about-text">
               <h5>Mafwolisha Likelenge</h5>
-              <p>Manager/Developer.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Repudiandae voluptatibus debitis pariatur nostrum exercitationem saepe.</p>
+              <p>Manager/Developer.<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Repudiandae voluptatibus debitis pariatur nostrum exercitationem saepe.</p>
               <a rel="stylesheet" className="btn btn-primary" href="https://mailto:mafwolikelenge@gmail.com">Email:</a>
             </div>
 
             <div className="col-md-8 about-text">
               <h5>Charles Chanda</h5>
-              <p>FullStack Developer.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Repudiandae voluptatibus debitis pariatur nostrum exercitationem saepe.</p>
+              <p>FullStack Developer.<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Repudiandae voluptatibus debitis pariatur nostrum exercitationem saepe.</p>
               <a rel="stylesheet" className="btn btn-primary" href="https://mailto:@gmail.com">Email:</a>
             </div>
             <div className="col-md-4">
               <img className="img" src="img4.jpeg" alt="Card image cap"></img>
             </div>
           </div>
-          </div>
-          <Footer/>
-          </div>
+        </div>
+        <Footer />
+      </div>
     );
   }
 

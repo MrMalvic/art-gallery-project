@@ -8,7 +8,7 @@ export class ArtSignUp extends Component {
   getUserData = (e) => {
     e.preventDefault();
     const { target } = e;
-    const name = target.fullname.value;
+    const name = target.name.value;
     const email = target.email.value;
     const password = target.password.value;
     const confirmPassword = target.confirmPassword.value;
@@ -57,7 +57,7 @@ export class ArtSignUp extends Component {
               </div>
               <div className="form-group col-md-6">
                 <label htmlFor="inputConfirm">Confirm Password</label>
-                <input type="password" className="form-control" name="password2" id="inputConfirm" placeholder="Confirm Password" required />
+                <input type="password" className="form-control" name="confirmPassword" id="inputConfirm" placeholder="Confirm Password" required />
               </div>
             </div>
             <div className="form-row">
