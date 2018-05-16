@@ -19,6 +19,7 @@ export class Scul1 extends Component {
           <h1>PROJECTS DONE BY THIS ARTIST:</h1>
           <div class="row">
             <div class="col-md-4 container2">
+            <p>text</p>
             <a className="" href="#"><img class="thumb thumbs" src="painting/aa.jpg"/></a>
             <div class="centered"></div>
             </div>
