@@ -9,14 +9,14 @@ import $ from 'jquery';
 export default class NavBar1 extends Component {
 
   componentDidMount() {
-    $(document).ready(() => {
-      if (Meteor.user()) {
-        $('#nav1').hide();
-        $('#nav2').show();
+    $(document).ready((e) => {
+        if (Meteor.user()) {
+        $('#loggedOut').hide();
+        $('#loggedIn').show();
       }
       else {
-        $('#nav1').show();
-        $('#nav2').hide();
+        $('#loggedOut').show();
+        $('#loggedIn').hide();
       }
     })
   }
@@ -28,24 +28,12 @@ export default class NavBar1 extends Component {
     window.location.reload()
   }
 
-  goToHome = () => {
-    route.go('/') // pathDef, params, queryParams
-  }
-  goToSignUp = () => {
-    route.go('/SignUp') // pathDef, params, queryParams
-  }
-
-  goToUsign = () => {
-    route.go('/UserSign') // pathDef, params, queryParams
-  }
-  goTolog = () => {
-    route.go('/LogIn') // pathDef, params, queryParams
-  }
+  
 
   render() {
     return (
       <div>
-        <nav className="navbar navbar-inverse navbar-fixed-top trans-nav" id="nav1">
+        <nav className="navbar navbar-inverse navbar-fixed-top trans-nav" id="loggedOut">
           <a className="navbar-brand" href="/">
             <img src="logo2.png" className="d-inline-block align-top" alt="" />
           </a>
@@ -63,13 +51,16 @@ export default class NavBar1 extends Component {
             </li>
           </ul>
         </nav>
-        <nav className="navbar navbar-inverse navbar-fixed-top trans-nav" id="nav2">
+        <nav className="navbar navbar-inverse navbar-fixed-top trans-nav" id="loggedIn">
           <a className="navbar-brand" href="/">
             <img src="logo2.png" className="d-inline-block align-top" alt="" />
           </a>
           <ul className="nav justify-Dropdowncontent-end">
+          <li className="nav-item">          
+          <a href="/upload" className="nav-link active">Upload</a>
+          </li>
             <li className="nav-item">
-              <a className="nav-link active" id="logOut" href="#" onClick={this.logUserOut}>LogOut</a>
+              <a className="nav-link active" id="logOut" href="#" onClick={this.logUserOut}>Logout</a>
             </li>
           </ul>
         </nav>

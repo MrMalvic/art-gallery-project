@@ -13,6 +13,7 @@ export class ArtSignUp extends Component {
     const password = target.password.value;
     const confirmPassword = target.confirmPassword.value;
     const location = target.location.value;
+    const createdAt = new Date();
     if (password.trim() !== confirmPassword.trim()) {
       console.log("passwords dont match");
       return;
@@ -25,7 +26,7 @@ export class ArtSignUp extends Component {
         name,
         location
       },
-      createdAt: new Date()
+      createdAt
     }
     Accounts.createUser(user, error => {
       error ? console.log(error.reason) : route.go('/');

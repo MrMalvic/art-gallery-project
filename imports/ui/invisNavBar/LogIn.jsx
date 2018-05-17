@@ -34,11 +34,11 @@ logUserIn = e => {
           <form onSubmit={this.logUserIn} className="artist-signup-form container-fluid">
           <h1 className="artist-reg">Welcome back</h1>
             <div className="login">
-              {/* <label htmlFor="Email">Email</label><br/> */}
+              <label htmlFor="Email">Email</label><br/>
               <input type="text" className="form-control2" name="email" id="Email" placeholder="Email" />
             </div>
             <div className="login">
-              {/* <label htmlFor="inputPassword">Password</label><br/> */}
+              <label htmlFor="inputPassword">Password</label><br/>
               <input type="password" className="form-control2" name="password" id="inputPassword" placeholder="Password" />
             </div><br/>
             <button type="submit" className="btn btn-primary">LogIn</button>

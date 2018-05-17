@@ -7,8 +7,4 @@ Meteor.methods({
   }
 });
 
-Meteor.methods({
-  'insertUser': (newUserData) => {
-    return Accounts.createUser(newUserData);
-  }
-})
+
