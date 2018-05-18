@@ -99,7 +99,7 @@ button:focus {outline:0;}
 .trans-nav{
   position: absolute;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .nav-link , .artist-link{
@@ -222,7 +222,7 @@ label{
   width: 400px;
   outline-color: white;
   border: 1px solid white;
-  border-radius: 15px;
+  border-radius: 15                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   padding-left: 7px;
@@ -423,4 +423,8 @@ input[type=file]{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.nav-img{
+  height: 60px;
 }

@@ -37,7 +37,7 @@ export default class NavBar1 extends Component {
       <div>
         <nav className="navbar navbar-inverse navbar-fixed-top trans-nav" id="loggedIn">
           <a className="navbar-brand" href="/">
-            <img src="logo2.png" className="d-inline-block align-top" alt="" />
+            <img src="logo2.png" className="d-inline-block align-top nav-img" alt="" />
           </a>
           <ul className="nav justify-Dropdowncontent-end">
           <li className="nav-item">          
@@ -50,7 +50,7 @@ export default class NavBar1 extends Component {
         </nav>
         <nav className="navbar navbar-inverse navbar-fixed-top trans-nav" id="loggedOut">
           <a className="navbar-brand" href="/">
-            <img src="logo2.png" className="d-inline-block align-top" alt="" />
+            <img src="logo2.png" className="d-inline-block align-top nav-img" alt="" />
           </a>
           <ul className="nav justify-Dropdowncontent-end">
             <li className="nav-item dropdown">
