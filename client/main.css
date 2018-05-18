@@ -1,20 +1,15 @@
-/* CSS declarations go here */
-
 body, html {
   height: 100%;
-}
+  font-family: 'Montserrat', sans-serif;}
 
-/* for all text alignments */
 .App{
   text-align: center;
 }
 
-/* homepage background carousel */
 .carousel{
   z-index: -1;
 }
 
- /* to give images in the carousel a fixed height */
 .carousel-inner > .carousel-item > img {
   height: 100vh;
   max-width:100%;
@@ -61,7 +56,7 @@ a:hover{
   font-size: 30px;
   outline-color: white;
   border: 3px solid white;
-  border-radius: 3px;
+  border-radius: 15px;
   height: 50px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -113,7 +108,7 @@ button:focus {outline:0;}
 
 
 .navbar-two{
-  background-color: #a7c9f0;
+  background-color: #e0e0e0;
   position: sticky;
   top:0;
   z-index: 1;
@@ -210,23 +205,24 @@ label{
 }
 
 .form-control{
-  width: 75%;
-  margin-left: 15%;
+  width: 400px;
   outline-color: white;
-  border: 3px solid white;
-  border-radius: 3px;
+  border: 1px solid white;
+  border-radius: 15px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 7px;
+  height: 50px;
+  margin: 20px;
+  /* padding-right: 7px; */
 }
 
 .form-control2{
   height: 50px;
   width: 400px;
   outline-color: white;
-  border: 3px solid white;
-  border-radius: 3px;
+  border: 1px solid white;
+  border-radius: 15px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   padding-left: 7px;
@@ -419,4 +415,12 @@ input[type=file]{
 
 .pad{
   padding: 50px;
+}
+
+.parallax { 
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

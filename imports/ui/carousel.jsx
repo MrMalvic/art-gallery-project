@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 export class Carousel extends Component {
     render() {
         return (
-            <div className="mask">
+            <div className="mask parallax" id="cards">
                 <div id="carouselExampleIndicators" data-interval="7000" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">

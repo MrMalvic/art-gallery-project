@@ -29,6 +29,7 @@ class Home extends Component {
 }
 
 export default withTracker(() => {
+  Meteor.subscribe('search');
   return {
     posts: Posts.find().fetch(),
   }

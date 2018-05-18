@@ -11,7 +11,7 @@ import Posts from '../api/blog/collections.js';
 export class Cards extends Component {
   render() {
     return (
-      <div className="App container">
+      <div className="App container" id="cards" >
         <div className="row">
           <div className="col-md-4 card padding">
             <img className="card-img-top" src="images/g.jpg"/>
@@ -55,8 +55,7 @@ export class Cards extends Component {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quasi voluptas eius a itaque excepturi unde eligendi inventore impedit delectus, hic fugiat quo, quis nulla similique incidunt quidem voluptatibus. Cumque?</p>
             </div>
           </div>
-
-        </div>
+          </div>
       </div>
 
 

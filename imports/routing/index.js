@@ -13,10 +13,18 @@ import { Pops } from  '/imports/ui/Pops.jsx';
 import {Buy1} from '/imports/ui/Buy1.jsx';
 import { Scul1 } from '/imports/ui/Scul1.jsx';
 import { Upload } from '/imports/ui/invisNavBar/Upload.jsx';
+import { Meteor } from 'meteor/meteor';
 
 
 
 route('/', Home);
+// if( Meteor.userId()){
+//   route.go('/upload',Upload);
+// }
+// else{
+//     route('/LogIn', LogIn);
+//     route.go('/LogIn', LogIn);
+// }
 route('/about', About);
 route('/painting', Painting);
 route('/sculpture', Sculpture);

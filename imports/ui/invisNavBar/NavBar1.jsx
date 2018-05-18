@@ -8,17 +8,18 @@ import $ from 'jquery';
 
 export default class NavBar1 extends Component {
 
-  componentDidMount() {
-    $(document).ready((e) => {
-        if (Meteor.user()) {
+  componentDidMount(){
+        if (Meteor.userId()) {
         $('#loggedOut').hide();
         $('#loggedIn').show();
+        console.log("you're now logged in")
       }
       else {
         $('#loggedOut').show();
         $('#loggedIn').hide();
+        console.log("you're now logged out")
       }
-    })
+    
   }
 
   logUserOut = (e) => {
@@ -26,6 +27,7 @@ export default class NavBar1 extends Component {
     console.log('you are now logged out');
     Meteor.logout();
     window.location.reload()
+    route.go('/')
   }
 
   
@@ -33,6 +35,19 @@ export default class NavBar1 extends Component {
   render() {
     return (
       <div>
+        <nav className="navbar navbar-inverse navbar-fixed-top trans-nav" id="loggedIn">
+          <a className="navbar-brand" href="/">
+            <img src="logo2.png" className="d-inline-block align-top" alt="" />
+          </a>
+          <ul className="nav justify-Dropdowncontent-end">
+          <li className="nav-item">          
+          <a href="/upload" className="nav-link active">Upload</a>
+          </li>
+            <li className="nav-item">
+              <a className="nav-link active" id="logOut" href="#" onClick={this.logUserOut}>Logout</a>
+            </li>
+          </ul>
+        </nav>
         <nav className="navbar navbar-inverse navbar-fixed-top trans-nav" id="loggedOut">
           <a className="navbar-brand" href="/">
             <img src="logo2.png" className="d-inline-block align-top" alt="" />
@@ -51,19 +66,7 @@ export default class NavBar1 extends Component {
             </li>
           </ul>
         </nav>
-        <nav className="navbar navbar-inverse navbar-fixed-top trans-nav" id="loggedIn">
-          <a className="navbar-brand" href="/">
-            <img src="logo2.png" className="d-inline-block align-top" alt="" />
-          </a>
-          <ul className="nav justify-Dropdowncontent-end">
-          <li className="nav-item">          
-          <a href="/upload" className="nav-link active">Upload</a>
-          </li>
-            <li className="nav-item">
-              <a className="nav-link active" id="logOut" href="#" onClick={this.logUserOut}>Logout</a>
-            </li>
-          </ul>
-        </nav>
+        
       </div>
     );
   }

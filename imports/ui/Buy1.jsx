@@ -18,11 +18,10 @@ export class Buy1 extends Component {
         <Navbar2 />
         <div className="container">
           <div className="row">
-            <div className="col-md-8 App details">
+            <div className="col-md-9 App details">
               <img className="buy-art details" src="http://via.placeholder.com/1024x720" />
             </div>
-            <div className="vr">
-            </div>
+            
             <div className="col-md-3 contact-info">
               <p>By <a href="/scul1">Artist</a></p>
               <a href="#"><i className="fas fa-user-plus"> Follow</i></a><hr />

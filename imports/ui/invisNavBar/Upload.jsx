@@ -37,9 +37,8 @@ export class Upload extends Component {
                 </div>
                 <NavBar1 />
                 <div>
-                    <form onSubmit={this.getUploadData} className="artist-signup-form container">
+                    <form onSubmit={this.getUploadData} className="artist-signup-form">
                         <h1 className="upload-work App">Upload your work</h1>
-                        <div className="form-row">
 
                             <div className="form-group col-md-6">
                                 <input type="text" name="name" placeholder="Name of piece" className="form-control2" />
@@ -73,7 +72,6 @@ export class Upload extends Component {
                             <div className="form-group col-md-6">
                                 <input type="number" name="price" placeholder="Price" className="form-control2" />
                             </div>
-                        </div>
                         <div className="App">
                             <textarea className="form-control2 textarea" placeholder="description" name="desc" />
                         </div>
