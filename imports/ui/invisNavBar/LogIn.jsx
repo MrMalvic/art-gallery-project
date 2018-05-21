@@ -30,7 +30,7 @@ logUserIn = e => {
 
     return (
       <div className="App">
-      <div id="snackbar2">User doesn't exist.</div>  
+      <div id="snackbar2">Incorrect information entered.</div>  
         <div className="mask3">
         <img src="img5.jpg" className="artist-signup-img"/>
         </div>

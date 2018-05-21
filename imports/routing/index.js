@@ -14,16 +14,18 @@ import {Buy1} from '/imports/ui/Buy1.jsx';
 import { Scul1 } from '/imports/ui/Scul1.jsx';
 import { Upload } from '/imports/ui/invisNavBar/Upload.jsx';
 import { Meteor } from 'meteor/meteor';
+import { accessDenied } from '/imports/ui/accessDenied.jsx';
+import { searchResults } from '/imports/ui/searchResults.jsx';
+
 
 
 
 route('/', Home);
-// if( Meteor.userId()){
-//   route.go('/upload',Upload);
+// if( Meteor.user()){
 // }
 // else{
-//     route('/LogIn', LogIn);
-//     route.go('/LogIn', LogIn);
+//     route('/accessDenied',accessDenied);
+//     route.go('/accessDenied', accessDenied);
 // }
 route('/about', About);
 route('/painting', Painting);
@@ -39,3 +41,4 @@ route('/Pops', Pops);
 route('/buy1', Buy1);
 route('/scul1',Scul1);
 route('/upload',Upload);
+route('/searchResults', searchResults)

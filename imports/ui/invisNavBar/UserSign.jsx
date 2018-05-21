@@ -7,6 +7,18 @@ import NavBar1 from './NavBar1.jsx';
 
 export class UserSign extends Component {
 
+  passwordsDontMatch = () => {
+    var x = document.getElementById("snackbar2");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+  }
+
+  userAlreadyExists = () => {
+    var x = document.getElementById("snackbar3");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+  }
+
   getUserData = (e) => {
     e.preventDefault();
     const { target } = e;
@@ -16,9 +28,11 @@ export class UserSign extends Component {
     const confirmPassword = target.confirmPassword.value;
     const location = target.location.value;
     if (password.trim() !== confirmPassword.trim()) {
-      console.log("passwords dont match");
+      this.passwordsDontMatch();
       return;
     }
+
+    
 
     const user = {
       email,
@@ -30,7 +44,7 @@ export class UserSign extends Component {
       createdAt: new Date()
     }
     Accounts.createUser(user, error => {
-      error ? console.log(error.reason) : route.go('/');
+      error ?  this.userAlreadyExists(console.log(error.reason)) : route.go('/');
     })
   }
 
@@ -38,6 +52,8 @@ export class UserSign extends Component {
 
     return (
       <div className="App">
+        <div id="snackbar2">Passwords don't match.</div>
+        <div id="snackbar3">Email already exists.</div>
         <div className="mask3">
           <img src="img6.jpg" className="artist-signup-img" />
         </div>
@@ -58,17 +74,17 @@ export class UserSign extends Component {
               <input type="password" className="form-control" name="confirmPassword" id="inputConfirm2" placeholder="Confirm Password" required />
             </div>
             <div className="form-group col-md-6">
-              <input type="text" className="form-control" name="location" placeholder="Location" id="inputCity" />
+              <input type="text" className="form-control" name="location" placeholder="Location" id="inputCity" required />
             </div>
           <div className="form-group">
             <div className="form-check">
               <label className="form-check-label" htmlFor="gridCheck">
-              <input className="form-check-input" type="checkbox" id="gridCheck" />              
+              <input className="form-check-input" type="checkbox" id="gridCheck" required />              
                 I agree to Elite's Ts&Cs
               </label>
             </div>
           </div>
-          <button type="submit" className="btn btn-primary">Sign Up</button>
+          <button type="submit" className="btn btn-primary" >Sign Up</button>
         </form>
       </div>
     );
