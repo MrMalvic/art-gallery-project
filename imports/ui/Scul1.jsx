@@ -23,7 +23,7 @@ export class Scul1 extends Component {
             <div className="centered"></div>
             </div>
             <div className="col-md-4">
-            <a className="" href="/buy1"><img class="thumb thumbs" src="painting/ab.jpg"/></a>
+            <a className="" href="#"><img class="thumb thumbs" src="painting/ab.jpg"/></a>
             </div>
             <div className="col-md-4">
             <a className="" href="#"><img class="thumb thumbs" src="painting/ac.jpeg"/></a>
