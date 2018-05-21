@@ -43,7 +43,8 @@ export class UserSign extends Component {
         </div>
         <NavBar1 />
         <form onSubmit={this.getUserData} className="artist-signup-form ">
-        <h1 className="artist-reg">User Registration</h1>
+        <h1 className="artist-reg">Join Elite Arts</h1>
+        <p className="artist-reg">Already have an account? click <a href="/LogIn" className="here">here</a> to Login.</p>
             <div className="form-group col-md-6">
               <input type="text" className="form-control" name="name" id="inputName2" placeholder="Full Names" required />
             </div>

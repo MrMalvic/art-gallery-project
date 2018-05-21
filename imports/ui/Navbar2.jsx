@@ -31,7 +31,7 @@ export class Navbar2 extends Component {
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categories
-          </a>
+              </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a className="dropdown-item" href="/painting">Painting</a>
                 <a className="dropdown-item" href="/sculpture">Sculpture</a>
@@ -43,7 +43,7 @@ export class Navbar2 extends Component {
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Discovery
-          </a>
+              </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a className="dropdown-item" href="/Pops">Popular Artists</a>
                 <a className="dropdown-item" href="#">New Artists</a>

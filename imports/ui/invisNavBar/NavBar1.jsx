@@ -53,13 +53,8 @@ export default class NavBar1 extends Component {
             <img src="logo2.png" className="d-inline-block align-top nav-img" alt="" />
           </a>
           <ul className="nav justify-Dropdowncontent-end">
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                SignUp </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="/SignUp">Artist</a>
-                <a className="dropdown-item" href="/UserSign">User</a>
-              </div>
+            <li className="nav-item">
+                <a className="nav-link" href="/UserSign">SignUp</a>
             </li>
             <li className="nav-item">
               <a className="nav-link active" id="logIn" href="/LogIn">LogIn</a>
