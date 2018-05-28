@@ -23,6 +23,7 @@ export class UserSign extends Component {
     e.preventDefault();
     const { target } = e;
     const name = target.name.value;
+    const username = target.username.value;
     const email = target.email.value;
     const password = target.password.value;
     const confirmPassword = target.confirmPassword.value;
@@ -32,10 +33,11 @@ export class UserSign extends Component {
       return;
     }
 
-    
+
 
     const user = {
       email,
+      username,
       password,
       profile: {
         name,
@@ -44,7 +46,7 @@ export class UserSign extends Component {
       createdAt: new Date()
     }
     Accounts.createUser(user, error => {
-      error ?  this.userAlreadyExists(console.log(error.reason)) : route.go('/');
+      error ? this.userAlreadyExists(console.log(error.reason)) : route.go('/');{}
     })
   }
 
@@ -53,33 +55,36 @@ export class UserSign extends Component {
     return (
       <div className="App">
         <div id="snackbar2">Passwords don't match.</div>
-        <div id="snackbar3">Email already exists.</div>
+        <div id="snackbar3">User already exists.</div>
         <div className="mask3">
           <img src="img6.jpg" className="artist-signup-img" />
         </div>
         <NavBar1 />
         <form onSubmit={this.getUserData} className="artist-signup-form ">
-        <h1 className="artist-reg">Join Elite Arts</h1>
-        <p className="artist-reg">Already have an account? click <a href="/LogIn" className="here">here</a> to Login.</p>
-            <div className="form-group col-md-6">
-              <input type="text" className="form-control" name="name" id="inputName2" placeholder="Full Names" required />
-            </div>
-            <div className="form-group col-md-6">
-              <input type="email" className="form-control" name="email" id="inputEmail2" placeholder="Email" required />
-            </div>
-            <div className="form-group col-md-6">
-              <input type="password" className="form-control" name="password" id="inputPassword2" placeholder="Password" required />
-            </div>
-            <div className="form-group col-md-6">
-              <input type="password" className="form-control" name="confirmPassword" id="inputConfirm2" placeholder="Confirm Password" required />
-            </div>
-            <div className="form-group col-md-6">
-              <input type="text" className="form-control" name="location" placeholder="Location" id="inputCity" required />
-            </div>
+          <h1 className="artist-reg">Join Elite Arts</h1>
+          <p className="artist-reg">Already have an account? click <a href="/LogIn" className="here">here</a> to Login.</p>
+          <div className="form-group col-md-6">
+            <input type="text" className="form-control" name="name" placeholder="Full Name" required />
+          </div>
+          <div className="form-group col-md-6">
+            <input type="email" className="form-control" name="email" placeholder="Email" required />
+          </div>
+          <div className="form-group col-md-6">
+            <input type="text" className="form-control" name="username" placeholder="Username" required />
+          </div>
+          <div className="form-group col-md-6">
+            <input type="password" className="form-control" name="password" placeholder="Password" required />
+          </div>
+          <div className="form-group col-md-6">
+            <input type="password" className="form-control" name="confirmPassword" placeholder="Confirm Password" required />
+          </div>
+          <div className="form-group col-md-6">
+            <input type="text" className="form-control" name="location" placeholder="Location" id="inputCity" required />
+          </div>
           <div className="form-group">
             <div className="form-check">
               <label className="form-check-label" htmlFor="gridCheck">
-              <input className="form-check-input" type="checkbox" id="gridCheck" required />              
+                <input className="form-check-input" type="checkbox" required />
                 I agree to Elite's Ts&Cs
               </label>
             </div>

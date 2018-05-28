@@ -23,75 +23,72 @@ export class Painting extends Component {
         <h1>PAINTINGS</h1>
         <div className="row">
           <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/ab.jpg" alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
           </div>
           <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/ah.jpeg" alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
+            
           </div>
           <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/ac.jpeg"  alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
+            
           </div>
         </div>
         <div className="row">
           <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/ad.jpg" alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
           </div>
           <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/ae.jpg"  alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
+            
           </div>
           <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/af.jpg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/ag.jpg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-          </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/ai.jpg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-          </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/aj.jpg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
           </div>
         </div>
         <div className="row">
           <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/an.jpeg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
           </div>
           <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/ap.jpg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
           </div>
           <div className="col-md-4">
-            <img className="card-img-top thumb" src="painting/aa.jpg" alt="Card image cap"></img>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-4">
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
+          </div>
+          <div className="col-md-4">
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
+            
+          </div>
+          <div className="col-md-4">
+          <img className="thumbnail" src="painting/aa.jpg" />
+            <a className="on-hover-details" href="/Buy1"></a>
           </div>
         </div>
         <Footer/>

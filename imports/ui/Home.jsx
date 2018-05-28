@@ -10,8 +10,7 @@ import { Footer } from '/imports/ui/Footer.jsx';
 import { SearchCarousel } from '/imports/ui/search.jsx';
 import { Pops } from '/imports/ui/Pops.jsx';
 import { Newartist } from '/imports/ui/Newartist.jsx';
-import { ProfilePage } from '/imports/ui/ProfilePage.jsx';
-
+  
 
 class Home extends Component {
   loggedIn = () => {
@@ -44,7 +43,6 @@ class Home extends Component {
         <Navbar2 />
         <Cards />
         <Featured />
-        {/* <ProfilePage/> */}
         <Footer />
       </div>
     )
@@ -52,7 +50,7 @@ class Home extends Component {
 }
 
 export default withTracker(() => {
-  Meteor.subscribe('search');
+  Meteor.subscribe('posts');
   return {
     posts: Posts.find().fetch(),
   }

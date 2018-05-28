@@ -56,12 +56,19 @@ a:hover{
   font-size: 30px;
   outline-color: transparent;
   border: 1px solid white;
-  border-radius: 15px;
+  border-radius: 25px;
   height: 50px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   padding-left: 7px;
   padding-right: 7px;
+  transition: .3s;
+}
+
+#search-bar:focus{
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+  
 }
 
 .search-button{
@@ -203,7 +210,8 @@ button:focus {outline:0;}
  left: 50%;
  transform: translate(-50%, -50%);
  padding: 10px;
- margin-right: 10px
+ margin-right: 10px;
+
 }
 
 label{
@@ -429,7 +437,7 @@ input[type=file]{
 }
 
 .pad{
-  padding: 50px;
+  padding: 10px;
 }
 
 .nav-img{
@@ -443,23 +451,51 @@ input[type=file]{
 }
 
 .thumbnail{
-  z-index: 1;
+  position: relative;
+  z-index: -1;
   height: 450px;
   width: 350px;
 }
 
 .on-hover-details{
   position: absolute;
-    left:0px;
-    top: 0px;
+  left:0px;
+  top: 0px;
   z-index: 10;
   opacity: 0;
   color: white;
-  height: 450px;
   width: 350px;
+  height: 450px;
+  margin: auto;
+  z-index: 0;
   transition: 0.3s;
-  padding-top:450px; 
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.3)
+}
+
+.on-hover-details:hover{
+  opacity: 1;
+}
+
+.hover-item-one{
+  position: absolute;
+  /* margin-top: 350px;   */
+  top:380px;
+  right: 40px;
+  color: white;
+}
+
+.hover-item-two{
+  position: absolute;
+  top:380px;
+  left: -10px;
+  color: white;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5)
+  
+}
+
+.hover-item:hover{
+  opacity: 1;
 }
 
 .on-hover-details:hover{
@@ -611,4 +647,28 @@ input[type=file]{
 .access-denied-links{
   padding: 0 10px 0 10px;
   font-weight: bold;
+}
+
+.artist-links{
+  height: 50px;
+  width: 120px; 
+  margin-left:20px; 
+}
+
+.small-img{
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+}
+
+.pad2{
+  /* margin-left:10px ; */
+  padding: 5px;
+}
+.fa-heart{
+  transition: .3s;
+}
+
+.fa-heart:hover{
+  color: red;
 }

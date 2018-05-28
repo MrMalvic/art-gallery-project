@@ -2,6 +2,8 @@ import {Meteor} from 'meteor/meteor';
 import {Carousel} from './carousel.jsx';
 import React, {Component} from 'react';
 import NavBar1 from '/imports/ui/invisNavBar/NavBar1.jsx';
+import { Accounts } from 'meteor/accounts-base';
+import route from '/imports/routing/router.js';
 
 export class SearchCarousel extends Component {
 
@@ -11,12 +13,20 @@ export class SearchCarousel extends Component {
       "value": "text"
     });
   }
+  
  }
 
  handleSearch = (e) => {
    e.preventDefault();
-  route.go('/searchResults')
- }
+  //  Meteor.call('findUserByUsername', 'username', findUserByUsername)
+  //  function findUserByUsername(error,users){
+  //   console.log(users);
+    var user = Meteor.users.findOne({"name": this.users.name});
+    console.log(user)
+   }
+ 
+
+ 
 
   render() {
     return (

@@ -19,12 +19,15 @@ export class Upload extends Component {
         const desc = target.desc.value;
    
     const post = {
-        _id,
         name,
         category,
-        location
+        location,
+        phoneNumber,
+        price,
+        desc,
     }
     Posts.insert(post);
+    route.go('/Buy1')
     }
 
     

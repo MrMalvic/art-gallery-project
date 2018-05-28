@@ -1,11 +1,12 @@
 import { Mongo } from 'meteor/mongo';
+import { WSAEUSERS } from 'constants';
 
-const Artists = new Mongo.Collection( 'artists' );
+  Artists = new Mongo.Collection( 'artists' );
 export default Artists;
 
 
 if ( Meteor.isServer ) {
-  Artists._ensureIndex( { name: 1, year: 1 } );
+  Artists._ensureIndex( { name: 1 } );
 }
 
 Artists.allow({
@@ -19,16 +20,3 @@ Artists.deny({
   update: () => true,
   remove: () => true
 });
-
-let AlbumsSchema = new SimpleSchema({
-  'name': {
-    type: String,
-    label: 'The name of the artist'
-  },
-  'year': {
-    type: String,
-    label: 'The year this album was released.'
-  }
-});
-
-Artists.attachSchema( ArtistsSchema );

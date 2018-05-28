@@ -30,7 +30,7 @@ logUserIn = e => {
 
     return (
       <div className="App">
-      <div id="snackbar2">Incorrect information entered.</div>  
+      <div id="snackbar2">User Does not exist.</div>  
         <div className="mask3">
         <img src="img5.jpg" className="artist-signup-img"/>
         </div>
@@ -40,16 +40,16 @@ logUserIn = e => {
         <div className="Container">
          <div className="row justify-content-center">
           <form onSubmit={this.logUserIn} className="artist-signup-form container-fluid">
-          <h1 className="artist-reg">Welcome back</h1>
+          <h1 className="artist-reg">Welcome back!</h1>
             <div className="login">
-              <label htmlFor="Email">Email</label><br/>
-              <input type="text" className="form-control2" name="email" id="Email" placeholder="Email" />
+              <label htmlFor="Email">Email or Username</label><br/>
+              <input type="text" className="form-control2" name="email" id="Email" placeholder="Email or Username" />
             </div>
             <div className="login">
               <label htmlFor="inputPassword">Password</label><br/>
               <input type="password" className="form-control2" name="password" id="inputPassword" placeholder="Password" />
             </div>
-            <p className="artist-reg">Forgot your password? click <a href="#" className="here">here</a> to reset it.</p>
+            <p className="artist-reg pad">Forgot your password? click <a href="#" className="here">here</a> to reset it.</p>
             <button type="submit" className="btn btn-primary">LogIn</button>
           </form>
         </div>
