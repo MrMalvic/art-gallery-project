@@ -478,7 +478,6 @@ input[type=file]{
 
 .hover-item-one{
   position: absolute;
-  /* margin-top: 350px;   */
   top:380px;
   right: 40px;
   color: white;
@@ -662,7 +661,6 @@ input[type=file]{
 }
 
 .pad2{
-  /* margin-left:10px ; */
   padding: 5px;
 }
 .fa-heart{
