@@ -446,8 +446,11 @@ input[type=file]{
 
 .hover-over-imgs{
   position: relative;
-  margin: 15px 15px;
-    
+  margin: 15px auto 15px auto;
+}
+
+.hover-over-imgs:hover{
+  cursor: pointer;
 }
 
 .thumbnail{
@@ -650,8 +653,8 @@ input[type=file]{
 
 .artist-links{
   height: 50px;
-  width: 120px; 
-  margin-left:20px; 
+    width: 100px;
+    margin-left: 15px; 
 }
 
 .small-img{
@@ -665,8 +668,4 @@ input[type=file]{
 }
 .fa-heart{
   transition: .3s;
-}
-
-.fa-heart:hover{
-  color: red;
 }

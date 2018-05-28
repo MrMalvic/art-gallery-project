@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import React, { Component } from 'react';
 import { Navbar2 } from '/imports/ui/Navbar2.jsx';
 import { Footer } from '/imports/ui/Footer.jsx';
+import route from '/imports/routing/router.js';
 
 
 
@@ -16,82 +17,59 @@ export class Craft extends Component {
     route.go('/Pops');
   }
 
+  linkToBuy = (e) =>{
+    e.preventDefault();
+    route.go('/Buy1')
+  }
+  
   render() {
     return (
 
       <div className="App">
         <Navbar2 />
-        <h1>CRAFTS</h1>
+        <h1>CRAFTS</h1><hr/>
         <div className="row">
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/let.jpeg" alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+        <div className=" hover-over-imgs">
+            <img className="thumbnail" src="craft/awes.jpeg" />
+            <div className=" on-hover-details" href="/Buy1" onClick={this.linkToBuy} >
+              <a onClick={this.liker} ><i id="like" className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>
           </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/awes.jpeg" alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="craft/cool.jpeg" />
+            <div className=" on-hover-details" href="/Buy1" onClick={this.linkToBuy} >
+              <a onClick={this.liker} ><i id="like" className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>
           </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/super.jpeg" alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="craft/eat.jpeg" />
+            <div className=" on-hover-details" href="/Buy1" onClick={this.linkToBuy} >
+              <a onClick={this.liker} ><i id="like" className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/less.jpeg" alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="craft/great.jpeg" />
+            <div className=" on-hover-details" href="/Buy1" onClick={this.linkToBuy} >
+              <a onClick={this.liker} ><i id="like" className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>
           </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/inde.jpeg" width="20%" height="80%" alt="Card image cap"></img>
-            <br>
-            </br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="craft/impo.jpeg" />
+            <div className=" on-hover-details" href="/Buy1" onClick={this.linkToBuy} >
+              <a onClick={this.liker} ><i id="like" className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>
           </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/toot.jpeg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/great.jpeg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-          </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/impo.jpeg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-          </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/more.jpeg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/cool.jpeg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-          </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/sir.jpeg" alt="Card image cap"></img>
-            <br></br>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
-          </div>
-          <div className="col-md-4">
-            <img className="card-img-top thumb" src="craft/eat.jpeg" alt="Card image cap"></img>
-            <a className="btn btn-success" href="/buy1"><h5>Buy</h5></a>
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="craft/inde.jpeg" />
+            <div className=" on-hover-details" href="/Buy1" onClick={this.linkToBuy} >
+              <a onClick={this.liker} ><i id="like" className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>
           </div>
         </div>
         <Footer />
