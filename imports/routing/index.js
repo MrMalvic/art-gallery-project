@@ -8,12 +8,14 @@ import {Craft} from '/imports/ui/Craft.jsx';
 import {ArtSignUp} from '/imports/ui/invisNavBar/ArtSignUp.jsx';
 import LogIn from '/imports/ui/invisNavBar/LogIn.jsx';
 import {UserSign} from'/imports/ui/invisNavBar/UserSign.jsx';
-import { ProfilePage } from '/imports/ui/ProfilePage.jsx';
+import { ProfilePage } from '/imports/ui/invisNavBar/ProfilePage.jsx';
 import { Pops } from  '/imports/ui/Pops.jsx';
 import {Buy1} from '/imports/ui/Buy1.jsx';
 import { Scul1 } from '/imports/ui/Scul1.jsx';
 import { Upload } from '/imports/ui/invisNavBar/Upload.jsx';
 import { Meteor } from 'meteor/meteor';
+
+
 
 
 

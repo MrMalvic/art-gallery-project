@@ -28,3 +28,7 @@ accounts-ui
 accounts-base
 jquery
 meteorhacks:search-source
+ostrio:files
+check
+ejson
+autopublish
