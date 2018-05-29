@@ -29,45 +29,33 @@ export class About extends Component {
         </div>
         <h1 className="meet-the-team">Meet Our Team</h1>
 
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
 
-            <div className="col-md-4 one">
-              <img className="img" src="http://via.placeholder.com/200x200" alt="Card image cap"></img>
-            </div>
-            <br></br>
-            <div className="col-md-8 about-text">
+            <div className="col-md-6">
+              <img className="img" src="http://via.placeholder.com/200x200" alt="Card image cap"/ >
               <h5>Malumbo Mutale</h5>
               <p>Senior Developer/Designer.</p>
-              <a rel="stylesheet" className="btn btn-primary" href="https://mailto:chandacharles904@gmail.com">Email:</a>
             </div>
 
-            <div className="col-md-8 about-text">
+            <div className="col-md-6">
+            <img className="img" src="http://via.placeholder.com/200x200" alt="Card image cap"></img>
               <h5>Andrew Khondowe</h5>
               <p>Front-End full Developer.</p>
-              <a rel="stylesheet" className="btn btn-primary" href="https://mailto:a@gmail.com">Email:</a>
-            </div>
-            <div className="col-md-4">
-              <img className="img" src="http://via.placeholder.com/200x200" alt="Card image cap"></img>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-6">
               <img className="img" src="http://via.placeholder.com/200x200" alt="Card image cap"></img>
-            </div>
-            <div className="col-md-8 about-text">
               <h5>Mafwolisha Likelenge</h5>
               <p>Manager/Developer.</p>
-              <a rel="stylesheet" className="btn btn-primary" href="https://mailto:mafwolikelenge@gmail.com">Email:</a>
             </div>
 
-            <div className="col-md-8 about-text">
+            <div className="col-md-6">
+             <img className="img" src="img4.jpeg" alt="Card image cap"></img>
               <h5>Charles Chanda</h5>
               <p>FullStack Developer.</p>
-              <a rel="stylesheet" className="btn btn-primary" href="https://mailto:@gmail.com">Email:</a>
             </div>
-            <div className="col-md-4">
-              <img className="img" src="img4.jpeg" alt="Card image cap"></img>
-            </div>
+
           </div>
         </div>
         <Footer/>

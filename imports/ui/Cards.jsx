@@ -9,53 +9,69 @@ import Posts from '../api/blog/collections.js';
 
 
 export class Cards extends Component {
+
+  linkToBuy = (e) =>{
+    e.preventDefault();
+    route.go('/Buy1')
+  }
+  
+   liker = (e) => {
+    e.preventDefault();
+    var x = document.getElementById("like");
+    if (x.style.color === "white") {
+        x.style.color = "red";
+        x.title = "unlike";
+    } else {
+        x.style.color = "white";
+        x.title = "like";
+    }
+}
+
   render() {
     return (
-      <div className="App container" id="cards" >
+      <div className="App container">
         <div className="row">
-          <div className="col-md-4 card padding">
-            <img className="card-img-top" src="images/g.jpg"/>
-            <div className="card-body">
-              <h5 className="card-title"> By Leonardo da Vinci</h5>
-              <p>Leonardo da Vinci was a leading artist and intellectual of the Italian Renaissance who's known for his enduring works "The Last Supper" and the "Mona Lisa."</p>
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="painting/aa.jpg" />
+            <div className=" on-hover-details" href="/Buy1" onClick={this.linkToBuy} >
+              <a onClick={this.liker} ><i id="like" className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
             </div>
           </div>
-          <div className="col-md-4 card padding">
-            <img className="card-img-top" src="images/b.jpg"/>
-            <div className="card-body">
-              <h5 className="card-title"> By Raphael's La Fornarina </h5>
-              <p>was an Italian painter and architect of the High Renaissance. His work is admired for its clarity of form, ease of composition, and visual achievement of the Neoplatonic.</p>
-            </div>
-          </div>
-          <div className="col-md-4 card padding">
-            <img className="card-img-top" src="images/h .jpg"/>
-            <div className="card-body">
-              <h5 className="card-title">By Vincent van Gogh</h5>
-              <p>Vincent Willem van Gogh  was a post-impressionist painter whose work, notable for its beauty, emotion and color, highly influenced 20th-century art.</p>
-            </div>
-          </div>
-          <div className="col-md-4 card padding">
-            <img className="card-img-top" src="http://via.placeholder.com/350x450"/>
-            <div className="card-body">
-              <h5 className="card-title">by <a href="/scul1">Artist</a></h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quasi voluptas eius a itaque excepturi unde eligendi inventore impedit delectus, hic fugiat quo, quis nulla similique incidunt quidem voluptatibus. Cumque?</p>
-            </div>
-          </div>
-          <div className="col-md-4 card padding">
-            <img className="card-img-top" src="http://via.placeholder.com/350x450"/>
-            <div className="card-body">
-              <h5 className="card-title">by <a href="/scul1">Artist</a></h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quasi voluptas eius a itaque excepturi unde eligendi inventore impedit delectus, hic fugiat quo, quis nulla similique incidunt quidem voluptatibus. Cumque?</p>
-            </div>
-          </div>
-          <div className="col-md-4 card padding">
-            <img className="card-img-top" src="http://via.placeholder.com/350x450"/>
-            <div className="card-body">
-              <h5 className="card-title">by <a href="/scul1">Artist</a></h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quasi voluptas eius a itaque excepturi unde eligendi inventore impedit delectus, hic fugiat quo, quis nulla similique incidunt quidem voluptatibus. Cumque?</p>
-            </div>
-          </div>
-          </div>
+
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="painting/ab.jpg" />
+            <div className=" on-hover-details" onClick={this.linkToBuy}>
+              <a href="#"><i className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>          </div>
+
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="painting/ac.jpeg" />
+            <div className=" on-hover-details" onClick={this.linkToBuy}>
+              <a href="#"><i className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>          </div>
+
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="painting/ad.jpg" />
+            <div className=" on-hover-details" onClick={this.linkToBuy}>
+              <a href="#"><i className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>          </div>
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="painting/ae.jpg" />
+            <div className=" on-hover-details" onClick={this.linkToBuy}>
+              <a href="#"><i className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>          </div>
+          <div className=" hover-over-imgs">
+            <img className="thumbnail" src="painting/af.jpg" />
+            <div className=" on-hover-details" onClick={this.linkToBuy}>
+              <a href="#"><i className="fas fa-heart fa-2x hover-item-one" title="i like this"></i></a>
+              <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            </div>          </div>
+        </div>
       </div>
 
 

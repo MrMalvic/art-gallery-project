@@ -10,6 +10,7 @@ import { Session } from 'meteor/session';
 
 
 export class Upload extends Component {
+
     constructor(props){
     super(props);
     this.state = {
@@ -42,6 +43,7 @@ export class Upload extends Component {
       createdAt: new Date(),
       createdBy:currentUserId,
       paid: true
+
     }
     Meteor.call('posts.create',piece );
     console.log('piece created')

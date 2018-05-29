@@ -56,10 +56,10 @@ export class ArtSignUp extends Component {
                 <input type="password" className="form-control" name="confirmPassword" id="inputConfirm" placeholder="Confirm Password" required />
               </div>
               <div className="form-group col-md-6">
-                <input type="text" className="form-control" name="location" id="inputCity" placeholder="Your Location" />
+                <input type="text" className="form-control" name="location" id="inputCity" placeholder="Your Location" required/>
               </div>
               <div className="form-group col-md-6">
-                <select name="category" id="inputCategory" className="form-control">
+                <select name="category" id="inputCategory" className="form-control" required>
                   <option>Choose Category</option>
                   <option>Crafts</option>
                   <option>Drawings</option>
@@ -70,7 +70,7 @@ export class ArtSignUp extends Component {
             <div className="form-group">
               <div className="form-check">
                 <label className="form-check-label" htmlFor="gridCheck">
-                  <input className="form-check-input" type="checkbox" id="gridCheck" />
+                  <input className="form-check-input" type="checkbox" id="gridCheck" required />
                   I agree to Elite's Ts&Cs
                 </label>
               </div>
