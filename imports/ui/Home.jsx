@@ -53,11 +53,7 @@ Developing new innovations while keeping cost effective with utmost customer sat
 Why with Elite Arts
  -Innovative Designs
  -Fast Delivery with buyer friendly prices
- -Eco friendly Top finishing Coats
- -No compromise with the quality
-
-
-</p>
+ -No compromise with the quality..</p>
         <Cards />
         <Featured />
         <Footer />
