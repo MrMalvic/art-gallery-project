@@ -34,7 +34,7 @@ export class UserSign extends Component {
     }
 
 
-
+    
     const user = {
       email,
       username,
@@ -64,22 +64,22 @@ export class UserSign extends Component {
           <h1 className="artist-reg">Join Elite Arts</h1>
           <p className="artist-reg">Already have an account? click <a href="/LogIn" className="here">here</a> to Login.</p>
           <div className="form-group col-md-6">
-            <input value="Malumbo Mutale" type="text" className="form-control" name="name" placeholder="Full Name" required />
+            <input type="text" className="form-control" name="name" placeholder="Full Name" required />
           </div>
           <div className="form-group col-md-6">
-            <input value="mutalevictor6@gmail.com" type="email" className="form-control" name="email" placeholder="Email" required />
+            <input type="email" className="form-control" name="email" placeholder="Email" required />
           </div>
           <div className="form-group col-md-6">
-            <input value="Mr.Malvic" type="text" className="form-control" name="username" placeholder="Username" required />
+            <input type="text" className="form-control" name="username" placeholder="Username" required />
           </div>
           <div className="form-group col-md-6">
-            <input value="test123" type="password" className="form-control" name="password" placeholder="Password" required />
+            <input type="password" className="form-control" name="password" placeholder="Password" required />
           </div>
           <div className="form-group col-md-6">
-            <input value="test123" type="password" className="form-control" name="confirmPassword" placeholder="Confirm Password" required />
+            <input type="password" className="form-control" name="confirmPassword" placeholder="Confirm Password" required />
           </div>
           <div className="form-group col-md-6">
-            <input value="lusaka,zambia" type="text" className="form-control" name="location" placeholder="Location" id="inputCity" required />
+            <input type="text" className="form-control" name="location" placeholder="Location" id="inputCity" required />
           </div>
           <div className="form-group">
             <div className="form-check">
