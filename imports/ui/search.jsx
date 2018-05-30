@@ -18,11 +18,17 @@ export class SearchCarousel extends Component {
 
  handleSearch = (e) => {
    e.preventDefault();
-  //  Meteor.call('findUserByUsername', 'username', findUserByUsername)
-  //  function findUserByUsername(error,users){
-  //   console.log(users);
-    var user = Meteor.users.findOne({"name": this.users.name});
-    console.log(user)
+   const { target } = e;
+   const search = target.search.value;
+   const result = document.getElementById('search-result')
+   $("#search-result").hide()
+   if(search){
+    result.style.display = "none";
+   }
+   else{
+    result.style.display = "block";
+     console.log('NOt Found')
+   }
    }
  
 
@@ -33,8 +39,8 @@ export class SearchCarousel extends Component {
       <div className="carousel-search">
         <NavBar1/>
         <form onSubmit={this.handleSearch} >
-        <input type="search" id="search-bar" placeholder="Search..."/>
-        <button type="submit"className="search-button" ><i className="fas fa-search"></i></button>
+        <input type="search" id="search-bar" name="search" placeholder="Search..."/>
+        <button type="submit"className="search-button"><i className="fas fa-search"></i></button>
         </form>
         <Carousel/>
       </div>
