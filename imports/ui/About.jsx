@@ -51,7 +51,7 @@ export class About extends Component {
             </div>
 
             <div className="col-md-6">
-             <img className="img" src="img4.jpeg" alt="Card image cap"></img>
+             <img className="img" src="Developers-code-programming.jpg" alt="Card image cap"></img>
               <h5>Charles Chanda</h5>
               <p>FullStack Developer.</p>
             </div>
