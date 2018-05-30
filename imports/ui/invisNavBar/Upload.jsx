@@ -1,38 +1,106 @@
 import { Meteor } from 'meteor/meteor';
 import React, { Component } from 'react';
 import route from '/imports/routing/router.js';
+import {withTracker} from 'meteor/react-meteor-data';
 import NavBar1 from '/imports/ui/invisNavBar/NavBar1.jsx';
 import Posts from '/imports/api/blog/collections.js';
+import FileUpload from './uploadFile.jsx';
+import {UserFiles} from '../../api/upload/collections.js';
+import { Session } from 'meteor/session';
 
 
 export class Upload extends Component {
 
-    getUploadData = (e) => {
-        e.preventDefault();
-        const { target } = e;
-        const name = target.name.value;
-        const file = target.file.value;
-        const category = target.category.value;
-        const location = target.location.value;
-        const phoneNumber = target.phoneNumber.value;
-        const price = target.price.value;
-        const desc = target.desc.value;
-   
-    const post = {
-        name,
-        category,
-        location,
-        phoneNumber,
-        price,
-        desc,
-    }
-    Posts.insert(post);
-    route.go('/')
+    constructor(props){
+    super(props);
+    this.state = {
+      imageId:'',
+      pieceName:'',
+      category:'',
+      location:'',
+      phoneNumber:'',
+      price:'',
+      description:'',
+      file: '',
+      imagePreviewUrl: '',
     }
 
-    
+  }
+
+  handleSubmit=(e)=>{
+    e.preventDefault();
+    const attempt = Session.get('imageId');
+    const artist = Session.get('profile');
+    const currentUserId = Meteor.userId()
+    const piece = {
+      imageId: attempt,
+      owner: artist,
+      pieceName:this.state.pieceName,
+      category: this.state.category,
+      location:this.state.location,
+      phoneNumber:this.state.phoneNumber,
+      price:this.state.price,
+      description:this.state.description,
+      createdAt: new Date(),
+      createdBy:currentUserId,
+      paid: true
+
+// //  additions
+//     Posts.insert(post);
+//     route.go('/')
+
+    }
+    Meteor.call('posts.create',piece );
+    console.log('piece created')
+    route.go('/');
+  }
+    handlePieceNameChange = (e) => {
+    this.setState({
+     pieceName: e.target.value
+    })
+  }
+
+  
+  handleCategoryChange = (e) => {
+    this.setState({
+      category: e.target.value
+    })
+  }
+
+  
+  handleLocationChange = (e) => {
+    this.setState({
+      location: e.target.value
+    })
+  }
+
+  handlephoneNumberChange = (e) => {
+    this.setState({
+      phoneNumber: e.target.value
+    })
+  }
+
+  handlepriceChange = (e) => {
+    this.setState({
+      price: e.target.value
+    })
+  }
+
+  handleDescriptionChange = (e) => {
+    this.setState({
+      description: e.target.value
+    })
+  }
+        
 
     render() {
+            let {imagePreviewUrl} = this.state;
+    let $imagePreview = null;
+    if (imagePreviewUrl) {
+      $imagePreview = (<img src={imagePreviewUrl} style={{width:100+"px",height:100+"px"}}/>);
+    } else {
+      $imagePreview = (<div className="previewText">Please select an Image for Preview<br/></div>);
+    }
         return (
             <div className="App">
                 <div className="mask3">
@@ -40,23 +108,17 @@ export class Upload extends Component {
                 </div>
                 <NavBar1 />
                 <div>
-                    <form onSubmit={this.getUploadData} className="artist-signup-form">
+                    <form onSubmit={this.handleSubmit} className="artist-signup-form">
                         <h1 className="upload-work App">Upload your work</h1>
-
-                            <div className="form-group col-md-6">
-                                <input type="text" name="name" placeholder="Name of piece" className="form-control2" />
+                        <FileUpload fileName = {this.state.pieceName} />
+                            <div className="imgPreview">
                             </div>
-
                             <div className="form-group col-md-6">
-                                <div className="upload-btn-wrapper">
-                                    <button className="up-btn">upload a picture</button>
-                                    <input type="file" name="file" className="form-control2" />
-                                </div>
-                            </div>
-
+                                    <input onChange={this.handlePieceNameChange} type="text" name="pieceName" placeholder="Name of piece" className="form-control2" required/>
+                                    </div>  
                             <div className="form-group col-md-6">
-                                <select name="category" id="inputCategory" className="form-control2">
-                                    <option>Choose Category</option>
+                                <select onChange={this.handleCategoryChange} name="category" id="inputCategory" className="form-control2">
+                                    <option defaultValue> Choose Category</option>
                                     <option>Crafts</option>
                                     <option>Drawings</option>
                                     <option>Paintings</option>
@@ -65,18 +127,18 @@ export class Upload extends Component {
                             </div>
 
                             <div className="form-group col-md-6">
-                                <input type="text" name="location" placeholder="Location    " className="form-control2" />
+                                <input onChange={this.handleLocationChange} type="text" name="location" placeholder="Location    " className="form-control2" />
                             </div>
 
                             <div className="form-group col-md-6">
-                                <input type="number" name="phoneNumber" placeholder="Phone number" className="form-control2" />
+                                <input onChange={this.handlephoneNumberChange} type="number" name="phoneNumber" placeholder="Phone number" className="form-control2" />
                             </div>
 
                             <div className="form-group col-md-6">
-                                <input type="number" name="price" placeholder="Price" className="form-control2" />
+                                <input onChange={this.handlePriceChange} type="number" name="price" placeholder="Price" className="form-control2" />
                             </div>
                         <div className="App">
-                            <textarea className="form-control2 textarea" placeholder="description" name="desc" />
+                            <textarea onChange={this.handleDescriptionChange} className="form-control2 textarea" placeholder="description" name="desc" />
                         </div>
                         <button type="submit" className="btn btn-primary App ">Post</button>
                     </form>
@@ -87,3 +149,43 @@ export class Upload extends Component {
         )
     }
 }
+<<<<<<< HEAD
+
+
+export default withTracker(() =>{
+  Meteor.subscribe('files.all');
+  return{
+    files : UserFiles.find({}, {sort: {name: 1}}).fetch(),
+  }
+
+// additions
+
+})(Upload);
+
+var clock = new Date({
+    el: '#clock',
+    data: {
+        time: '',
+        date: ''
+    }
+});
+
+var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+var timerID = setInterval(updateTime, 1000);
+updateTime();
+function updateTime() {
+    var cd = new Date();
+    clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
+    clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+};
+
+function zeroPadding(num, digit) {
+    var zero = '';
+    for(var i = 0; i < digit; i++) {
+        zero += '0';
+    }
+    return (zero + num).slice(-digit);
+}
+
+=======
+>>>>>>> 299125418df5eb3f61a59c604deb22013c0381cc

@@ -8,9 +8,11 @@ import { Navbar2a } from '/imports/ui/Navbar2a.jsx';
 import { Featured } from '/imports/ui/Featured.jsx';
 import { Footer } from '/imports/ui/Footer.jsx';
 import { SearchCarousel } from '/imports/ui/search.jsx';
+// import { ProfilePage }  from '/imports/ui/invisNavBar/ProfilePage.jsx';
 import { Pops } from '/imports/ui/Pops.jsx';
 import { Newartist } from '/imports/ui/Newartist.jsx';
   
+
 
 class Home extends Component {
   loggedIn = () => {
@@ -57,6 +59,7 @@ Why with Elite Arts
         <Cards />
         <Featured />
         <Footer />
+
       </div>
     )
   }

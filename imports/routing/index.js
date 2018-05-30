@@ -20,6 +20,8 @@ import { searchResults } from '/imports/ui/searchResults.jsx';
 
 
 
+
+
 route('/', Home);
 // if( Meteor.user()){
 // }
