@@ -144,10 +144,10 @@ export class Upload extends Component {
     }
 }
 
-// export default withTracker(() =>{
-//   Meteor.subscribe('files.all');
-//   return{
-//     files : UserFiles.find({}, {sort: {name: 1}}).fetch(),
-//   }
+export default withTracker(() =>{
+  Meteor.subscribe('files.all');
+  return{
+    files : UserFiles.find({}, {sort: {name: 1}}).fetch(),
+  }
 
-// })(Upload);
+})(Upload);

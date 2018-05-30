@@ -28,11 +28,8 @@ accounts-ui
 accounts-base
 jquery
 meteorhacks:search-source
-<<<<<<< HEAD
 ostrio:files
 check
 ejson
-=======
 aldeed:simple-schema
->>>>>>> ca4d4e46a095ef7420f6fa6625f93deadcdf7da5
-autopublish
+#autopublish

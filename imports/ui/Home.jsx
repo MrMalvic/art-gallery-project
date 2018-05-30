@@ -39,13 +39,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-
-      <SearchCarousel/>
-      <Navbar2/>
-      <Cards/>
-      <Featured/>    
-      <Footer/>
-
         <div id="snackbar2">You're logged out.</div>
         <div id="snackbar">You're logged in.</div>
         <SearchCarousel />
