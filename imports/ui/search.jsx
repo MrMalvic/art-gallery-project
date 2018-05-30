@@ -21,14 +21,12 @@ export class SearchCarousel extends Component {
    const { target } = e;
    const search = target.search.value;
    const result = document.getElementById('search-result')
-   $("#search-result").hide()
-   if(search){
-    result.style.display = "none";
-   }
-   else{
-    result.style.display = "block";
-     console.log('NOt Found')
-   }
+     Accounts.findUserByUsername = function (username) {
+    return Accounts._findUserByQuery({
+      username: username
+    });
+    console.log(username)
+  };
    }
  
 

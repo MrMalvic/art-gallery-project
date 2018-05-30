@@ -4,7 +4,7 @@ import route from '/imports/routing/router.js';
 import { withTracker } from 'meteor/react-meteor-data';
 import Posts from '../api/blog/collections.js';
 import { Cards } from './Cards.jsx';
-import { Navbar2 } from '/imports/ui/Navbar2.jsx';
+import { Navbar2a } from '/imports/ui/Navbar2a.jsx';
 import { Featured } from '/imports/ui/Featured.jsx';
 import { Footer } from '/imports/ui/Footer.jsx';
 import { SearchCarousel } from '/imports/ui/search.jsx';
@@ -40,7 +40,9 @@ class Home extends Component {
         <div id="snackbar2">You're logged out.</div>
         <div id="snackbar">You're logged in.</div>
         <SearchCarousel />
-        <Navbar2 />
+        <Navbar2a />
+        <h1 className="App pad" id="destination" >Welcome to elite arts</h1>
+        <p className="App pad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam excepturi quidem, eveniet eos, sit similique suscipit odit aperiam, earum itaque aliquam delectus architecto optio eum. Aliquid porro esse aut adipisci!</p>
         <Cards />
         <Featured />
         <Footer />
