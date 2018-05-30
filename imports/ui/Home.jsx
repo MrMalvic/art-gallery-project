@@ -42,11 +42,11 @@ class Home extends Component {
         <SearchCarousel />
         <Navbar2a />
         <h1 className="App pad" id="destination" >Welcome to elite arts</h1>
-        <p className="App pad">Elite Arts is one the fastest rising Furniture Company in Home Décor Space of India. Elite Arts & Crafts is whole heartedly devoted to provide most stylish, luxurious and affordable furnishing with the team of adapt and skilled furniture experts. We craft to get you the perfection and thus satisfaction.
+        <p className="App pad">Elite Arts is one the fastest rising arts Company in Home Lusaka Space of Zambia. Elite Arts is whole heartedly devoted to provide most stylish, luxurious and affordable furnishing with the team of adapt and skilled arts experts. We do craft,sculpture,drawing and painting to get you the perfection and thus satisfaction.
 
-Elite Arts started its operations in 29th February 2018, supplying hardwood furniture to overseas market with the team of dedicated staff and production team.
+Elite Arts started its operations in 29th February 2018, supplying hardwood sculptures to overseas market with the team of dedicated staff and production team.
 
-A high quality and perfectly finished furniture makes your world beautiful.
+A high quality and perfectly finished elite arts makes your world beautiful.
 
 Developing new innovations while keeping cost effective with utmost customer satisfaction is our aim.
 
@@ -54,8 +54,7 @@ Why with Elite Arts
  -Innovative Designs
  -Fast Delivery with buyer friendly prices
  -Eco friendly Top finishing Coats
- -Customer Satisfaction through five star post shipment services
--No compromise with the quality
+ -No compromise with the quality
 
 
 </p>
