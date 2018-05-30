@@ -9,7 +9,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 export class SearchCarousel extends Component {
 
   componentDidMount() {
-    console.log(Meteor.users.find().fetch())
+    console.log(Meteor.user())
   }
 
   render() {
