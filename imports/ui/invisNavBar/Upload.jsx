@@ -11,22 +11,7 @@ import { Session } from 'meteor/session';
 
 export class Upload extends Component {
 
-    constructor(props){
-    super(props);
-    this.state = {
-      imageId:'',
-      pieceName:'',
-      category:'',
-      location:'',
-      phoneNumber:'',
-      price:'',
-      description:'',
-      file: '',
-      imagePreviewUrl: '',
-    }
-
-  }
-
+    
   handleSubmit=(e)=>{
     e.preventDefault();
     const attempt = Session.get('imageId');
@@ -44,15 +29,10 @@ export class Upload extends Component {
       createdAt: new Date(),
       createdBy:currentUserId,
       paid: true
-
-// //  additions
-//     Posts.insert(post);
-//     route.go('/')
-
     }
     Meteor.call('posts.create',piece );
     console.log('piece created')
-    route.go('/');
+    route.go('/Buy1');
   }
     handlePieceNameChange = (e) => {
     this.setState({
@@ -110,7 +90,7 @@ export class Upload extends Component {
                 <div>
                     <form onSubmit={this.handleSubmit} className="artist-signup-form">
                         <h1 className="upload-work App">Upload your work</h1>
-                        <FileUpload fileName = {this.state.pieceName} />
+                        <FileUpload className="white-text" fileName = {this.state.pieceName} />
                             <div className="imgPreview">
                             </div>
                             <div className="form-group col-md-6">

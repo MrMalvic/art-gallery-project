@@ -3,6 +3,6 @@ import Posts from '../collections.js';
 
 Meteor.publish('posts',()=>{
     
-        return Posts.find();
+        return Posts.find({});
 });
 

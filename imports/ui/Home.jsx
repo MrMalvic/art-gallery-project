@@ -34,7 +34,12 @@ class Home extends Component {
     else {
       this.loggedOut()
     }
+
+    const Id = Meteor.userId();
+    console.log(Id)
   }
+
+  
   
   render() {
     return (
@@ -44,7 +49,7 @@ class Home extends Component {
         <SearchCarousel />
         <Navbar2a />
         <h1 className="App pad" id="destination" >Welcome to elite arts</h1>
-        <p className="App pad">Elite Arts is one the fastest rising arts Company in Home Lusaka Space of Zambia. Elite Arts is whole heartedly devoted to provide most stylish, luxurious and affordable furnishing with the team of adapt and skilled arts experts. We do craft,sculpture,drawing and painting to get you the perfection and thus satisfaction.
+        <p className="App pad">{this.Id}Elite Arts is one the fastest rising arts Company in Home Lusaka Space of Zambia. Elite Arts is whole heartedly devoted to provide most stylish, luxurious and affordable furnishing with the team of adapt and skilled arts experts. We do craft,sculpture,drawing and painting to get you the perfection and thus satisfaction.
 
 Elite Arts started its operations in 29th February 2018, supplying hardwood sculptures to overseas market with the team of dedicated staff and production team.
 

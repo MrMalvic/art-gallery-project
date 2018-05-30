@@ -8,49 +8,25 @@ import { userInfo } from 'os';
 
 
 
-export class Buy1 extends Component {
-constructor(){
-  super();
-  this.state = {
-    name:'',
-    category:'',
-    price:'',
-    phone:"",
-    location:''
-  }
-}
+class Buy1 extends Component {
 
-  componentWillMount(){
-    this.setState({
-    name:'',
-    category:'',
-    price:'',
-    phone:"",
-    location:''
-    })
-    console.log(this.state);
-  }
-
-
-
-  render() {
-    return (
-      <div >
-        <Navbar2 />
-        <div className="container">
+  getAllItems = () => {
+    const posts = this.props.posts;
+    return posts.map((post) => (
+        <div key={posts._id} className="container">
           <div className="row">
             <div className="col-md-9 App details">
               <img className="buy-art details" src="http://via.placeholder.com/1024x720" />
             </div>
-            
+
             <div className="col-md-3 contact-info">
               <p>By <a href="/scul1"></a></p>
-              <a href="#"><i className="fas fa-user-plus"> Follow</i></a><hr/>
-              <p><strong>Name of piece: </strong>{this.state.name}</p>
-              <p><strong>Category: </strong>{this.state.category}</p>
-              <p><strong>Price: </strong>{this.state.price}</p>
-              <p><strong>Phone number: </strong>{this.state.phone}</p>
-              <p><strong>Location: </strong>{this.state.location} </p> <hr/>
+              <a href="#"><i className="fas fa-user-plus"> Follow</i></a><hr />
+              <p><strong>Name of piece: </strong>{posts.name}</p>
+              <p><strong>Category: </strong></p>
+              <p><strong>Price: </strong> K</p>
+              <p><strong>Phone number: </strong></p>
+              <p><strong>Location: </strong> </p> <hr />
               <h5 className="App">Contact the artist</h5>
             </div>
             <div className="col-md-12">
@@ -71,19 +47,39 @@ constructor(){
             </div>
           </div>
         </div>
-        <Footer />
-      </div>
-
-
-
-
+      
     )
+    )
+  }
+
+  
+
+  render() {
+    console.log(this.props.posts)
+    if (this.props.isDataReady) {
+      return (
+        <div >
+          <Navbar2 />
+             {this.getAllItems()}
+          <Footer />
+        </div>
+      )
+    }
+    else {
+      return (
+        <div className="App">
+           <h1>It aynt working bruh</h1>
+           
+        </div>
+      )
+    }
   }
 }
 
 export default withTracker(() => {
-  Meteor.subscribe(Posts);
+  let handle = Meteor.subscribe('posts')
   return {
-    posts: Posts.find({}).fetch(),
-  };
+    posts: Posts.find({}),
+    isDataReady: handle.ready(),
+  }
 })(Buy1);
