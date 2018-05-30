@@ -128,7 +128,7 @@ button:focus {outline:0;}
 
 .navbar-two{
   background-color: #e0e0e0;
-  position: sticky;
+  position: fixed;
   top:0;
   z-index: 20;
   width: 100%;
@@ -479,6 +479,24 @@ input[type=file]{
   opacity: 1;
 }
 
+.link-to-buy{
+  position: absolute;
+  left:0px;
+  top: 0px;
+  z-index: 10;
+  opacity: 0;
+  color: white;
+  width: 350px;
+  height: 450px;
+  margin: auto;
+  z-index: 0;
+  transition: 0.3s;
+}
+
+.link-to-buy:hover{
+  opacity: 1;
+}
+
 .hover-item-one{
   position: absolute;
   top:380px;
@@ -668,4 +686,8 @@ input[type=file]{
 }
 .fa-heart{
   transition: .3s;
+}
+
+#destination{
+  margin-top:10px;
 }

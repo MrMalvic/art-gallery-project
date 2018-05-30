@@ -24,6 +24,7 @@ export class Upload extends Component {
       file: '',
       imagePreviewUrl: '',
     }
+
   }
 
   handleSubmit=(e)=>{
@@ -43,6 +44,10 @@ export class Upload extends Component {
       createdAt: new Date(),
       createdBy:currentUserId,
       paid: true
+
+// //  additions
+//     Posts.insert(post);
+//     route.go('/')
 
     }
     Meteor.call('posts.create',piece );
@@ -138,11 +143,13 @@ export class Upload extends Component {
                         <button type="submit" className="btn btn-primary App ">Post</button>
                     </form>
                 </div>
+            
             </div>
 
         )
     }
 }
+
 
 export default withTracker(() =>{
   Meteor.subscribe('files.all');
@@ -150,4 +157,32 @@ export default withTracker(() =>{
     files : UserFiles.find({}, {sort: {name: 1}}).fetch(),
   }
 
+// additions
+
 })(Upload);
+
+var clock = new Date({
+    el: '#clock',
+    data: {
+        time: '',
+        date: ''
+    }
+});
+
+var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+var timerID = setInterval(updateTime, 1000);
+updateTime();
+function updateTime() {
+    var cd = new Date();
+    clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
+    clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+};
+
+function zeroPadding(num, digit) {
+    var zero = '';
+    for(var i = 0; i < digit; i++) {
+        zero += '0';
+    }
+    return (zero + num).slice(-digit);
+}
+
