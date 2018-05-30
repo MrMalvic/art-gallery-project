@@ -149,6 +149,7 @@ export class Upload extends Component {
         )
     }
 }
+<<<<<<< HEAD
 
 
 export default withTracker(() =>{
@@ -186,3 +187,5 @@ function zeroPadding(num, digit) {
     return (zero + num).slice(-digit);
 }
 
+=======
+>>>>>>> 299125418df5eb3f61a59c604deb22013c0381cc
