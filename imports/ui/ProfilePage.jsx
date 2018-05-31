@@ -40,10 +40,12 @@ export class ProfilePage extends Component {
         <div key = {post._id} className="card border-primary">
         <img className="card-img-top" src={link} style={{width: 100 + "%",height:200 + "px"}} alt="Card image cap"/>
         <div className="card-body">
-            <h5 className="card-title"><strong>Piece Name:</strong> {post.postName}</h5>
-            <h6 className="card-subtitle mb-2"><strong>Catergory:</strong> {post.postCategory}</h6>
-            <h6 className="card-subtitle mb-2"><strong>Price:</strong>K {posts.price}</h6>
-            <h6 className="card-subtitle mb-2"><strong>Description:</strong> {posts.description}</h6>
+            <h5 className="card-title"><strong>Piece Name:</strong> {post.pieceName}</h5>
+            <h6 className="card-subtitle mb-2"><strong>Catergory:</strong> {post.category}</h6>
+            <h6 className="card-subtitle mb-2"><strong>location:</strong> {post.location}</h6>
+            <h6 className="card-subtitle mb-2"><strong>phonenumber:</strong> {post.phoneNumber}</h6>
+            <h6 className="card-subtitle mb-2"><strong>Price:</strong>K {post.price}</h6>
+            <h6 className="card-subtitle mb-2"><strong>Description:</strong> {post.description}</h6>
           </div>
           <div className="card-footer">
           </div>
@@ -51,7 +53,7 @@ export class ProfilePage extends Component {
             <button className="btn btn-primary btn-block adding" data-toggle="modal" data-target="#exampleModalCenter">Get Item</button>
           </div>
           <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered" role="document">
+            {/* <div className="modal-dialog modal-dialog-centered" role="document">
               <div className="modal-content">
                 <div className="modal-body poster">
                 <h4>Contact Artist:</h4><br/>
@@ -63,7 +65,7 @@ export class ProfilePage extends Component {
                   <button type="button" className="btn btn-secondary adding" data-dismiss="modal">Close</button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       )

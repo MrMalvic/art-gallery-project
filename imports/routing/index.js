@@ -16,7 +16,7 @@ import { Upload } from '/imports/ui/invisNavBar/Upload.jsx';
 import { Meteor } from 'meteor/meteor';
 import { accessDenied } from '/imports/ui/accessDenied.jsx';
 import { searchResults } from '/imports/ui/searchResults.jsx';
-
+import Cards from '/imports/ui/Cards.jsx'
 
 
 
@@ -44,3 +44,4 @@ route('/buy1', Buy1);
 route('/scul1',Scul1);
 route('/upload',Upload);
 route('/searchResults', searchResults)
+route('/Cards', Cards)
