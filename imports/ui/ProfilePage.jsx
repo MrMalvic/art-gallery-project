@@ -41,37 +41,14 @@ export class ProfilePage extends Component {
       console.log(trial);
       const link = UserFiles.findOne({_id: trial}).link();
       return (
-        <div key = {post._id} className="card border-primary">
-        <img className="card-img-top" src={link} style={{width: 100 + "%",height:200 + "px"}} alt="Card image cap"/>
-        <div className="card-body">
-            <h5 className="card-title"><strong>Piece Name:</strong> {post.pieceName}</h5>
-            <h6 className="card-subtitle mb-2"><strong>Catergory:</strong> {post.category}</h6>
-            <h6 className="card-subtitle mb-2"><strong>location:</strong> {post.location}</h6>
-            <h6 className="card-subtitle mb-2"><strong>phonenumber:</strong> {post.phoneNumber}</h6>
-            <h6 className="card-subtitle mb-2"><strong>Price:</strong>K {post.price}</h6>
-            <h6 className="card-subtitle mb-2"><strong>Description:</strong> {post.description}</h6>
+        <div key={post._id} className=" hover-over-imgs">
+          <img className="thumbnail" src={link} />
+          <div className=" on-hover-details">
+            <a className="link-to-buy" href="/Buy1"></a>
+            {/* <a className="hover-item-one">buy</a> */}
+            <a className="artist-links hover-item-two" title="artist" href="/ProfilePage"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
           </div>
-          <div className="card-footer">
-          </div>
-          <div className="text-center">
-            <button className="btn btn-primary btn-block adding" onClick={this.toBuy}>Get Item</button>
-          </div>
-          <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            {/* <div className="modal-dialog modal-dialog-centered" role="document">
-              <div className="modal-content">
-                <div className="modal-body poster">
-                <h4>Contact Artist:</h4><br/>
-                 <h5>Artist Name: {post.owner}</h5>
-                 <h5>Email: {post.email}</h5>
-                 <h5>Number: {post.number}</h5>
-                </div>
-                <div className="modal-footer">
-                  <button type="button" className="btn btn-secondary adding" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div> */}
-          </div>
-        </div>
+        </div>  
       )
     }
   )
@@ -97,11 +74,11 @@ export class ProfilePage extends Component {
           <h4 className=""> </h4>
           <br />
           <br />
-          <div className="container">
-            <div className="card-columns">
-              {this.getAllPosts()}
-            </div>
+          <div className="App container-fluid ">
+          <div className="row">
+            {this.getAllPosts()}
           </div>
+        </div>
           <br /><br />
           <Footer />
         </div>
