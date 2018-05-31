@@ -41,7 +41,7 @@ export class Upload extends Component {
     }
     Meteor.call('posts.create',piece );
     console.log('piece created')
-    route.go('/Buy1');
+    route.go('/ProfilePage');
   }
     handlePieceNameChange = (e) => {
     this.setState({

@@ -30,6 +30,10 @@ export class ProfilePage extends Component {
 
   }
 
+  toBuy = () =>{
+    route.go('/Buy1')
+  }
+
   getAllPosts=()=>{
     const posts = this.props.posts;
     return posts.map((post) => {
@@ -50,7 +54,7 @@ export class ProfilePage extends Component {
           <div className="card-footer">
           </div>
           <div className="text-center">
-            <button className="btn btn-primary btn-block adding" data-toggle="modal" data-target="#exampleModalCenter">Get Item</button>
+            <button className="btn btn-primary btn-block adding" onClick={this.toBuy}>Get Item</button>
           </div>
           <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             {/* <div className="modal-dialog modal-dialog-centered" role="document">
@@ -105,14 +109,10 @@ export class ProfilePage extends Component {
     }
     else {
       return (
-        <div className="text-center">
-          <br />
-          <br />
-          <br />
-          <br />
-          <img src="images/loader.svg" className="App-logo" alt="logo" />
-          <h3 className="loading">Please wait a moment</h3>
-        </div>
+        <div>
+        
+        <div className="loader"></div>
+      </div>
       )
     }
   }

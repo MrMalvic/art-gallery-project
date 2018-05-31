@@ -15,20 +15,20 @@ class Buy1 extends Component {
 
   getAllPosts=()=>{
     const posts = this.props.posts;
+    const users = this.props.users;
+    
     return posts.map((post) => {
       const trial = post.imageId;
       console.log(trial);
       const link = UserFiles.findOne({_id: trial}).link();
       return (
-        <div key={post._id} className="container">
-        <div className="row">
-          <div className="col-md-9 App details">
+        <>
+        <div className="row" key={post._id}>
+          <div className="col-md-9  details">
             <img className="buy-art details" src={link}/>
           </div>
-
           <div className="col-md-3 contact-info">
             <p>By <a href="/scul1"></a></p>
-            <a href="#"><i className="fas fa-user-plus"> Follow</i></a><hr />
             <p><strong>Name of piece: </strong>{post.pieceName}</p>
             <p><strong>Category: </strong>{post.category}</p>
             <p><strong>Price: </strong> K{post.price}</p>
@@ -36,10 +36,10 @@ class Buy1 extends Component {
             <p><strong>Location: </strong>{post.location}</p>
             <p><strong>Description: </strong>{post.description}</p>
           </div>
+          
           </div>
-          <hr />
-        </div>
-    
+          <hr/>
+         </>
       )
     }
   )
@@ -50,14 +50,16 @@ render() {
     return (
       <div>
         <Navbar2 />
+        <div className="container-fluid">
             {this.getAllPosts()}
+            </div>
         <Footer />
       </div>
     )
   }
   else {
     return (
-      <div className="text-center">
+      <div>
         
         <div className="loader"></div>
       </div>

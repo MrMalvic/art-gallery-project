@@ -37,8 +37,7 @@ class Home extends Component {
       this.loggedOut()
     }
 
-    const Id = Meteor.userId();
-    console.log(Id)
+    
   }
 
   getAllPosts = () => {
@@ -52,8 +51,8 @@ class Home extends Component {
           <img className="thumbnail" src={link} />
           <div className=" on-hover-details">
             <a className="link-to-buy" href="/Buy1"></a>
-            <a ><i className="fas fa-heart fa-2x hover-item-one" ></i></a>
-            <a className="artist-links hover-item-two" title="artist" href="/scul1"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+            {/* <a className="hover-item-one">buy</a> */}
+            <a className="artist-links hover-item-two" title="artist" href="/ProfilePage"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
           </div>
         </div>
       )
