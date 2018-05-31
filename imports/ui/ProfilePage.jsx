@@ -117,7 +117,6 @@ export class ProfilePage extends Component {
 }
 
 export default withTracker(() =>{
-  Meteor.subscribe('files.all');
   Meteor.subscribe('posts');
   let isDataReady = Meteor.subscribe('files.all');
   return{
