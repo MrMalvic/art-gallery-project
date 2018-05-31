@@ -32,4 +32,4 @@ ostrio:files
 check
 ejson
 aldeed:simple-schema
-#Sautopublish
+#autopublish
