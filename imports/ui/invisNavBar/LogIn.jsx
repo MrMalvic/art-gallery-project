@@ -49,7 +49,7 @@ logUserIn = e => {
               <label htmlFor="inputPassword">Password</label><br/>
               <input type="password" className="form-control2" name="password" id="inputPassword" placeholder="Password" />
             </div>
-            <p className="artist-reg pad">Forgot your password? click <a href="#" className="here">here</a> to reset it.</p>
+            <p className="artist-reg pad">Forgot your password? click <a href="/userSign" className="here">here</a> to reset it.</p>
             <button type="submit" className="btn btn-primary">LogIn</button>
           </form>
         </div>
