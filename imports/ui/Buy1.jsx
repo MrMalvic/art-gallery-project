@@ -58,10 +58,7 @@ render() {
   else {
     return (
       <div className="text-center">
-        <br />
-        <br />
-        <br />
-        <br />
+        
         <div className="loader"></div>
       </div>
     )

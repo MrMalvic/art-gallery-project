@@ -714,6 +714,7 @@ input[type=file]{
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   margin: auto;
+  margin-top: 45vh; 
 }
 
 @-webkit-keyframes spin {
