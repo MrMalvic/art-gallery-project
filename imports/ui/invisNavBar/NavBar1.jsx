@@ -6,6 +6,7 @@ import route from '/imports/routing/router.js';
 import $ from 'jquery';
 
 
+
 export default class NavBar1 extends Component {
 
   componentDidMount(){

@@ -10,8 +10,17 @@ import { Session } from 'meteor/session';
 
 
 export class Upload extends Component {
-
-    
+    constructor(props){
+    super(props);
+    this.state = {
+      pieceName:'',
+      category:'',
+      location:'',
+      phoneNumber:'',
+      price:'',
+      description:'',
+    }
+}
   handleSubmit=(e)=>{
     e.preventDefault();
     const attempt = Session.get('imageId');
