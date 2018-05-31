@@ -5,7 +5,7 @@ import {withTracker} from 'meteor/react-meteor-data';
 import NavBar1 from '/imports/ui/invisNavBar/NavBar1.jsx';
 import Posts from '/imports/api/blog/collections.js';
 import FileUpload from './uploadFile.jsx';
-import {UserFiles} from '../../api/upload/collections.js';
+import UserFiles from '../../api/upload/collections.js';
 import { Session } from 'meteor/session';
 
 
@@ -74,7 +74,7 @@ export class Upload extends Component {
         
 
     render() {
-            let {imagePreviewUrl} = this.state;
+    let {imagePreviewUrl} = this.state;
     let $imagePreview = null;
     if (imagePreviewUrl) {
       $imagePreview = (<img src={imagePreviewUrl} style={{width:100+"px",height:100+"px"}}/>);
@@ -142,28 +142,28 @@ export default withTracker(() =>{
 
 })(Upload);
 
-var clock = new Date({
-    el: '#clock',
-    data: {
-        time: '',
-        date: ''
-    }
-});
+// var clock = new Date({
+//     el: '#clock',
+//     data: {
+//         time: '',
+//         date: ''
+//     }
+// });
 
-var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-var timerID = setInterval(updateTime, 1000);
-updateTime();
-function updateTime() {
-    var cd = new Date();
-    clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
-    clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
-};
+// var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+// var timerID = setInterval(updateTime, 1000);
+// updateTime();
+// function updateTime() {
+//     var cd = new Date();
+//     clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
+//     clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+// };
 
-function zeroPadding(num, digit) {
-    var zero = '';
-    for(var i = 0; i < digit; i++) {
-        zero += '0';
-    }
-    return (zero + num).slice(-digit);
-}
+// function zeroPadding(num, digit) {
+//     var zero = '';
+//     for(var i = 0; i < digit; i++) {
+//         zero += '0';
+//     }
+//     return (zero + num).slice(-digit);
+// }
 
