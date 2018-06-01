@@ -29,8 +29,11 @@ export class ProfilePage extends Component {
     route.go('/Update')
 
   }
+  toBuy = () =>{
+    route.go('/Buy1')
+  }
 
-<<<<<<< HEAD
+
 
  getAllProfiles=()=>{
     const profiles = this.props.profiles;
@@ -50,12 +53,6 @@ export class ProfilePage extends Component {
 
 
 
-=======
-  toBuy = () =>{
-    route.go('/Buy1')
-  }
->>>>>>> a50b15c84091dbe59a351bc58a23a81315008465
-
   getAllPosts=()=>{
     const posts = this.props.posts;
     return posts.map((post) => {
@@ -63,36 +60,6 @@ export class ProfilePage extends Component {
       console.log(trial);
       const link = UserFiles.findOne({_id: trial}).link();
       return (
-<<<<<<< HEAD
-        <div key = {post._id} className="card border-primary">
-        <img className="card-img-top" src={link} style={{width: 100 + "%",height:200 + "px"}} alt="Card image cap"/>
-        <div className="card-body">
-            <h5 className="card-title"><strong>Piece Name:</strong> {post.postName}</h5>
-            <h6 className="card-subtitle mb-2"><strong>Catergory:</strong> {post.postCategory}</h6>
-            <h6 className="card-subtitle mb-2"><strong>Price:</strong>K {posts.price}</h6>
-            <h6 className="card-subtitle mb-2"><strong>Description:</strong> {posts.description}</h6>
-          </div>
-          <div className="card-footer">
-          </div>
-          <div className="text-center">
-            <button className="btn btn-dark btn-block adding" data-toggle="modal" data-target="#exampleModalCenter">Get Piece</button>
-          </div>
-          <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered" role="document">
-              <div className="modal-content">
-                <div className="modal-body poster">
-                <h4>Contact Artist:</h4><br/>
-                 <h5>Artist Name: {post.owner}</h5>
-                 <h5>Number: {post.number}</h5>
-                </div>
-                <div className="modal-footer">
-                  <button type="button" className="btn btn-secondary adding" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-=======
         <div key={post._id} className=" hover-over-imgs">
           <img className="thumbnail" src={link} />
           <div className=" on-hover-details">
@@ -101,7 +68,6 @@ export class ProfilePage extends Component {
             <a className="artist-links hover-item-two" title="artist" href="/ProfilePage"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
           </div>
         </div>  
->>>>>>> a50b15c84091dbe59a351bc58a23a81315008465
       )
     }
   )
@@ -136,21 +102,10 @@ export class ProfilePage extends Component {
     }
     else {
       return (
-<<<<<<< HEAD
-        <div className="text-center">
-          <br />
-          <br />
-          <br />
-          <br />
-          <img src="public/load.png" className="App-logo" alt="logo" />
-          <h3 className="">Please wait</h3>
-        </div>
-=======
         <div>
         
         <div className="loader"></div>
       </div>
->>>>>>> a50b15c84091dbe59a351bc58a23a81315008465
       )
     }
   }
