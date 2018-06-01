@@ -33,7 +33,7 @@ export class About extends Component {
           <div className="row">
 
             <div className="col-md-6">
-              <img className="img" src="http://via.placeholder.com/200x200" alt="Card image cap"/ >
+              <img className="img" src="malumbo.jpg" alt="Card image cap"/ >
               <h5>Malumbo Mutale</h5>
               <p>Senior Developer/Designer.</p>
             </div>
