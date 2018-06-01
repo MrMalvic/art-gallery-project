@@ -4,7 +4,7 @@ export class Footer extends Component {
     render() {
         return (
             <div>
-                <footer className="page-footer font-small blue pt-4 mt-4">
+                <footer id="footer" className="page-footer font-small blue pt-4 mt-4">
                     <div className="container-fluid text-center text-md-left upper-footer">
                         <div className="row text-center">
                             <div className="col-md-4">
