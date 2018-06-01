@@ -190,9 +190,17 @@ button:focus {outline:0;}
 .img{
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: auto;
   border-radius: 100%;
+  display: block;   
+}
 
+.img1{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 100%;
+  display: block;   
 }
 
 .about-text{
@@ -347,7 +355,7 @@ label{
 }
 
 .profile{
-  padding-top: 30vh;
+  padding-top: 35vh;
 }
 
 .thumbs{

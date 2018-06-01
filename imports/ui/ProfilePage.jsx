@@ -42,8 +42,8 @@ export class ProfilePage extends Component {
       console.log(trial);
       const link = UserFiles.findOne({_id: trial}).link();
       return (
-        <div key = {profile._id} className="container profile">
-        <img className="img" src={link} style={{width: 100 + "%",height:200 + "px"}} alt="ProfilePage"/>
+        <div key = {profile._id} >
+        <img className="img1" src={link}  alt="ProfilePage"/>
         </div>
       
     );
@@ -78,7 +78,7 @@ export class ProfilePage extends Component {
         <div>
          
           <Navbar2 />
-          <img src="" alt="PROFILE" className="cover-photo" />
+          <div src="" alt="PROFILE" className="cover-photo" ></div>
           <div className="container profile">
           {this.getAllProfiles()}
           <h1 style={{ textAlign: "center" }}>PROJECTS DONE BY THIS ARTIST:</h1>
