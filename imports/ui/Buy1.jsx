@@ -5,81 +5,75 @@ import { Footer } from '/imports/ui/Footer.jsx'
 import Posts from '/imports/api/blog/collections.js';
 import { withTracker } from 'meteor/react-meteor-data';
 import { userInfo } from 'os';
+import { UserFiles } from '../api/upload/collections.js';
 
 
 
 class Buy1 extends Component {
 
-  getAllItems = () => {
-    const posts = this.props.posts;
-    return posts.map((post) => (
-        <div key={posts._id} className="container">
-          <div className="row">
-            <div className="col-md-9 App details">
-              <img className="buy-art details" src="http://via.placeholder.com/1024x720" />
-            </div>
-
-            <div className="col-md-3 contact-info">
-              <p>By <a href="/scul1"></a></p>
-              <a href="#"><i className="fas fa-user-plus"> Follow</i></a><hr />
-              <p><strong>Name of piece: </strong>{posts.name}</p>
-              <p><strong>Category: </strong></p>
-              <p><strong>Price: </strong> K</p>
-              <p><strong>Phone number: </strong></p>
-              <p><strong>Location: </strong> </p> <hr />
-              <h5 className="App">Contact the artist</h5>
-            </div>
-            <div className="col-md-12">
-              <h1 className="App">Description</h1>
-              <p className="App">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores veritatis qui quae at vel consequuntur ex impedit, aliquid, modi omnis quaerat doloremque, labore eos quam nulla aspernatur suscipit dolor dolorem.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores veritatis qui quae at vel consequuntur ex impedit, aliquid, modi omnis quaerat doloremque, labore eos quam nulla aspernatur suscipit dolor dolorem.</p><br />
-              <h1 className="App">More from this artist</h1>
-              <div className="row">
-                <div className="col-md-4">
-                  <img className="more-work" src="http://via.placeholder.com/350x350" />
-                </div>
-                <div className="col-md-4">
-                  <img className="more-work" src="http://via.placeholder.com/350x350" />
-                </div>
-                <div className="col-md-4">
-                  <img className="more-work" src="http://via.placeholder.com/350x350" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    )
-    )
-  }
-
   
 
-  render() {
-    console.log(this.props.posts)
-    if (this.props.isDataReady) {
+  getAllPosts=()=>{
+    const posts = this.props.posts;
+    const users = this.props.users;
+    
+    return posts.map((post) => {
+      const trial = post.imageId;
+      console.log(trial);
+      const link = UserFiles.findOne({_id: trial}).link();
       return (
-        <div >
-          <Navbar2 />
-             {this.getAllItems()}
-          <Footer />
-        </div>
+        <>
+        <div className="row" key={post._id}>
+          <div className="col-md-9  details">
+            <img className="buy-art details" src={link}/>
+          </div>
+          <div className="col-md-3 contact-info">
+            <p>By <a href="/scul1"></a></p>
+            <p><strong>Name of piece: </strong>{post.pieceName}</p>
+            <p><strong>Category: </strong>{post.category}</p>
+            <p><strong>Price: </strong> K{post.price}</p>
+            <p><strong>Phone number: </strong>{post.phoneNumber}</p>
+            <p><strong>Location: </strong>{post.location}</p>
+            <p><strong>Description: </strong>{post.description}</p>
+          </div>
+          
+          </div>
+          <hr/>
+         </>
       )
     }
-    else {
-      return (
-        <div className="App">
-           <h1>It aynt working bruh</h1>
-           
-        </div>
-      )
-    }
-  }
+  )
 }
 
-export default withTracker(() => {
-  let handle = Meteor.subscribe('posts')
-  return {
-    posts: Posts.find({}),
-    isDataReady: handle.ready(),
+render() {
+  if (this.props.isDataReady) {
+    return (
+      <div>
+        <Navbar2 />
+        <div className="container-fluid">
+            {this.getAllPosts()}
+            </div>
+        <Footer />
+      </div>
+    )
   }
+  else {
+    return (
+      <div>
+        
+        <div className="loader"></div>
+      </div>
+    )
+  }
+}
+}
+
+export default withTracker(() =>{
+Meteor.subscribe('posts');
+let isDataReady = Meteor.subscribe('files.all');
+return{
+  posts: Posts.find().fetch(),
+  files : UserFiles.find({}, {sort: {name: 1}}).fetch(),
+  isDataReady: isDataReady.ready(),
+}
 })(Buy1);

@@ -30,6 +30,7 @@ export class ProfilePage extends Component {
 
   }
 
+<<<<<<< HEAD
 
  getAllProfiles=()=>{
     const profiles = this.props.profiles;
@@ -49,6 +50,11 @@ export class ProfilePage extends Component {
 
 
 
+=======
+  toBuy = () =>{
+    route.go('/Buy1')
+  }
+>>>>>>> a50b15c84091dbe59a351bc58a23a81315008465
 
   getAllPosts=()=>{
     const posts = this.props.posts;
@@ -57,6 +63,7 @@ export class ProfilePage extends Component {
       console.log(trial);
       const link = UserFiles.findOne({_id: trial}).link();
       return (
+<<<<<<< HEAD
         <div key = {post._id} className="card border-primary">
         <img className="card-img-top" src={link} style={{width: 100 + "%",height:200 + "px"}} alt="Card image cap"/>
         <div className="card-body">
@@ -85,6 +92,16 @@ export class ProfilePage extends Component {
             </div>
           </div>
         </div>
+=======
+        <div key={post._id} className=" hover-over-imgs">
+          <img className="thumbnail" src={link} />
+          <div className=" on-hover-details">
+            <a className="link-to-buy" href="/Buy1"></a>
+            {/* <a className="hover-item-one">buy</a> */}
+            <a className="artist-links hover-item-two" title="artist" href="/ProfilePage"><img src="a.jpg" className="small-img pad2" alt="artist" />Artist</a>
+          </div>
+        </div>  
+>>>>>>> a50b15c84091dbe59a351bc58a23a81315008465
       )
     }
   )
@@ -107,11 +124,11 @@ export class ProfilePage extends Component {
           <h4 className=""> </h4>
           <br />
           <br />
-          <div className="container">
-            <div className="card-columns">
-              {this.getAllPosts()}
-            </div>
+          <div className="App container-fluid ">
+          <div className="row">
+            {this.getAllPosts()}
           </div>
+        </div>
           <br /><br />
           <Footer />
         </div>
@@ -119,6 +136,7 @@ export class ProfilePage extends Component {
     }
     else {
       return (
+<<<<<<< HEAD
         <div className="text-center">
           <br />
           <br />
@@ -127,6 +145,12 @@ export class ProfilePage extends Component {
           <img src="public/load.png" className="App-logo" alt="logo" />
           <h3 className="">Please wait</h3>
         </div>
+=======
+        <div>
+        
+        <div className="loader"></div>
+      </div>
+>>>>>>> a50b15c84091dbe59a351bc58a23a81315008465
       )
     }
   }

@@ -44,6 +44,9 @@ export default class NavBar1 extends Component {
           <li className="nav-item">          
           <a href="/upload" className="nav-link active">Upload</a>
           </li>
+          <li className="nav-item">
+              <a className="nav-link active" href="/ProfilePage">Profile</a>
+            </li>
             <li className="nav-item">
               <a className="nav-link active" id="logOut" href="#" onClick={this.logUserOut}>Logout</a>
             </li>
