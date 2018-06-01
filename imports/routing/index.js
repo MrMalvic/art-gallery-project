@@ -12,6 +12,7 @@ import ProfilePage  from '/imports/ui/ProfilePage.jsx';
 import { Pops } from  '/imports/ui/Pops.jsx';
 import Buy1 from '/imports/ui/Buy1.jsx';
 import { Scul1 } from '/imports/ui/Scul1.jsx';
+import { Update } from '/imports/ui/Update.jsx';
 import { Upload } from '/imports/ui/invisNavBar/Upload.jsx';
 import { Meteor } from 'meteor/meteor';
 import { accessDenied } from '/imports/ui/accessDenied.jsx';
@@ -42,5 +43,6 @@ route('/LogIn', LogIn);
 route('/Pops', Pops);
 route('/buy1', Buy1);
 route('/scul1',Scul1);
+route('/Update',Update);
 route('/upload',Upload);
 route('/searchResults', searchResults)

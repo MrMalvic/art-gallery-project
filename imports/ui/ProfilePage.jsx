@@ -3,14 +3,14 @@ import React, { Component } from 'react';
 import route from '/imports/routing/router.js';
 import { withTracker } from 'meteor/react-meteor-data';
 import Posts from '../api/blog/collections.js';
+import Profiles from '../api/profile/collections.js';
 import { Cards } from './Cards.jsx';
 import { Navbar2 } from '/imports/ui/Navbar2.jsx';
 import { Featured } from '/imports/ui/Featured.jsx';
 import { UserFiles } from '../api/upload/collections.js';
 import { Footer } from '/imports/ui/Footer.jsx';
 import { SearchCarousel } from '/imports/ui/search.jsx';
-// import { ProfilePage }  from '/imports/ui/invisNavBar/ProfilePage.jsx';
-import { Pops } from '/imports/ui/Pops.jsx';
+import {ProfilePic} from '/imports/ui/ProfilePic.jsx';
 import { Newartist } from '/imports/ui/Newartist.jsx';
 
 
@@ -24,11 +24,31 @@ export class ProfilePage extends Component {
     goToAbout = () => {
         route.go('/about');
     }
-   goToProfile = () => {
+   goToUpdate = () => {
 
-    route.go('/profile')
+    route.go('/Update')
 
   }
+
+
+ getAllProfiles=()=>{
+    const profiles = this.props.profiles;
+    return profiles.map((profile) => {
+      const trial = profile.imageId;
+      console.log(trial);
+      const link = UserFiles.findOne({_id: trial}).link();
+      return (
+        <div key = {profile._id} className="container profile">
+        <img className="img" src={link} style={{width: 100 + "%",height:200 + "px"}} alt="ProfilePage"/>
+        </div>
+      
+    );
+    }
+      )
+    }
+
+
+
 
   getAllPosts=()=>{
     const posts = this.props.posts;
@@ -48,7 +68,7 @@ export class ProfilePage extends Component {
           <div className="card-footer">
           </div>
           <div className="text-center">
-            <button className="btn btn-primary btn-block adding" data-toggle="modal" data-target="#exampleModalCenter">Get Item</button>
+            <button className="btn btn-dark btn-block adding" data-toggle="modal" data-target="#exampleModalCenter">Get Piece</button>
           </div>
           <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered" role="document">
@@ -56,7 +76,6 @@ export class ProfilePage extends Component {
                 <div className="modal-body poster">
                 <h4>Contact Artist:</h4><br/>
                  <h5>Artist Name: {post.owner}</h5>
-                 <h5>Email: {post.email}</h5>
                  <h5>Number: {post.number}</h5>
                 </div>
                 <div className="modal-footer">
@@ -76,16 +95,13 @@ export class ProfilePage extends Component {
         <div>
          
           <Navbar2 />
-          <img src="" alt="cover" className="cover-photo"/>
+          <img src="" alt="PROFILE" className="cover-photo" />
           <div className="container profile">
-          <div className="App">
-           <img className="img" src=" " />
-            <h5></h5>
-          </div>
+          {this.getAllProfiles()}
           <h1 style={{ textAlign: "center" }}>PROJECTS DONE BY THIS ARTIST:</h1>
           <br />
           <button onClick = {this.goToUpload}>Upload Piece</button>
-          <button onClick = {this.goToHome}>Edit Profile</button>
+          <button onClick = {this.goToUpdate}>Edit Profile</button>
           </div>
           <p className="h1" style={{ textAlign: "center" }}></p><br />
           <h4 className=""> </h4>
@@ -108,8 +124,8 @@ export class ProfilePage extends Component {
           <br />
           <br />
           <br />
-          <img src="images/loader.svg" className="App-logo" alt="logo" />
-          <h3 className="loading">Please wait a moment</h3>
+          <img src="public/load.png" className="App-logo" alt="logo" />
+          <h3 className="">Please wait</h3>
         </div>
       )
     }
@@ -117,10 +133,13 @@ export class ProfilePage extends Component {
 }
 
 export default withTracker(() =>{
+  Meteor.subscribe('files.all');
   Meteor.subscribe('posts');
+  Meteor.subscribe('profiles');
   let isDataReady = Meteor.subscribe('files.all');
   return{
     posts: Posts.find().fetch(),
+    profiles: Profiles.find().fetch(),    
     files : UserFiles.find({}, {sort: {name: 1}}).fetch(),
     isDataReady: isDataReady.ready(),
   }

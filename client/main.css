@@ -334,11 +334,12 @@ label{
 }
 
 .cover-photo{
-  height: 45vh;
+  height: 50vh;
   z-index: -20;
   width: 100%;
   position: absolute;
   left: 0;
+  background-color: rgba( 112, 123, 124 );
 }
 
 .profile{
